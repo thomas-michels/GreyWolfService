@@ -15,7 +15,7 @@
 
       "request": "launch",
 
-      "program": "run_server.py",
+      "program": "main.py",
 
       "console": "integratedTerminal"
     }

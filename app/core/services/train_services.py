@@ -1,5 +1,5 @@
 from typing import Tuple
-from mealpy.swarm_based.GWO import OriginalGWO
+from mealpy.swarm_based.GWO import BaseGWO
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
@@ -50,8 +50,8 @@ class TrainServices:
         return self.mse, bucket_path
 
     def find_best_fitness_with_gwo(self):
-        gwo = OriginalGWO(_env.GWO_EPOCH, _env.GWO_POP_SIZE)
-        best_position, best_fitness = gwo.solve(self.params)
+        gwo = BaseGWO(self.params, _env.GWO_EPOCH, _env.GWO_POP_SIZE)
+        best_position, best_fitness = gwo.solve()
 
         self.best_position = best_position
         self.best_fitness = best_fitness

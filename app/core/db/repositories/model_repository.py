@@ -20,7 +20,7 @@ class ModelRepository(Repository):
         RETURNING id, "path", x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, created_at, updated_at;
         """
         try:
-            result = self.conn.execute(sql_statement=query, values={
+            result = self.conn.fetch_with_retry(sql_statement=query, values={
                 "path": model.path,
                 "x_min_max_scaler": model.x_min_max,
                 "y_min_max_scaler": model.y_min_max,
@@ -55,8 +55,7 @@ class ModelRepository(Repository):
         LIMIT 1 OFFSET 0;
         """
         try:
-            self.conn.execute(sql_statement=query)
-            result = self.conn.fetch()
+            result = self.conn.fetch_with_retry(sql_statement=query)
 
             if result:
                 return ModelInDB(**result)

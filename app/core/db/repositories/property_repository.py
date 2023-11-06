@@ -1,5 +1,6 @@
 import requests
 from app.core.configs import get_environment, get_logger
+import time
 
 _env = get_environment()
 _logger = get_logger(__name__)
@@ -11,16 +12,18 @@ class PropertyRepository:
         pass
 
     def get_all_properties(self) -> str:
-        try:
-            url = f"{_env.PROPERTY_API_URL}/properties/export/csv"
+        for i in range(5):
+            try:
+                url = f"{_env.PROPERTY_API_URL}/properties/export/csv"
 
-            response = requests.get(url=url)
+                response = requests.get(url=url)
 
-            response.raise_for_status()
+                response.raise_for_status()
 
-            json = response.json()
+                json = response.json()
 
-            return json["file_url"]
+                return json["file_url"]
 
-        except Exception as error:
-            _logger.error(f"Error on get_all_properties: {str(error)}")
+            except Exception as error:
+                _logger.error(f"Error on get_all_properties: {str(error)}")
+                time.sleep(2)

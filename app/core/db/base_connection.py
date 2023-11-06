@@ -28,6 +28,12 @@ class DBConnection(ABC):
         """
 
     @abstractmethod
+    def fetch_with_retry(self, sql_statement: str, values: tuple = None, all=False):
+        """
+        Method to get all or one occurence from database
+        """
+
+    @abstractmethod
     def close(self):
         """
         Method to close connection

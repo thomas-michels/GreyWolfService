@@ -41,12 +41,17 @@ class PGConnection:
                 time.sleep(2)
 
             except Exception:
-                ...
+                self.close()
+                self.conn = None
 
         return response
 
     def close(self):
-        self.conn.close()
+        try:
+            self.conn.close()
+
+        except Exception:
+            ...
 
     def __start_connection(self):
         try:
@@ -56,7 +61,11 @@ class PGConnection:
                     f"port={_env.DATABASE_PORT} "
                     f"user={_env.DATABASE_USER} "
                     f"password={_env.DATABASE_PASSWORD} "
-                    f"dbname={_env.DATABASE_NAME}"),
+                    f"dbname={_env.DATABASE_NAME} "
+                    f"keepalives_idle=5 "
+                    f"keepalives_interval=2 "
+                    f"keepalives_count=2"
+                ),
                 autocommit=False,
                 row_factory=dict_row
             )

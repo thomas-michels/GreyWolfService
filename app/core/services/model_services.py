@@ -102,7 +102,7 @@ class ModelServices:
         if latest_model:
             current_datetime = datetime.now(timezone.utc)
 
-            model_age = ((current_datetime - latest_model.created_at).seconds) / 60
+            model_age = ((latest_model.created_at - current_datetime).seconds) / 60
 
             if model_age <= _env.MODEL_MINIMAL_AGE:
                 return False

@@ -30,7 +30,7 @@ class TrainServices:
         self.params = {
             "fit_func": self.fitness_func,
             "lb": [10, 19, 19, 19, 19, 0.0001, 0.001, 16],
-            "ub": [50, 117, 117, 117, 117, 0.1, 1, 256],
+            "ub": [50, 117, 117, 117, 117, 0.9, 1, 256],
             "minmax": "min",
         }
         self.mse = 1

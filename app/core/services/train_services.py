@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import List, Tuple
 from mealpy.swarm_based.GWO import BaseGWO
 import numpy as np
 from keras.models import Sequential
@@ -8,6 +8,9 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 from datetime import datetime
 import tempfile
 from app.core.configs import get_environment, get_logger
+from app.core.entities import ModelHistory, ModelInDB
+from app.core.db import PGConnection
+from app.core.db.repositories import ModelHistoryRepository
 from app.api.dependencies import Bucket
 
 
@@ -18,6 +21,7 @@ _logger = get_logger(__name__)
 class TrainServices:
     def __init__(
         self,
+        model_in_db: ModelInDB,
         x_properties_train: np.array,
         y_properties_train: np.array,
         x_properties_test: np.array,
@@ -29,11 +33,15 @@ class TrainServices:
         self.y_properties_test = y_properties_test
         self.params = {
             "fit_func": self.fitness_func,
-            "lb": [10, 19, 19, 19, 19, 0.0001, 0.001, 16],
-            "ub": [50, 117, 117, 117, 117, 0.9, 1, 256],
+            "lb": [10, 10, 10, 0.0001, 0.001, 16],
+            "ub": [50, 100, 100, 0.1, 1, 256],
             "minmax": "min",
         }
         self.mse = 1
+        self.epoch = 1
+        self.model_in_db = model_in_db
+        self.__model_history_repository = ModelHistoryRepository(connection=PGConnection())
+        self.__save_gwo_params()
 
     def train(self) -> Tuple[float, str]:
         _logger.info(f"Starting train at {datetime.now()}")
@@ -62,10 +70,10 @@ class TrainServices:
 
     def fitness_func(self, solution: tuple) -> float:
         max_iter = int(solution[0])
-        hidden_layer_sizes = (int(solution[1]), int(solution[2]), int(solution[3]), int(solution[4]))
-        learning_rate = solution[5]
-        momentum = solution[6]
-        batch_size = int(solution[7])
+        hidden_layer_sizes = [int(solution[1]), int(solution[2])]
+        learning_rate = solution[3]
+        momentum = solution[4]
+        batch_size = int(solution[5])
 
         model = Sequential()
 
@@ -85,6 +93,15 @@ class TrainServices:
 
         mse = mean_absolute_error(self.y_properties_test, predictions)
 
+        self.__save_history(
+            mse=mse,
+            max_iter=max_iter,
+            hidden_layer_sizes=hidden_layer_sizes,
+            learning_rate=learning_rate,
+            momentum=momentum,
+            batch_size=batch_size
+        )
+
         if mse < self.mse:
             self.mse = mse
             self.model = model
@@ -98,3 +115,35 @@ class TrainServices:
         now = datetime.now()
 
         return f"GWO/GWO_{now.year}-{now.month}-{now.day}-{now.hour}:{now.minute}.h5"
+
+    def __save_history(
+            self,
+            mse: float,
+            max_iter: int,
+            hidden_layer_sizes: List[int],
+            learning_rate: float,
+            momentum: float,
+            batch_size: int
+        ):
+        history = ModelHistory(
+            model_id=self.model_in_db.id,
+            epoch=self.epoch,
+            mse=mse,
+            params={
+                "max_iter": max_iter,
+                "hidden_layer_sizes": hidden_layer_sizes,
+                "learning_rate": learning_rate,
+                "momentum": momentum,
+                "batch_size": batch_size,
+            }
+        )
+
+        self.__model_history_repository.create(model_history=history)
+        self.epoch += 1
+
+    def __save_gwo_params(self):
+        self.model_in_db.gwo_params = {
+            "lb": self.params["lb"],
+            "ub": self.params["ub"],
+            "minmax": "min",
+        }

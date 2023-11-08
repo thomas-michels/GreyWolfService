@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from app.api.dependencies import Bucket
 from app.core.configs import get_environment
-from app.core.entities import Model
+from app.core.entities import ModelInDB
 from datetime import datetime
 import requests
 
@@ -18,7 +18,7 @@ _env = get_environment()
 
 
 class PreProcessingServices:
-    def __init__(self, model: Model=None, file_url: str=None) -> None:
+    def __init__(self, model: ModelInDB=None, file_url: str=None) -> None:
         self.label_encoder_neighborhood = LabelEncoder()
         self.onehot_encoder_properties = ColumnTransformer(
             transformers=[("OneHot", OneHotEncoder(), [4])], remainder="passthrough"
@@ -100,7 +100,7 @@ class PreProcessingServices:
             self.x_properties_finished, self.y_properties_finished, test_size=_env.TEST_SIZE, random_state=0
         )
 
-    def save(self, model: Model) -> dict:
+    def save(self, model: ModelInDB) -> dict:
         
         model.neighborhood_encoder = self.__save_label_encoder()
         model.one_hot_encoder = self.__save_one_hot_encoder()

@@ -2,7 +2,7 @@ from app.core.db.repositories import ModelRepository, PropertyRepository
 from app.core.services.train_services import TrainServices
 from app.core.services.prediction_services import PredictionServices
 from app.core.services.preprocessing_services import PreProcessingServices
-from app.core.entities import Model, ModelInDB, Property, PredictedProperty
+from app.core.entities import Model, ModelInDB, Property, PredictedProperty, ModelHistory, ModelStatus
 from app.core.configs import get_environment, get_logger
 from datetime import datetime, timezone
 
@@ -18,9 +18,15 @@ class ModelServices:
         self.__property_repository = property_repository
 
     async def train_and_save_model(self) -> ModelInDB:
+        model = Model(name="GREY WOLF V1")
+
+        model_in_db = await self.__model_repository.create(model=model)
+
         file_url = self.__property_repository.get_all_properties()
-        if not file_url:
+        if not file_url or not model_in_db:
             return
+
+        await self.__model_repository.update_status(new_status=ModelStatus.TRAINING, model_id=model_in_db.id)
 
         preprocessing = PreProcessingServices(file_url=file_url)
 
@@ -37,6 +43,7 @@ class ModelServices:
         preprocessing.split()
 
         train_services = TrainServices(
+            model_in_db=model_in_db,
             x_properties_train=preprocessing.x_properties_train,
             y_properties_train=preprocessing.y_properties_train,
             x_properties_test=preprocessing.x_properties_test,
@@ -45,14 +52,18 @@ class ModelServices:
 
         mse, model_path = train_services.train()
 
-        model = Model(
-            path=model_path,
-            mse=mse
-        )
+        model_in_db.path = model_path
+        model_in_db.mse = mse
 
-        preprocessing.save(model)
+        preprocessing.save(model_in_db)
 
-        model_in_db = await self.__model_repository.create(model=model)
+        is_updated = await self.__model_repository.update(model_in_db=model_in_db)
+
+        if is_updated:
+            await self.__model_repository.update_status(new_status=ModelStatus.READY, model_id=model_in_db.id)
+
+        else:
+            await self.__model_repository.update_status(new_status=ModelStatus.ERROR, model_id=model_in_db.id)
 
         return model_in_db
     

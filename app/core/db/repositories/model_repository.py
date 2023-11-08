@@ -1,6 +1,7 @@
+import json
 from app.core.db import DBConnection
 from app.core.db.repositories.base_repository import Repository
-from app.core.entities import Model, ModelInDB
+from app.core.entities import Model, ModelInDB, ModelStatus
 from app.core.configs import get_logger
 
 _logger = get_logger(__name__)
@@ -11,13 +12,13 @@ class ModelRepository(Repository):
         super().__init__(connection)
 
     async def create(self, model: Model) -> ModelInDB:
-        query = """
+        query = """--sql
         INSERT
             INTO
-            development.models
-        ("path", created_at, updated_at, x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse)
-        VALUES(%(path)s, NOW(), NOW(), %(x_min_max_scaler)s, %(y_min_max_scaler)s, %(neighborhood_encoder)s, %(one_hot_encoder)s, %(mse)s)
-        RETURNING id, "path", x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, created_at, updated_at;
+            public.models
+        ("path", created_at, updated_at, x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, name, status, gwo_params)
+        VALUES(%(path)s, NOW(), NOW(), %(x_min_max_scaler)s, %(y_min_max_scaler)s, %(neighborhood_encoder)s, %(one_hot_encoder)s, %(mse)s, %(name)s, %(status)s, %(gwo_params)s)
+        RETURNING id, "path", x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, created_at, updated_at, name, status, gwo_params;
         """
         try:
             result = self.conn.fetch_with_retry(sql_statement=query, values={
@@ -27,6 +28,9 @@ class ModelRepository(Repository):
                 "neighborhood_encoder": model.neighborhood_encoder,
                 "one_hot_encoder": model.one_hot_encoder,
                 "mse": model.mse,
+                "name": model.name,
+                "status": model.status,
+                "gwo_params": json.dumps(model.gwo_params)
             })
             self.conn.commit()
 
@@ -36,8 +40,66 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
+    async def update_status(self, new_status: ModelStatus, model_id: int) -> bool:
+        query = """--sql
+        UPDATE
+            public.models
+        SET
+            updated_at = NOW(),
+            status = %(new_status)s
+        WHERE
+            id = %(model_id)s
+        RETURNING id;
+        """
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={
+                "new_status": new_status,
+                "model_id": model_id
+            })
+            self.conn.commit()
+
+            return bool(result)
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+
+    async def update(self, model_in_db: ModelInDB) -> bool:
+        query = """--sql
+        UPDATE
+            public.models
+        SET
+            "path" = %(path)s,
+            updated_at = NOW(),
+            x_min_max_scaler = %(x_min_max_scaler)s,
+            neighborhood_encoder = %(neighborhood_encoder)s,
+            one_hot_encoder = %(one_hot_encoder)s,
+            mse = %(mse)s,
+            y_min_max_scaler = %(y_min_max_scaler)s,
+            gwo_params = %(gwo_params)s
+        WHERE
+            id = %(id)s
+        RETURNING id;
+        """
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={
+                "path": model_in_db.path,
+                "x_min_max_scaler": model_in_db.x_min_max,
+                "y_min_max_scaler": model_in_db.y_min_max,
+                "neighborhood_encoder": model_in_db.neighborhood_encoder,
+                "one_hot_encoder": model_in_db.one_hot_encoder,
+                "mse": model_in_db.mse,
+                "id": model_in_db.id,
+                "gwo_params": json.dumps(model_in_db.gwo_params)
+            })
+            self.conn.commit()
+
+            return bool(result)
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+
     async def select_latest(self) -> ModelInDB:
-        query = """
+        query = """--sql
         SELECT
             id,
             "path",
@@ -47,7 +109,10 @@ class ModelRepository(Repository):
             one_hot_encoder,
             mse,
             created_at,
-            updated_at
+            updated_at,
+            name,
+            status,
+            gwo_params
         FROM
             public.models m
         ORDER BY

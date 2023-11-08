@@ -1,9 +1,10 @@
 import psycopg
 from psycopg.rows import dict_row
-from app.core.configs import get_environment
+from app.core.configs import get_environment, get_logger
 import time
 
 _env = get_environment()
+_logger = get_logger(__name__)
 
 
 class PGConnection:
@@ -16,7 +17,8 @@ class PGConnection:
         self.cursor.execute(sql, values)
 
     def commit(self):
-        self.conn.commit()
+        if self.conn:
+            self.conn.commit()
 
     def rollback(self):
         self.conn.rollback()
@@ -27,7 +29,7 @@ class PGConnection:
     def fetch_with_retry(self, sql_statement: str, values: tuple = None, all: bool = False):
         response = None
 
-        for i in range(5):
+        for i in range(10):
             try:
                 if not self.conn:
                     self.__start_connection()
@@ -38,11 +40,12 @@ class PGConnection:
                 if response:
                     break
 
-                time.sleep(2)
-
-            except Exception:
+            except Exception as error:
+                _logger.error(f"Error: {str(error)}")
+                _logger.warning(f"DB retry activated - Count: {i}")
                 self.close()
                 self.conn = None
+                time.sleep(2)
 
         return response
 

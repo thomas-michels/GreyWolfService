@@ -1,14 +1,25 @@
+from typing import Optional
 from pydantic import BaseModel, Field
 from datetime import datetime
+from enum import Enum
+
+class ModelStatus(str, Enum):
+    SCHEDULED: str = "SCHEDULED"
+    TRAINING: str = "TRAINING"
+    READY: str = "READY"
+    ERROR: str = "ERROR"
 
 
 class Model(BaseModel):
-    path: str = Field(default=None, example="path")
-    neighborhood_encoder: str = Field(default=None, example="path")
-    one_hot_encoder: str = Field(default=None, example="path")
-    x_min_max: str = Field(default=None, example="path")
-    y_min_max: str = Field(default=None, example="path")
+    name: Optional[str] = Field(default="", example="test")
+    status: Optional[ModelStatus] = Field(default=ModelStatus.SCHEDULED, example=ModelStatus.SCHEDULED)
+    path: str = Field(default="", example="path")
+    neighborhood_encoder: str = Field(default="", example="path")
+    one_hot_encoder: str = Field(default="", example="path")
+    x_min_max: str = Field(default="", example="path")
+    y_min_max: str = Field(default="", example="path")
     mse: float = Field(default=0, example=123)
+    gwo_params: Optional[dict] = Field(default={})
 
 
 class ModelInDB(Model):

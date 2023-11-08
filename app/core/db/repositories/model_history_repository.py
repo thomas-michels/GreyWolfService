@@ -1,3 +1,4 @@
+from typing import Dict, List
 from app.core.db import DBConnection
 from app.core.db.repositories.base_repository import Repository
 from app.core.entities import ModelHistory, ModelHistoryInDB
@@ -41,3 +42,37 @@ class ModelHistoryRepository(Repository):
 
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
+
+    def select_model_histories_by_model_id(self, models_id: List[int]) -> Dict[int, List[ModelHistoryInDB]]:
+        query = """--sql
+        SELECT
+            mh.id,
+            mh.model_id,
+            mh.epoch,
+            mh.mse,
+            mh.params,
+            mh.created_at,
+            mh.updated_at
+        FROM
+            public.model_histories mh
+        WHERE
+            mh.model_id = ANY(%(models_id)s);
+        """
+
+        try:
+            models = {}
+
+            results = self.conn.fetch_with_retry(sql_statement=query, values={"models_id": models_id}, all=True)
+
+            if results:
+                for result in results:
+                    if result["model_id"] not in models:
+                        models[result["model_id"]] = []
+
+                    models[result["model_id"]].append(ModelHistoryInDB(**result))
+
+            return models
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+            return {}

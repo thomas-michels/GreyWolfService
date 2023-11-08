@@ -1,7 +1,11 @@
 from fastapi import Depends
 from app.core.services import ModelServices
 from app.core.db import PGConnection
-from app.core.db.repositories import ModelRepository, PropertyRepository
+from app.core.db.repositories import (
+    ModelRepository,
+    PropertyRepository,
+    ModelHistoryRepository,
+)
 
 
 async def model_composer(
@@ -9,7 +13,10 @@ async def model_composer(
 ) -> ModelServices:
     model_repository = ModelRepository(connection=conn)
     property_repository = PropertyRepository()
+    model_history_repository = ModelHistoryRepository(connection=conn)
     service = ModelServices(
-        model_repository=model_repository, property_repository=property_repository
+        model_repository=model_repository,
+        property_repository=property_repository,
+        model_history_repository=model_history_repository,
     )
     return service

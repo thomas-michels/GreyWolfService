@@ -143,6 +143,11 @@ class TrainServices:
 
     def __save_gwo_params(self):
         self.model_in_db.gwo_params = {
+            "max_iter": [self.params["lb"][0], self.params["ub"][0]],
+            "hidden_layer_sizes": [self.params["lb"][1:-3], self.params["ub"][1:-3]],
+            "learning_rate": [self.params["lb"][-3], self.params["ub"][-3]],
+            "momentum": [self.params["lb"][-2], self.params["ub"][-2]],
+            "batch_size": [self.params["lb"][-1], self.params["ub"][-1]],
             "lb": self.params["lb"],
             "ub": self.params["ub"],
             "minmax": "min",

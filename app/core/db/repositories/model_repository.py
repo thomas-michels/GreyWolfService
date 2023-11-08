@@ -1,7 +1,8 @@
 import json
+from typing import List
 from app.core.db import DBConnection
 from app.core.db.repositories.base_repository import Repository
-from app.core.entities import Model, ModelInDB, ModelStatus
+from app.core.entities import Model, ModelInDB, ModelStatus, ModelWithHistory
 from app.core.configs import get_logger
 
 _logger = get_logger(__name__)
@@ -127,3 +128,39 @@ class ModelRepository(Repository):
 
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
+
+    async def select_models(self, page: int, page_size: int) -> List[ModelInDB]:
+        query = """--sql
+        SELECT
+            id,
+            "path",
+            x_min_max_scaler AS x_min_max,
+            y_min_max_scaler AS y_min_max,
+            neighborhood_encoder,
+            one_hot_encoder,
+            mse,
+            created_at,
+            updated_at,
+            name,
+            status,
+            gwo_params
+        FROM
+            public.models m
+        ORDER BY
+            created_at DESC
+        LIMIT %(page_size)s OFFSET %(page)s;
+        """
+        try:
+            models = []
+
+            results = self.conn.fetch_with_retry(sql_statement=query, values={"page": page - 1, "page_size": page_size}, all=True)
+
+            if results:
+                for result in results:
+                    models.append(ModelInDB(**result))
+     
+            return models
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+            return []

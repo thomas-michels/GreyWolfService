@@ -14,4 +14,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["uvicorn", "app.application:create_app"]
 
-CMD ["--proxy-headers", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["--proxy-headers", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]

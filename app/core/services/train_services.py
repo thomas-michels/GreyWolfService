@@ -31,16 +31,11 @@ class TrainServices:
         self.y_properties_train = y_properties_train
         self.x_properties_test = x_properties_test
         self.y_properties_test = y_properties_test
-        self.params = {
-            "fit_func": self.fitness_func,
-            "lb": [10, 10, 10, 0.0001, 0.001, 16],
-            "ub": [50, 100, 100, 0.1, 1, 256],
-            "minmax": "min",
-        }
         self.mse = 1
         self.epoch = 1
         self.model_in_db = model_in_db
         self.__model_history_repository = ModelHistoryRepository(connection=PGConnection())
+        self.__mount_params()
         self.__save_gwo_params()
 
     def train(self) -> Tuple[float, str]:
@@ -61,7 +56,7 @@ class TrainServices:
     def find_best_fitness_with_gwo(self):
         start = datetime.now()
         _logger.info(f"Starting GWO - {start}")
-        gwo = BaseGWO(self.params, _env.GWO_EPOCH, _env.GWO_POP_SIZE)
+        gwo = BaseGWO(self.params, self.model_in_db.epochs, self.model_in_db.population_size)
         best_position, best_fitness = gwo.solve()
 
         self.best_position = best_position
@@ -140,6 +135,14 @@ class TrainServices:
 
         self.__model_history_repository.create(model_history=history)
         self.epoch += 1
+
+    def __mount_params(self):
+        self.params = {
+            "fit_func": self.fitness_func,
+            "lb": self.model_in_db.gwo_params["lb"],
+            "ub": self.model_in_db.gwo_params["ub"],
+            "minmax": "min",
+        }
 
     def __save_gwo_params(self):
         self.model_in_db.gwo_params = {

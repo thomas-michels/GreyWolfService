@@ -2,7 +2,7 @@ import json
 from typing import List
 from app.core.db import DBConnection
 from app.core.db.repositories.base_repository import Repository
-from app.core.entities import Model, ModelInDB, ModelStatus, ModelWithHistory
+from app.core.entities import Model, ModelInDB, ModelStatus, SummarizedModel
 from app.core.configs import get_logger
 
 _logger = get_logger(__name__)
@@ -17,9 +17,9 @@ class ModelRepository(Repository):
         INSERT
             INTO
             public.models
-        ("path", created_at, updated_at, x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, name, status, gwo_params)
-        VALUES(%(path)s, NOW(), NOW(), %(x_min_max_scaler)s, %(y_min_max_scaler)s, %(neighborhood_encoder)s, %(one_hot_encoder)s, %(mse)s, %(name)s, %(status)s, %(gwo_params)s)
-        RETURNING id, "path", x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, created_at, updated_at, name, status, gwo_params;
+        ("path", created_at, updated_at, x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, name, status, gwo_params, epochs, population_size)
+        VALUES(%(path)s, NOW(), NOW(), %(x_min_max_scaler)s, %(y_min_max_scaler)s, %(neighborhood_encoder)s, %(one_hot_encoder)s, %(mse)s, %(name)s, %(status)s, %(gwo_params)s, %(epochs)s, %(population_size)s)
+        RETURNING id, "path", x_min_max_scaler, y_min_max_scaler, neighborhood_encoder, one_hot_encoder, mse, created_at, updated_at, name, status, gwo_params, epochs, population_size;
         """
         try:
             result = self.conn.fetch_with_retry(sql_statement=query, values={
@@ -31,7 +31,9 @@ class ModelRepository(Repository):
                 "mse": model.mse,
                 "name": model.name,
                 "status": model.status,
-                "gwo_params": json.dumps(model.gwo_params)
+                "gwo_params": json.dumps(model.gwo_params),
+                "epochs": model.epochs,
+                "population_size": model.population_size
             })
             self.conn.commit()
 
@@ -113,7 +115,9 @@ class ModelRepository(Repository):
             updated_at,
             name,
             status,
-            gwo_params
+            gwo_params,
+            epochs,
+            population_size
         FROM
             public.models m
         ORDER BY
@@ -143,7 +147,9 @@ class ModelRepository(Repository):
             updated_at,
             name,
             status,
-            gwo_params
+            gwo_params,
+            epochs,
+            population_size
         FROM
             public.models m
         ORDER BY
@@ -164,3 +170,25 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
             return []
+
+    async def select_by_id(self, id: int) -> SummarizedModel:
+        query = """--sql
+        SELECT
+            id,
+            name,
+            status,
+            created_at,
+            updated_at
+        FROM
+            public.models m
+        WHERE
+            m.id = %(id)s;
+        """
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={"id": id})
+
+            if result:
+                return SummarizedModel(**result)
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")

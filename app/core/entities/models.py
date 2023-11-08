@@ -13,6 +13,8 @@ class ModelStatus(str, Enum):
 
 class Model(BaseModel):
     name: Optional[str] = Field(default="", example="test")
+    epochs: Optional[int] = Field(example=123)
+    population_size: Optional[int] = Field(example=123)
     status: Optional[ModelStatus] = Field(default=ModelStatus.SCHEDULED, example=ModelStatus.SCHEDULED)
     path: str = Field(default="", example="path")
     neighborhood_encoder: str = Field(default="", example="path")
@@ -37,3 +39,11 @@ class ModelWithHistory(BaseModel):
     created_at: datetime = Field(example=str(datetime.now()))
     updated_at: datetime = Field(example=str(datetime.now()))
     history: List[ModelHistoryInDB] = Field(default=[])
+
+
+class SummarizedModel(BaseModel):
+    id: int = Field(example=123)
+    name: Optional[str] = Field(default="", example="test")
+    status: Optional[ModelStatus] = Field(default=ModelStatus.SCHEDULED, example=ModelStatus.SCHEDULED)
+    created_at: datetime = Field(example=str(datetime.now()))
+    updated_at: datetime = Field(example=str(datetime.now()))

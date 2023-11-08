@@ -14,9 +14,10 @@ from app.core.entities import (
     PredictedProperty,
     ModelStatus,
     ModelWithHistory,
+    SummarizedModel
 )
+from app.api.shared_schemas import GWOParams
 from app.core.configs import get_environment, get_logger
-from datetime import datetime, timezone
 
 _env = get_environment()
 _logger = get_logger(__name__)
@@ -33,10 +34,25 @@ class ModelServices:
         self.__property_repository = property_repository
         self.__model_history_repository = model_history_repository
 
-    async def train_and_save_model(self) -> ModelInDB:
-        model = Model(name="GREY WOLF V1")
+    async def pre_create_model(self, name: str, gwo_params: GWOParams) -> ModelInDB:
+        lb_neurons = [gwo_params.min_neurons] * gwo_params.hidden_layers
+        ub_neurons = [gwo_params.max_neurons] * gwo_params.hidden_layers
+
+        model = Model(
+            name=name,
+            epochs=gwo_params.epochs,
+            population_size=gwo_params.population_size,
+            gwo_params={
+                "lb": [gwo_params.min_max_iter] + lb_neurons + [gwo_params.min_learning_rate, gwo_params.min_momentum, gwo_params.min_batch_size],
+                "ub": [gwo_params.max_max_iter] + ub_neurons + [gwo_params.max_learning_rate, gwo_params.max_momentum, gwo_params.max_batch_size],
+            }
+        )
 
         model_in_db = await self.__model_repository.create(model=model)
+
+        return model_in_db
+
+    async def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
 
         file_url = self.__property_repository.get_all_properties()
         if not file_url or not model_in_db:
@@ -159,14 +175,6 @@ class ModelServices:
 
         return models_with_history
 
-    async def check_minimal_age(self) -> bool:
-        latest_model = await self.search_latest()
-        if latest_model:
-            current_datetime = datetime.now(timezone.utc)
-
-            model_age = ((latest_model.created_at - current_datetime).seconds) / 60
-
-            if model_age <= _env.MODEL_MINIMAL_AGE:
-                return False
-
-        return True
+    async def search_model_by_id(self, id: int) -> SummarizedModel:
+        model = await self.__model_repository.select_by_id(id=id)
+        return model

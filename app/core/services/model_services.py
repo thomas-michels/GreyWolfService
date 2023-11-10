@@ -48,6 +48,17 @@ class ModelServices:
             }
         )
 
+        model.gwo_params = {
+            "max_iter": [model.gwo_params["lb"][0], model.gwo_params["ub"][0]],
+            "hidden_layer_sizes": [model.gwo_params["lb"][1:-3], model.gwo_params["ub"][1:-3]],
+            "learning_rate": [model.gwo_params["lb"][-3], model.gwo_params["ub"][-3]],
+            "momentum": [model.gwo_params["lb"][-2], model.gwo_params["ub"][-2]],
+            "batch_size": [model.gwo_params["lb"][-1], model.gwo_params["ub"][-1]],
+            "lb": model.gwo_params["lb"],
+            "ub": model.gwo_params["ub"],
+            "minmax": "min",
+        }
+
         model_in_db = await self.__model_repository.create(model=model)
 
         return model_in_db
@@ -105,10 +116,13 @@ class ModelServices:
 
         return model_in_db
 
-    async def predict_price(self, property: Property) -> PredictedProperty:
+    async def predict_price(self, model_id: int, property: Property) -> PredictedProperty:
         prediction_services = PredictionServices()
 
-        latest_model = await self.search_latest()
+        latest_model = await self.search_complete_model_by_id(id=model_id)
+
+        if not latest_model:
+            return
 
         preprocessing = PreProcessingServices(model=latest_model)
 
@@ -177,4 +191,18 @@ class ModelServices:
 
     async def search_model_by_id(self, id: int) -> SummarizedModel:
         model = await self.__model_repository.select_by_id(id=id)
+
+        if model.status == ModelStatus.TRAINING:
+            remaining_time_in_seconds = await self.__model_repository.select_remaining_time(model_id=id)
+            model.remaining_time_in_seconds = remaining_time_in_seconds
+
+        return model
+
+    async def search_complete_model_by_id(self, id: int) -> ModelInDB:
+        if id:
+            model = await self.__model_repository.select_complete_by_id(id=id)
+
+        else:
+            model = await self.__model_repository.select_latest()
+
         return model

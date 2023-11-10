@@ -46,10 +46,10 @@ async def train_model(
 
 @router.post("/predict/price", responses={200: {"model": PredictedProperty}})
 async def predict_price(
-    property: Property, services: ModelServices = Depends(model_composer)
+    property: Property, model_id: int=None, services: ModelServices = Depends(model_composer)
 ):
     try:
-        predicted_property = await services.predict_price(property=property)
+        predicted_property = await services.predict_price(model_id=model_id, property=property)
 
         if predicted_property:
             return JSONResponse(

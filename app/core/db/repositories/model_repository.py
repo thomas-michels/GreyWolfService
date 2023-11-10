@@ -1,4 +1,5 @@
 import json
+import numpy as np
 from typing import List
 from app.core.db import DBConnection
 from app.core.db.repositories.base_repository import Repository
@@ -120,6 +121,8 @@ class ModelRepository(Repository):
             population_size
         FROM
             public.models m
+        WHERE
+            m.status = "READY"
         ORDER BY
             created_at DESC
         LIMIT 1 OFFSET 0;
@@ -189,6 +192,98 @@ class ModelRepository(Repository):
 
             if result:
                 return SummarizedModel(**result)
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+
+    async def select_complete_by_id(self, id: int) -> ModelInDB:
+        query = """--sql
+        SELECT
+            id,
+            "path",
+            x_min_max_scaler AS x_min_max,
+            y_min_max_scaler AS y_min_max,
+            neighborhood_encoder,
+            one_hot_encoder,
+            mse,
+            created_at,
+            updated_at,
+            name,
+            status,
+            gwo_params,
+            epochs,
+            population_size
+        FROM
+            public.models m
+        WHERE
+            m.status = "READY" AND m.id = %(model_id)s
+        ORDER BY
+            created_at DESC
+        LIMIT 1 OFFSET 0;
+        """
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={"model_id": id})
+
+            if result:
+                return ModelInDB(**result)
+
+        except Exception as error:
+            _logger.error(f"Error: {str(error)}")
+
+    async def select_remaining_time(self, model_id: int) -> float:
+        query = """--sql
+        WITH TimeDiffCTE AS (
+            SELECT
+                m.id,
+                m.gwo_params,
+                m.population_size,
+                m.epochs,
+                mh.epoch AS mh_epoch,
+                mh.created_at,
+                LAG(mh.created_at) OVER (PARTITION BY m.id ORDER BY mh.epoch) AS prev_created_at
+            FROM
+                public.models m
+            INNER JOIN public.model_histories mh ON
+                m.id = mh.model_id
+            WHERE m.id = %(model_id)s
+        )
+        SELECT
+            id,
+            gwo_params,
+            population_size,
+            epochs,
+            mh_epoch,
+            created_at,
+            COALESCE(AVG(EXTRACT(EPOCH FROM (created_at - prev_created_at))), 0) AS avg_time_diff
+        FROM
+            TimeDiffCTE
+        GROUP BY
+            id, gwo_params, population_size, epochs, mh_epoch, created_at
+        ORDER BY
+            mh_epoch;
+        """
+        try:
+            results = self.conn.fetch_with_retry(sql_statement=query, values={"model_id": model_id}, all=True)
+
+            times = []
+
+            if not results:
+                return 0
+            
+            last_epoch = results[-1]["mh_epoch"]
+
+            epochs = results[0]["epochs"] + 1
+            population_size = results[0]["population_size"]
+
+            for result in results:
+                times.append(result["avg_time_diff"])
+
+            mean_time = np.mean(times)
+
+            total_epochs = (epochs * population_size) + 1
+            atual_epochs = total_epochs - last_epoch
+
+            return round((atual_epochs * mean_time), 2)
 
         except Exception as error:
             _logger.error(f"Error: {str(error)}")

@@ -45,5 +45,6 @@ class SummarizedModel(BaseModel):
     id: int = Field(example=123)
     name: Optional[str] = Field(default="", example="test")
     status: Optional[ModelStatus] = Field(default=ModelStatus.SCHEDULED, example=ModelStatus.SCHEDULED)
+    remaining_time_in_seconds: Optional[float] = Field(default=0)
     created_at: datetime = Field(example=str(datetime.now()))
     updated_at: datetime = Field(example=str(datetime.now()))

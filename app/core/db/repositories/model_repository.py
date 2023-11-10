@@ -216,7 +216,7 @@ class ModelRepository(Repository):
         FROM
             public.models m
         WHERE
-            m.status = "READY" AND m.id = %(model_id)s
+            m.status = 'READY' AND m.id = %(model_id)s
         ORDER BY
             created_at DESC
         LIMIT 1 OFFSET 0;

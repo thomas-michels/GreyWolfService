@@ -1,5 +1,11 @@
 from typing import Optional
 from pydantic import BaseModel, Field
+from enum import Enum
+
+class PropertyType(str, Enum):
+    HOUSE = "casa"
+    APARTMENT = "apartamento"
+    GROUND  = "loteterreno"
 
 
 class Property(BaseModel):

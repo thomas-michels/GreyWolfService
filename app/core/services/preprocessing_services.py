@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from app.api.dependencies import Bucket
 from app.core.configs import get_environment
-from app.core.entities import ModelInDB
+from app.core.entities import ModelInDB, PropertyType
 from datetime import datetime
 import requests
 
@@ -56,8 +56,11 @@ class PreProcessingServices:
 
         self.dataframe["price"] = self.dataframe["price"].apply(lambda v: v / 1000)
 
-    def filter_best_characteristics(self):
+    def filter_best_characteristics(self, only: PropertyType = None):
         self.sell_dataframe = self.dataframe[self.dataframe["modality_name"] == "venda"]
+
+        if only:
+            self.sell_dataframe = self.sell_dataframe[self.sell_dataframe["main_type"] == only]
 
         self.x_properties = self.sell_dataframe.loc[
             :,

@@ -1,4 +1,6 @@
+from typing import Optional
 from pydantic import BaseModel, Field
+from app.core.entities.property import PropertyType
 
 
 class GWOParams(BaseModel):
@@ -15,3 +17,4 @@ class GWOParams(BaseModel):
     max_momentum: float = Field(default=1, example=10, gt=0)
     min_batch_size: int = Field(default=16, example=10, gt=0)
     max_batch_size: int = Field(default=256, example=10, gt=0)
+    property_type: Optional[PropertyType] = Field(default=None)

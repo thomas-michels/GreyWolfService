@@ -38,25 +38,31 @@ class ModelServices:
         lb_neurons = [gwo_params.min_neurons] * gwo_params.hidden_layers
         ub_neurons = [gwo_params.max_neurons] * gwo_params.hidden_layers
 
+        name = name
+
+        if gwo_params.property_type:
+            name = f"{name} - {gwo_params.property_type}"
+
         model = Model(
             name=name,
             epochs=gwo_params.epochs,
             population_size=gwo_params.population_size,
             gwo_params={
-                "lb": [gwo_params.min_max_iter] + lb_neurons + [gwo_params.min_learning_rate, gwo_params.min_momentum, gwo_params.min_batch_size],
-                "ub": [gwo_params.max_max_iter] + ub_neurons + [gwo_params.max_learning_rate, gwo_params.max_momentum, gwo_params.max_batch_size],
+                "lb": [gwo_params.min_max_iter, gwo_params.min_learning_rate, gwo_params.min_momentum, gwo_params.min_batch_size] + lb_neurons,
+                "ub": [gwo_params.max_max_iter, gwo_params.max_learning_rate, gwo_params.max_momentum, gwo_params.max_batch_size] + ub_neurons,
             }
         )
 
         model.gwo_params = {
             "max_iter": [model.gwo_params["lb"][0], model.gwo_params["ub"][0]],
-            "hidden_layer_sizes": [model.gwo_params["lb"][1:-3], model.gwo_params["ub"][1:-3]],
-            "learning_rate": [model.gwo_params["lb"][-3], model.gwo_params["ub"][-3]],
-            "momentum": [model.gwo_params["lb"][-2], model.gwo_params["ub"][-2]],
-            "batch_size": [model.gwo_params["lb"][-1], model.gwo_params["ub"][-1]],
+            "learning_rate": [model.gwo_params["lb"][1], model.gwo_params["ub"][1]],
+            "momentum": [model.gwo_params["lb"][2], model.gwo_params["ub"][2]],
+            "batch_size": [model.gwo_params["lb"][3], model.gwo_params["ub"][3]],
+            "hidden_layer_sizes": [model.gwo_params["lb"][4:], model.gwo_params["ub"][4:]],
             "lb": model.gwo_params["lb"],
             "ub": model.gwo_params["ub"],
             "minmax": "min",
+            "property_type": gwo_params.property_type
         }
 
         model_in_db = await self.__model_repository.create(model=model)
@@ -77,7 +83,7 @@ class ModelServices:
 
         preprocessing.normalize()
 
-        preprocessing.filter_best_characteristics()
+        preprocessing.filter_best_characteristics(only=model_in_db.gwo_params.get("property_type"))
 
         preprocessing.apply_label_encoder()
 

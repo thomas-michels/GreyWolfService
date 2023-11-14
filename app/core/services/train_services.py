@@ -65,10 +65,11 @@ class TrainServices:
 
     def fitness_func(self, solution: tuple) -> float:
         max_iter = int(solution[0])
-        hidden_layer_sizes = [int(solution[1]), int(solution[2])]
-        learning_rate = solution[3]
-        momentum = solution[4]
-        batch_size = int(solution[5])
+        learning_rate = solution[1]
+        momentum = solution[2]
+        batch_size = int(solution[3])
+        pre_hidden_layers = solution[4:]
+        hidden_layer_sizes = [int(neuron) for neuron in pre_hidden_layers]
 
         model = Sequential()
 
@@ -147,11 +148,11 @@ class TrainServices:
     def __save_gwo_params(self):
         self.model_in_db.gwo_params = {
             "max_iter": [self.params["lb"][0], self.params["ub"][0]],
-            "hidden_layer_sizes": [self.params["lb"][1:-3], self.params["ub"][1:-3]],
-            "learning_rate": [self.params["lb"][-3], self.params["ub"][-3]],
-            "momentum": [self.params["lb"][-2], self.params["ub"][-2]],
-            "batch_size": [self.params["lb"][-1], self.params["ub"][-1]],
+            "learning_rate": [self.params["lb"][1], self.params["ub"][1]],
+            "momentum": [self.params["lb"][2], self.params["ub"][2]],
+            "batch_size": [self.params["lb"][3], self.params["ub"][3]],
+            "hidden_layer_sizes": [self.params["lb"][4:], self.params["ub"][4:]],
             "lb": self.params["lb"],
             "ub": self.params["ub"],
-            "minmax": "min",
+            "minmax": "min"
         }

@@ -11,8 +11,11 @@ from app.core.entities import (
     ModelWithHistory,
     SummarizedModel,
 )
+from app.core.configs import get_logger
+
 
 router = APIRouter(prefix="/models", tags=["Models"])
+_logger = get_logger(__name__)
 
 
 @router.post("/train")
@@ -64,6 +67,7 @@ async def predict_price(
             )
 
     except Exception as error:
+        _logger.error(f"Error on predict_price: {str(error)}")
         return JSONResponse(
             status_code=400,
             content=jsonable_encoder({"message": f"Some error happen: {str(error)}"}),
@@ -92,6 +96,7 @@ async def get_trained_models(
             )
 
     except Exception as error:
+        _logger.error(f"Error on get_trained_models: {str(error)}")
         return JSONResponse(
             status_code=400,
             content=jsonable_encoder({"message": f"Some error happen: {str(error)}"}),
@@ -116,6 +121,7 @@ async def get_model_by_id(
             )
 
     except Exception as error:
+        _logger.error(f"Error on get_model_by_id: {str(error)}")
         return JSONResponse(
             status_code=400,
             content=jsonable_encoder({"message": f"Some error happen: {str(error)}"}),

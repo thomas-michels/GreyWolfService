@@ -175,7 +175,7 @@ class ModelServices:
         models_id = []
 
         for model in models:
-            if model.status == ModelStatus.READY:
+            if model.status == ModelStatus.READY and model.mse > 0:
                 models_id.append(model.id)
 
         histories = self.__model_history_repository.select_model_histories_by_model_id(models_id=models_id)

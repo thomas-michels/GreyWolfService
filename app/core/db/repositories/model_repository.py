@@ -122,7 +122,7 @@ class ModelRepository(Repository):
         FROM
             public.models m
         WHERE
-            m.status = "READY"
+            m.status = 'READY'
         ORDER BY
             created_at DESC
         LIMIT 1 OFFSET 0;

@@ -76,6 +76,7 @@ class PGConnection:
 
         except Exception:
             self.conn = None
+            self.cursor = None
 
     def __enter__(self):
         self.__start_connection()

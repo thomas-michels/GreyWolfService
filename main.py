@@ -13,5 +13,5 @@ if __name__ == "__main__":
         host=_env.APPLICATION_HOST,
         port=_env.APPLICATION_PORT,
         reload=False,
-        workers=2
+        workers=1
     )

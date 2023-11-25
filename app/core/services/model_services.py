@@ -34,7 +34,7 @@ class ModelServices:
         self.__property_repository = property_repository
         self.__model_history_repository = model_history_repository
 
-    async def pre_create_model(self, name: str, gwo_params: GWOParams) -> ModelInDB:
+    def pre_create_model(self, name: str, gwo_params: GWOParams) -> ModelInDB:
         lb_neurons = [gwo_params.min_neurons] * gwo_params.hidden_layers
         ub_neurons = [gwo_params.max_neurons] * gwo_params.hidden_layers
 
@@ -65,17 +65,17 @@ class ModelServices:
             "property_type": gwo_params.property_type
         }
 
-        model_in_db = await self.__model_repository.create(model=model)
+        model_in_db = self.__model_repository.create(model=model)
 
         return model_in_db
 
-    async def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
+    def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
 
         file_url = self.__property_repository.get_all_properties()
         if not file_url or not model_in_db:
             return
 
-        await self.__model_repository.update_status(
+        self.__model_repository.update_status(
             new_status=ModelStatus.TRAINING, model_id=model_in_db.id
         )
 
@@ -108,24 +108,24 @@ class ModelServices:
 
         preprocessing.save(model_in_db)
 
-        is_updated = await self.__model_repository.update(model_in_db=model_in_db)
+        is_updated = self.__model_repository.update(model_in_db=model_in_db)
 
         if is_updated:
-            await self.__model_repository.update_status(
+            self.__model_repository.update_status(
                 new_status=ModelStatus.READY, model_id=model_in_db.id
             )
 
         else:
-            await self.__model_repository.update_status(
+            self.__model_repository.update_status(
                 new_status=ModelStatus.ERROR, model_id=model_in_db.id
             )
 
         return model_in_db
 
-    async def predict_price(self, model_id: int, property: Property) -> PredictedProperty:
+    def predict_price(self, model_id: int, property: Property) -> PredictedProperty:
         prediction_services = PredictionServices()
 
-        latest_model = await self.search_complete_model_by_id(id=model_id)
+        latest_model = self.search_complete_model_by_id(id=model_id)
 
         if not latest_model:
             return
@@ -162,13 +162,13 @@ class ModelServices:
 
         return predicted_property
 
-    async def search_latest(self) -> ModelInDB:
-        model_in_db = await self.__model_repository.select_latest()
+    def search_latest(self) -> ModelInDB:
+        model_in_db = self.__model_repository.select_latest()
 
         return model_in_db
 
-    async def search_models(self, page: int, page_size: int) -> List[ModelWithHistory]:
-        models = await self.__model_repository.select_models(
+    def search_models(self, page: int, page_size: int) -> List[ModelWithHistory]:
+        models = self.__model_repository.select_models(
             page=page, page_size=page_size
         )
 
@@ -195,20 +195,20 @@ class ModelServices:
 
         return models_with_history
 
-    async def search_model_by_id(self, id: int) -> SummarizedModel:
-        model = await self.__model_repository.select_by_id(id=id)
+    def search_model_by_id(self, id: int) -> SummarizedModel:
+        model = self.__model_repository.select_by_id(id=id)
 
         if model.status == ModelStatus.TRAINING:
-            remaining_time_in_seconds = await self.__model_repository.select_remaining_time(model_id=id)
+            remaining_time_in_seconds = self.__model_repository.select_remaining_time(model_id=id)
             model.remaining_time_in_seconds = remaining_time_in_seconds
 
         return model
 
-    async def search_complete_model_by_id(self, id: int) -> ModelInDB:
+    def search_complete_model_by_id(self, id: int) -> ModelInDB:
         if id:
-            model = await self.__model_repository.select_complete_by_id(id=id)
+            model = self.__model_repository.select_complete_by_id(id=id)
 
         else:
-            model = await self.__model_repository.select_latest()
+            model = self.__model_repository.select_latest()
 
         return model

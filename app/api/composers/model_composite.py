@@ -8,7 +8,7 @@ from app.core.db.repositories import (
 )
 
 
-async def model_composer(
+def model_composer(
     conn: PGConnection = Depends(PGConnection),
 ) -> ModelServices:
     model_repository = ModelRepository(connection=conn)

@@ -41,6 +41,18 @@ class Environment(BaseSettings):
     # PROPERTY API
     PROPERTY_API_URL: str
 
+    # RABBIT
+    RBMQ_HOST: str
+    RBMQ_USER: str
+    RBMQ_PASS: str
+    RBMQ_PORT: int
+    RBMQ_EXCHANGE: str
+    RBMQ_VHOST: str
+    PREFETCH_VALUE: int
+
+    # QUEUES
+    TRAIN_MODEL_CHANNEL: str
+
     class Config:
         """Load config file"""
 

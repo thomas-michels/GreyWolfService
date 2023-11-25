@@ -1,0 +1,15 @@
+FROM python:3.10.9
+
+WORKDIR .
+
+COPY ./requirements.txt ./requirements.txt
+
+RUN pip install --upgrade pip \
+    && pip install --no-cache-dir --upgrade -r ./requirements.txt
+
+COPY ./app ./app
+COPY ./run_consumer.py ./run_consumer.py
+
+ENTRYPOINT ["python"]
+
+CMD ["run_consumer.py"]

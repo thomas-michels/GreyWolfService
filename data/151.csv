@@ -1,0 +1,601 @@
+id;title;price;rooms;bathrooms;size;parking_space;type;number;neighborhood_name;population;houses;area;street_name;zip_code;flood_quota;latitude;longitude;modality_name;company_name
+68;Casa à Venda em Blumenau no bairro Itoupava Central;550000.0;3;3;157.0;4;casa;39;Itoupava Central;28164;8715;45.0;Rua Bruno Mordhorst;89062-244;17.65;-26.8260108;-49.0799027;venda;portal_imoveis
+69;Sobrado à Venda em Blumenau no bairro Água Verde;510000.0;3;3;200.0;2;sobrado;321;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+75;Casa à Venda em Blumenau no bairro Água Verde;900000.0;3;2;204.0;2;casa;583;Agua Verde;16186;5526;5.0;Rua Frei Estanislau Schaette;89037-256;19.25;-26.9123839;-49.1120379;venda;portal_imoveis
+76;Sobrado à Venda em Blumenau no bairro Velha Central;389000.0;2;3;78.18;2;sobrado;331;Velha Central;18779;6119;7.0;Rua Hugo Hoffmann;89040-296;;-26.9282255;-49.1252643;venda;portal_imoveis
+77;Casa à Venda em Blumenau no bairro Água Verde;800000.0;3;2;200.0;3;casa;80;Agua Verde;16186;5526;5.0;Rua Arthur Weise;89032-290;;-26.9060085;-49.1343596;venda;portal_imoveis
+83;Casa à Venda em Blumenau no bairro Passo Manso;450000.0;3;2;200.0;5;casa;32;Passo Manso;6799;2069;7.0;Rua Josepha Micheluzzi;89032-340;;-26.9123888;-49.1389979;venda;portal_imoveis
+84;Lote/Terreno à Venda em Blumenau no bairro Velha;390000.0;0;0;518.95;0;loteterreno;480;Agua Verde;16186;5526;5.0;Rua Evald Braun;89037-193;;-26.9131067;-49.1019599;venda;portal_imoveis
+85;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;300000.0;0;0;359.37;0;loteterreno;;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+92;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;220000.0;0;0;720.0;0;loteterreno;3395;Itoupava Central;28164;8715;45.0;Rua Professor Jacob Ineichen;89066-598;;-26.8426432;-49.1113311;venda;portal_imoveis
+93;Casa à Venda em Blumenau no bairro Itoupavazinha;1000000.0;3;2;4600.0;2;casa;385;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+99;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;240000.0;0;0;456.28;0;loteterreno;78;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+100;Casa à Venda em Blumenau no bairro Itoupava Central;265000.0;2;1;67.41;2;casa;726;Itoupava Central;28164;8715;45.0;Rua Norma Hadlich;89069-040;;-26.8066061;-49.0942941;venda;portal_imoveis
+101;Casa à Venda em Blumenau no bairro Passo Manso;780000.0;3;3;245.0;4;casa;555;Passo Manso;6799;2069;7.0;Rua Alberto Manzke;89032-560;;-26.9017354;-49.156217;venda;portal_imoveis
+107;Casa à Venda em Blumenau no bairro Velha Central;330000.0;2;1;100.0;4;casa;167;Velha Central;18779;6119;7.0;Rua Johann Bachmann;89040-330;;-26.9276145;-49.1293332;venda;portal_imoveis
+108;Lote/Terreno à Venda em Blumenau no bairro Velha;298000.0;0;0;610.2;0;loteterreno;;Velha;15373;5470;6.0;Rua Harry Gauche;89036-390;;-26.9147403;-49.0933321;venda;portal_imoveis
+109;Casa à Venda em Blumenau no bairro Velha Central;265000.0;2;1;70.0;1;casa;167;Velha Central;18779;6119;7.0;Rua Johann Bachmann;89040-330;;-26.9276145;-49.1293332;venda;portal_imoveis
+115;Casa à Venda em Blumenau no bairro Água Verde;1150000.0;3;3;532.67;2;casa;421;Velha;15373;5470;6.0;Rua Tres Barras;89041-080;;-26.9120409;-49.1074581;venda;portal_imoveis
+117;Casa à Venda em Blumenau no bairro Itoupava Central;360000.0;2;1;94.0;1;casa;152;Itoupava Central;28164;8715;45.0;Rua Augusto Ruschi;89069-080;;-26.8053086;-49.0942244;venda;portal_imoveis
+123;Casa à Venda em Blumenau no bairro Itoupava Seca;1580000.0;4;3;238.58;1;casa;890;Itoupava Seca;4464;1616;3.0;Rua Coronel Feddersen;89030-400;17.3;-26.8902201;-49.0866196;venda;portal_imoveis
+124;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+125;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+131;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+132;Apartamento à Venda em Blumenau no bairro Escola Agrícola;710000.0;3;3;130.0;2;apartamento;244;Do Salto;4558;1445;2.0;Rua Jose Deeke;89031-400;;-26.8911422;-49.1015605;venda;portal_imoveis
+133;Lote/Terreno à Venda em Blumenau no bairro Testo Salto;250000.0;0;0;365.0;0;loteterreno;0;Testo Salto;7065;2135;15.0;Rua Pedro Poli;89074-360;;-26.8602224;-49.137931;venda;portal_imoveis
+172;Apartamento à Venda em Blumenau no bairro Jardim Blumenau;1300000.0;3;4;130.0;3;apartamento;50;Jardim Blumenau;2855;1004;1.0;Rua Pastor Stutzer;89010-390;12.95;-26.929547;-49.0655116;venda;portal_imoveis
+173;Sobrado à Venda em Blumenau no bairro Ponta Aguda;350000.0;2;3;95.0;2;sobrado;121;Ponta Aguda;9880;3233;7.0;Rua Jose Isidoro Correa;89050-230;;-26.8998894;-49.0558816;venda;portal_imoveis
+174;Casa à Venda em Blumenau no bairro Fortaleza;500000.0;3;4;238.0;2;casa;115;Fortaleza;13196;4212;5.0;Rua Rudolfo Liesenberg;89056-485;;-26.8635204;-49.0735849;venda;portal_imoveis
+180;Casa à Venda em Blumenau no bairro Velha Central;800000.0;8;4;300.0;2;casa;132;Velha Central;18779;6119;7.0;Rua Grecia;89046-633;;-26.9402675;-49.1523091;venda;portal_imoveis
+181;Casa à Venda em Blumenau no bairro Fortaleza;620000.0;3;2;160.0;3;casa;106;Fortaleza;13196;4212;5.0;Rua Helmuth Wandrey;89056-458;;-26.8666179;-49.0730005;venda;portal_imoveis
+188;Casa à Venda em Blumenau no bairro Fortaleza;420000.0;3;2;130.0;2;casa;150;Fortaleza;13196;4212;5.0;Rua Helmuth Wandrey;89056-458;;-26.8666179;-49.0730005;venda;portal_imoveis
+189;Sobrado à Venda em Blumenau no bairro Velha;320000.0;2;3;87.67;1;sobrado;2801;Itoupava Norte;15648;5258;5.0;Praca Governador Jorge Lacerda;89052-295;;-26.8881124;-49.0831704;venda;portal_imoveis
+190;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;675000.0;0;0;1269.6;0;loteterreno;371;Itoupava Central;28164;8715;45.0;Rua Tereza Fischer;89062-080;17.65;-26.8423599;-49.082931;venda;portal_imoveis
+196;Casa à Venda em Blumenau no bairro Itoupava Central;550000.0;2;2;125.0;2;casa;277;Itoupava Central;28164;8715;45.0;Rua Helena Fischer;89062-370;;-26.8151878;-49.0830725;venda;portal_imoveis
+197;Casa à Venda em Blumenau no bairro Água Verde;1100000.0;3;4;150.0;4;casa;218;Agua Verde;16186;5526;5.0;Rua Carlos Witthoeft;89042-080;;-26.9064546;-49.129018;venda;portal_imoveis
+198;Casa à Venda em Blumenau no bairro Tribess;850000.0;5;3;592.6;2;casa;45;Tribess;8503;2691;3.0;Rua Graciliano Ramos;89057-370;;-26.8787214;-49.0564648;venda;portal_imoveis
+204;Casa à Venda em Blumenau no bairro Tribess;590000.0;5;4;180.0;4;casa;2406;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+205;Sobrado à Venda em Blumenau no bairro Itoupava Central;275000.0;2;2;63.16;1;sobrado;87;Itoupava Central;28164;8715;45.0;Rua Severino Poltronieri;89062-243;;-26.827362;-49.0786247;venda;portal_imoveis
+206;Casa à Venda em Blumenau no bairro Velha Central;489000.0;3;2;108.0;2;casa;116;Velha Central;18779;6119;7.0;Rua Linus Reiter;89040-460;;-26.9194416;-49.1236134;venda;portal_imoveis
+212;Sobrado à Venda em Blumenau no bairro Vila Nova;995000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+213;Sobrado à Venda em Blumenau no bairro Vila Nova;690000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+214;Sobrado à Venda em Blumenau no bairro Vila Nova;660000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+220;Casa à Venda em Blumenau no bairro Itoupava Norte;600000.0;3;3;154.08;2;casa;366;Itoupava Norte;15648;5258;5.0;Rua Sideropolis;89053-230;13.4;-26.8788751;-49.0827229;venda;portal_imoveis
+221;Sobrado à Venda em Blumenau no bairro Velha Central;350000.0;3;3;150.42;2;sobrado;270;Velha Central;18779;6119;7.0;Rua Joao Raulino;89046-540;;-26.9387455;-49.1443042;venda;portal_imoveis
+222;Apartamento à Venda em Blumenau no bairro Água Verde;270000.0;3;2;94.0;1;apartamento;290;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+228;Apartamento à Venda em Blumenau no bairro Vila Formosa;550000.0;3;2;130.43;1;apartamento;285;Vila Formosa;711;242;1.0;Rua Hermann Huscher;89023-000;15.2;-26.9355949;-49.0674097;venda;portal_imoveis
+229;Casa à Venda em Blumenau no bairro Fortaleza Alta;329000.0;2;2;105.4;2;casa;100;Fidelis;5392;1597;9.0;Rua Monte Belo;89060-058;;-26.8449021;-49.0537036;venda;portal_imoveis
+236;Apartamento à Venda em Blumenau no bairro Velha;595000.0;3;2;129.0;2;apartamento;361;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+237;Casa à Venda em Blumenau no bairro Fortaleza Alta;470000.0;3;2;170.0;2;casa;121;Fidelis;5392;1597;9.0;Rua Monte Belo;89060-058;;-26.8449021;-49.0537036;venda;portal_imoveis
+238;Apartamento à Venda em Blumenau no bairro Ponta Aguda;1600000.0;3;4;360.0;2;apartamento;40;Ponta Aguda;9880;3233;7.0;Rua Uruguaiana;89050-520;;-26.9043067;-49.0498379;venda;portal_imoveis
+244;Casa para Alugar em Blumenau no bairro Ribeirão Fresco;4000.0;4;3;270.0;4;casa;1472;Ribeirao Fresco;1587;513;1.0;Rua Pastor Oswald Hesse;89015-100;;-26.9279792;-49.0390287;locação;portal_imoveis
+245;Apartamento à Venda em Blumenau no bairro Velha;749000.0;3;3;132.43;2;apartamento;147;Velha;15373;5470;6.0;Rua Henrique Dias;89036-370;12.55;-26.9143614;-49.0907303;venda;portal_imoveis
+246;Apartamento à Venda em Blumenau no bairro Boa Vista;450000.0;2;2;99.73;2;apartamento;301;Boa Vista;1748;589;1.0;Rua Guido Kaestner Senior;89012-360;13.8;-26.8999524;-49.0642471;venda;portal_imoveis
+254;Casa para Alugar em Blumenau no bairro Itoupava Central;6000.0;3;1;1320.0;1;casa;5240;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;locação;portal_imoveis
+258;Casa à Venda em Blumenau no bairro Fortaleza Alta;750000.0;4;3;485.0;2;casa;648;Fortaleza Alta;4507;1398;5.0;Rua Das Bromelias;89058-080;;-26.8548027;-49.0459675;venda;portal_imoveis
+259;Casa à Venda em Blumenau no bairro Itoupavazinha;375000.0;4;2;225.0;3;casa;204;Itoupavazinha;17560;5358;12.0;Rua Carlos Sebastiao Fischer;89066-700;;-26.8554563;-49.117845;venda;portal_imoveis
+267;Lote/Terreno à Venda em Blumenau no bairro Velha;590000.0;0;0;450.0;0;loteterreno;225;Velha;15373;5470;6.0;Rua Adecio Goncalves;89045-230;;-26.9237242;-49.1154438;venda;portal_imoveis
+269;Apartamento à Venda em Blumenau no bairro Velha Central;260000.0;2;1;75.0;1;apartamento;866;Velha Central;18779;6119;7.0;Rua Divinopolis;89040-400;;-26.9207073;-49.1221006;venda;portal_imoveis
+274;Apartamento à Venda em Blumenau no bairro Vila Nova;990000.0;3;4;175.0;3;apartamento;330;Vila Nova;9962;3884;2.0;Rua Joao Gomes Da Nobrega;89035-450;12.8;-26.8986994;-49.0885241;venda;portal_imoveis
+275;Apartamento à Venda em Blumenau no bairro Centro;450000.0;4;2;146.0;0;apartamento;26;Jardim Blumenau;2855;1004;1.0;Rua Nereu Ramos;89010-401;14.45;-26.9239658;-49.0619969;venda;portal_imoveis
+276;Casa à Venda em Blumenau no bairro Velha Central;560000.0;3;2;120.0;2;casa;212;Velha Central;18779;6119;7.0;Rua Joao Marchiori;89046-130;;-26.9280141;-49.1324117;venda;portal_imoveis
+279;Apartamento à Venda em Blumenau no bairro Fortaleza;263430.0;2;2;57.45;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+280;Apartamento à Venda em Blumenau no bairro Itoupava Norte;282008.0;2;2;58.6;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+281;Lote/Terreno à Venda em Blumenau no bairro Do Salto;290000.0;0;0;372.98;0;loteterreno;112;Do Salto;4558;1445;2.0;Rua Vitorino Odelli;89031-680;;-26.8845981;-49.1075309;venda;portal_imoveis
+287;Apartamento à Venda em Blumenau no bairro Victor Konder;470000.0;3;2;115.4;1;apartamento;755;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+288;Apartamento para Alugar em Blumenau no bairro Centro;2100.0;3;2;146.0;0;apartamento;26;Jardim Blumenau;2855;1004;1.0;Rua Nereu Ramos;89010-401;14.45;-26.9239658;-49.0619969;locação;portal_imoveis
+289;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;1060000.0;0;0;1531.63;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+297;Apartamento à Venda em Blumenau no bairro Garcia;495000.0;3;2;109.0;2;apartamento;110;Garcia;15911;5336;5.0;Rua Joao Ehrat;89020-090;12.25;-26.9318285;-49.059661;venda;portal_imoveis
+303;Loft à Venda em Blumenau no bairro Velha;468349.0;1;1;88.34;2;loft;334;Velha;15373;5470;6.0;Rua Jaragua;89036-400;15.4;-26.9175762;-49.0917647;venda;portal_imoveis
+337;Apartamento à Venda em Blumenau no bairro Fortaleza;286700.0;2;2;60.72;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+338;Apartamento à Venda em Blumenau no bairro Fortaleza;263466.0;2;2;55.86;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+339;Apartamento à Venda em Blumenau no bairro Fortaleza;266671.0;2;2;58.05;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+345;Apartamento à Venda em Blumenau no bairro Fortaleza;322751.0;2;2;59.15;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+346;Apartamento à Venda em Blumenau no bairro Itoupava Norte;279972.0;2;2;57.0;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+347;Apartamento à Venda em Blumenau no bairro Itoupava Norte;254520.0;2;2;57.95;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+353;Casa à Venda em Blumenau no bairro Ponta Aguda;240000.0;5;4;233.0;3;casa;303;Ponta Aguda;9880;3233;7.0;Rua Professor Lothar Krieck;89050-190;;-26.9096836;-49.0522814;venda;portal_imoveis
+354;Apartamento à Venda em Blumenau no bairro Itoupava Norte;299000.0;3;2;123.0;1;apartamento;179;Itoupava Norte;15648;5258;5.0;Rua Maracaja;89052-276;9.65;-26.8879402;-49.0788366;venda;portal_imoveis
+355;Casa à Venda em Blumenau no bairro Escola Agrícola;1000000.0;4;3;196.0;3;casa;664;Escola Agricola;12145;3906;4.0;Rua Ursa Maior;89037-510;;-26.9068808;-49.1014734;venda;portal_imoveis
+361;Apartamento à Venda em Blumenau no bairro Itoupava Seca;370000.0;2;1;85.0;1;apartamento;1729;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+362;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;139;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+363;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;143;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+369;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;145;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+370;Apartamento à Venda em Blumenau no bairro Victor Konder;350000.0;2;3;182.9;1;apartamento;165;Victor Konder;4612;1990;1.0;Rua Heinrich Hosang;89012-190;16.7;-26.9079728;-49.0757152;venda;portal_imoveis
+371;Sobrado à Venda em Blumenau no bairro Água Verde;850000.0;3;2;174.67;2;sobrado;259;Agua Verde;16186;5526;5.0;Rua Felipe Otto Becker;89037-080;15.45;-26.9113596;-49.1001998;venda;portal_imoveis
+377;Lote/Terreno à Venda em Blumenau no bairro Garcia;1900000.0;0;0;11875.0;0;loteterreno;303;Garcia;15911;5336;5.0;Rua Ararangua;89020-302;14.05;-26.938174;-49.0538273;venda;portal_imoveis
+378;Casa à Venda em Blumenau no bairro Valparaíso;450000.0;4;2;123.0;2;casa;122;Valparaiso;5280;1774;1.0;Rua Palmares;89023-650;;-26.9566687;-49.0715812;venda;portal_imoveis
+379;Loft à Venda em Blumenau no bairro Garcia;250000.0;1;1;60.0;1;loft;;Garcia;15911;5336;5.0;Rua Araxa;89020-330;10.6;-26.9298493;-49.0535121;venda;portal_imoveis
+385;Casa à Venda em Blumenau no bairro Itoupava Central;437000.0;3;2;146.7;2;casa;329;Itoupava Central;28164;8715;45.0;Rua Arnoldo Zuelow;89069-082;;-26.8046607;-49.0903124;venda;portal_imoveis
+403;Casa à Venda em Blumenau no bairro Ponta Aguda;650000.0;4;2;951.08;2;casa;321;Ponta Aguda;9880;3233;7.0;Rua Mexico;89050-130;17.3;-26.9116448;-49.0594885;venda;portal_imoveis
+404;Casa à Venda em Blumenau no bairro Garcia;689000.0;5;3;300.0;3;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;venda;portal_imoveis
+411;Casa à Venda em Blumenau no bairro Velha Central;389000.0;2;2;85.0;2;casa;71;Velha Central;18779;6119;7.0;Rua Augusto Zager;89046-150;;-26.9303803;-49.133405;venda;portal_imoveis
+416;Apartamento à Venda em Blumenau no bairro Vila Nova;1350000.0;3;3;215.0;3;apartamento;699;Vila Nova;9962;3884;2.0;Rua Joinville;89035-200;13.6;-26.9085016;-49.0822647;venda;portal_imoveis
+417;Casa à Venda em Blumenau no bairro Itoupava Norte;1600000.0;4;4;307.96;4;casa;163;Itoupava Norte;15648;5258;5.0;Rua Augusto Sutter;89052-680;16.35;-26.8845075;-49.0839477;venda;portal_imoveis
+418;Casa à Venda em Blumenau no bairro Ponta Aguda;500000.0;3;1;107.57;4;casa;256;Jardim Blumenau;2855;1004;1.0;Rua Jean Romain Bonnemasou;89010-370;;-26.9286324;-49.0630103;venda;portal_imoveis
+424;Casa à Venda em Blumenau no bairro Água Verde;590000.0;3;2;168.0;0;casa;595;Agua Verde;16186;5526;5.0;Rua Agua Branca;89041-700;;-26.9085947;-49.1217144;venda;portal_imoveis
+425;Apartamento à Venda em Blumenau no bairro Água Verde;240000.0;3;2;106.06;1;apartamento;290;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+426;Casa para Alugar em Blumenau no bairro Garcia;5000.0;5;3;300.0;3;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;locação;portal_imoveis
+432;Casa para Alugar em Blumenau no bairro Garcia;2500.0;1;1;300.0;2;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;locação;portal_imoveis
+434;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;135000.0;0;0;333.14;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+442;Casa à Venda em Blumenau no bairro Ponta Aguda;830000.0;4;3;210.0;2;casa;401;Ponta Aguda;9880;3233;7.0;Rua Mexico;89050-130;17.3;-26.9116448;-49.0594885;venda;portal_imoveis
+449;Apartamento à Venda em Blumenau no bairro Victor Konder;280000.0;2;1;70.0;1;apartamento;161;Victor Konder;4612;1990;1.0;Rua Max Hering;89012-510;13.85;-26.9073376;-49.0785149;venda;portal_imoveis
+68;Casa à Venda em Blumenau no bairro Itoupava Central;550000.0;3;3;157.0;4;casa;39;Itoupava Central;28164;8715;45.0;Rua Bruno Mordhorst;89062-244;17.65;-26.8260108;-49.0799027;venda;portal_imoveis
+69;Sobrado à Venda em Blumenau no bairro Água Verde;510000.0;3;3;200.0;2;sobrado;321;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+75;Casa à Venda em Blumenau no bairro Água Verde;900000.0;3;2;204.0;2;casa;583;Agua Verde;16186;5526;5.0;Rua Frei Estanislau Schaette;89037-256;19.25;-26.9123839;-49.1120379;venda;portal_imoveis
+76;Sobrado à Venda em Blumenau no bairro Velha Central;389000.0;2;3;78.18;2;sobrado;331;Velha Central;18779;6119;7.0;Rua Hugo Hoffmann;89040-296;;-26.9282255;-49.1252643;venda;portal_imoveis
+77;Casa à Venda em Blumenau no bairro Água Verde;800000.0;3;2;200.0;3;casa;80;Agua Verde;16186;5526;5.0;Rua Arthur Weise;89032-290;;-26.9060085;-49.1343596;venda;portal_imoveis
+83;Casa à Venda em Blumenau no bairro Passo Manso;450000.0;3;2;200.0;5;casa;32;Passo Manso;6799;2069;7.0;Rua Josepha Micheluzzi;89032-340;;-26.9123888;-49.1389979;venda;portal_imoveis
+84;Lote/Terreno à Venda em Blumenau no bairro Velha;390000.0;0;0;518.95;0;loteterreno;480;Agua Verde;16186;5526;5.0;Rua Evald Braun;89037-193;;-26.9131067;-49.1019599;venda;portal_imoveis
+85;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;300000.0;0;0;359.37;0;loteterreno;;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+92;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;220000.0;0;0;720.0;0;loteterreno;3395;Itoupava Central;28164;8715;45.0;Rua Professor Jacob Ineichen;89066-598;;-26.8426432;-49.1113311;venda;portal_imoveis
+93;Casa à Venda em Blumenau no bairro Itoupavazinha;1000000.0;3;2;4600.0;2;casa;385;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+99;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;240000.0;0;0;456.28;0;loteterreno;78;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+100;Casa à Venda em Blumenau no bairro Itoupava Central;265000.0;2;1;67.41;2;casa;726;Itoupava Central;28164;8715;45.0;Rua Norma Hadlich;89069-040;;-26.8066061;-49.0942941;venda;portal_imoveis
+101;Casa à Venda em Blumenau no bairro Passo Manso;780000.0;3;3;245.0;4;casa;555;Passo Manso;6799;2069;7.0;Rua Alberto Manzke;89032-560;;-26.9017354;-49.156217;venda;portal_imoveis
+107;Casa à Venda em Blumenau no bairro Velha Central;330000.0;2;1;100.0;4;casa;167;Velha Central;18779;6119;7.0;Rua Johann Bachmann;89040-330;;-26.9276145;-49.1293332;venda;portal_imoveis
+108;Lote/Terreno à Venda em Blumenau no bairro Velha;298000.0;0;0;610.2;0;loteterreno;;Velha;15373;5470;6.0;Rua Harry Gauche;89036-390;;-26.9147403;-49.0933321;venda;portal_imoveis
+109;Casa à Venda em Blumenau no bairro Velha Central;265000.0;2;1;70.0;1;casa;167;Velha Central;18779;6119;7.0;Rua Johann Bachmann;89040-330;;-26.9276145;-49.1293332;venda;portal_imoveis
+115;Casa à Venda em Blumenau no bairro Água Verde;1150000.0;3;3;532.67;2;casa;421;Velha;15373;5470;6.0;Rua Tres Barras;89041-080;;-26.9120409;-49.1074581;venda;portal_imoveis
+117;Casa à Venda em Blumenau no bairro Itoupava Central;360000.0;2;1;94.0;1;casa;152;Itoupava Central;28164;8715;45.0;Rua Augusto Ruschi;89069-080;;-26.8053086;-49.0942244;venda;portal_imoveis
+123;Casa à Venda em Blumenau no bairro Itoupava Seca;1580000.0;4;3;238.58;1;casa;890;Itoupava Seca;4464;1616;3.0;Rua Coronel Feddersen;89030-400;17.3;-26.8902201;-49.0866196;venda;portal_imoveis
+124;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+125;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+131;Casa à Venda em Blumenau no bairro Itoupava Central;299000.0;2;1;56.67;1;casa;;Itoupava Central;28164;8715;45.0;Rua Porcedonio Coutinho;89068-278;;-26.8142875;-49.1064201;venda;portal_imoveis
+132;Apartamento à Venda em Blumenau no bairro Escola Agrícola;710000.0;3;3;130.0;2;apartamento;244;Do Salto;4558;1445;2.0;Rua Jose Deeke;89031-400;;-26.8911422;-49.1015605;venda;portal_imoveis
+133;Lote/Terreno à Venda em Blumenau no bairro Testo Salto;250000.0;0;0;365.0;0;loteterreno;0;Testo Salto;7065;2135;15.0;Rua Pedro Poli;89074-360;;-26.8602224;-49.137931;venda;portal_imoveis
+172;Apartamento à Venda em Blumenau no bairro Jardim Blumenau;1300000.0;3;4;130.0;3;apartamento;50;Jardim Blumenau;2855;1004;1.0;Rua Pastor Stutzer;89010-390;12.95;-26.929547;-49.0655116;venda;portal_imoveis
+173;Sobrado à Venda em Blumenau no bairro Ponta Aguda;350000.0;2;3;95.0;2;sobrado;121;Ponta Aguda;9880;3233;7.0;Rua Jose Isidoro Correa;89050-230;;-26.8998894;-49.0558816;venda;portal_imoveis
+174;Casa à Venda em Blumenau no bairro Fortaleza;500000.0;3;4;238.0;2;casa;115;Fortaleza;13196;4212;5.0;Rua Rudolfo Liesenberg;89056-485;;-26.8635204;-49.0735849;venda;portal_imoveis
+180;Casa à Venda em Blumenau no bairro Velha Central;800000.0;8;4;300.0;2;casa;132;Velha Central;18779;6119;7.0;Rua Grecia;89046-633;;-26.9402675;-49.1523091;venda;portal_imoveis
+181;Casa à Venda em Blumenau no bairro Fortaleza;620000.0;3;2;160.0;3;casa;106;Fortaleza;13196;4212;5.0;Rua Helmuth Wandrey;89056-458;;-26.8666179;-49.0730005;venda;portal_imoveis
+188;Casa à Venda em Blumenau no bairro Fortaleza;420000.0;3;2;130.0;2;casa;150;Fortaleza;13196;4212;5.0;Rua Helmuth Wandrey;89056-458;;-26.8666179;-49.0730005;venda;portal_imoveis
+189;Sobrado à Venda em Blumenau no bairro Velha;320000.0;2;3;87.67;1;sobrado;2801;Itoupava Norte;15648;5258;5.0;Praca Governador Jorge Lacerda;89052-295;;-26.8881124;-49.0831704;venda;portal_imoveis
+190;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;675000.0;0;0;1269.6;0;loteterreno;371;Itoupava Central;28164;8715;45.0;Rua Tereza Fischer;89062-080;17.65;-26.8423599;-49.082931;venda;portal_imoveis
+196;Casa à Venda em Blumenau no bairro Itoupava Central;550000.0;2;2;125.0;2;casa;277;Itoupava Central;28164;8715;45.0;Rua Helena Fischer;89062-370;;-26.8151878;-49.0830725;venda;portal_imoveis
+197;Casa à Venda em Blumenau no bairro Água Verde;1100000.0;3;4;150.0;4;casa;218;Agua Verde;16186;5526;5.0;Rua Carlos Witthoeft;89042-080;;-26.9064546;-49.129018;venda;portal_imoveis
+198;Casa à Venda em Blumenau no bairro Tribess;850000.0;5;3;592.6;2;casa;45;Tribess;8503;2691;3.0;Rua Graciliano Ramos;89057-370;;-26.8787214;-49.0564648;venda;portal_imoveis
+204;Casa à Venda em Blumenau no bairro Tribess;590000.0;5;4;180.0;4;casa;2406;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+205;Sobrado à Venda em Blumenau no bairro Itoupava Central;275000.0;2;2;63.16;1;sobrado;87;Itoupava Central;28164;8715;45.0;Rua Severino Poltronieri;89062-243;;-26.827362;-49.0786247;venda;portal_imoveis
+206;Casa à Venda em Blumenau no bairro Velha Central;489000.0;3;2;108.0;2;casa;116;Velha Central;18779;6119;7.0;Rua Linus Reiter;89040-460;;-26.9194416;-49.1236134;venda;portal_imoveis
+212;Sobrado à Venda em Blumenau no bairro Vila Nova;995000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+213;Sobrado à Venda em Blumenau no bairro Vila Nova;690000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+214;Sobrado à Venda em Blumenau no bairro Vila Nova;660000.0;3;2;150.0;2;sobrado;40;Vila Nova;9962;3884;2.0;Rua Professor Joao Boos;89035-550;;-26.9019554;-49.0862616;venda;portal_imoveis
+220;Casa à Venda em Blumenau no bairro Itoupava Norte;600000.0;3;3;154.08;2;casa;366;Itoupava Norte;15648;5258;5.0;Rua Sideropolis;89053-230;13.4;-26.8788751;-49.0827229;venda;portal_imoveis
+221;Sobrado à Venda em Blumenau no bairro Velha Central;350000.0;3;3;150.42;2;sobrado;270;Velha Central;18779;6119;7.0;Rua Joao Raulino;89046-540;;-26.9387455;-49.1443042;venda;portal_imoveis
+222;Apartamento à Venda em Blumenau no bairro Água Verde;270000.0;3;2;94.0;1;apartamento;290;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+228;Apartamento à Venda em Blumenau no bairro Vila Formosa;550000.0;3;2;130.43;1;apartamento;285;Vila Formosa;711;242;1.0;Rua Hermann Huscher;89023-000;15.2;-26.9355949;-49.0674097;venda;portal_imoveis
+229;Casa à Venda em Blumenau no bairro Fortaleza Alta;329000.0;2;2;105.4;2;casa;100;Fidelis;5392;1597;9.0;Rua Monte Belo;89060-058;;-26.8449021;-49.0537036;venda;portal_imoveis
+236;Apartamento à Venda em Blumenau no bairro Velha;595000.0;3;2;129.0;2;apartamento;361;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+237;Casa à Venda em Blumenau no bairro Fortaleza Alta;470000.0;3;2;170.0;2;casa;121;Fidelis;5392;1597;9.0;Rua Monte Belo;89060-058;;-26.8449021;-49.0537036;venda;portal_imoveis
+238;Apartamento à Venda em Blumenau no bairro Ponta Aguda;1600000.0;3;4;360.0;2;apartamento;40;Ponta Aguda;9880;3233;7.0;Rua Uruguaiana;89050-520;;-26.9043067;-49.0498379;venda;portal_imoveis
+244;Casa para Alugar em Blumenau no bairro Ribeirão Fresco;4000.0;4;3;270.0;4;casa;1472;Ribeirao Fresco;1587;513;1.0;Rua Pastor Oswald Hesse;89015-100;;-26.9279792;-49.0390287;locação;portal_imoveis
+245;Apartamento à Venda em Blumenau no bairro Velha;749000.0;3;3;132.43;2;apartamento;147;Velha;15373;5470;6.0;Rua Henrique Dias;89036-370;12.55;-26.9143614;-49.0907303;venda;portal_imoveis
+246;Apartamento à Venda em Blumenau no bairro Boa Vista;450000.0;2;2;99.73;2;apartamento;301;Boa Vista;1748;589;1.0;Rua Guido Kaestner Senior;89012-360;13.8;-26.8999524;-49.0642471;venda;portal_imoveis
+254;Casa para Alugar em Blumenau no bairro Itoupava Central;6000.0;3;1;1320.0;1;casa;5240;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;locação;portal_imoveis
+258;Casa à Venda em Blumenau no bairro Fortaleza Alta;750000.0;4;3;485.0;2;casa;648;Fortaleza Alta;4507;1398;5.0;Rua Das Bromelias;89058-080;;-26.8548027;-49.0459675;venda;portal_imoveis
+259;Casa à Venda em Blumenau no bairro Itoupavazinha;375000.0;4;2;225.0;3;casa;204;Itoupavazinha;17560;5358;12.0;Rua Carlos Sebastiao Fischer;89066-700;;-26.8554563;-49.117845;venda;portal_imoveis
+267;Lote/Terreno à Venda em Blumenau no bairro Velha;590000.0;0;0;450.0;0;loteterreno;225;Velha;15373;5470;6.0;Rua Adecio Goncalves;89045-230;;-26.9237242;-49.1154438;venda;portal_imoveis
+269;Apartamento à Venda em Blumenau no bairro Velha Central;260000.0;2;1;75.0;1;apartamento;866;Velha Central;18779;6119;7.0;Rua Divinopolis;89040-400;;-26.9207073;-49.1221006;venda;portal_imoveis
+274;Apartamento à Venda em Blumenau no bairro Vila Nova;990000.0;3;4;175.0;3;apartamento;330;Vila Nova;9962;3884;2.0;Rua Joao Gomes Da Nobrega;89035-450;12.8;-26.8986994;-49.0885241;venda;portal_imoveis
+275;Apartamento à Venda em Blumenau no bairro Centro;450000.0;4;2;146.0;0;apartamento;26;Jardim Blumenau;2855;1004;1.0;Rua Nereu Ramos;89010-401;14.45;-26.9239658;-49.0619969;venda;portal_imoveis
+276;Casa à Venda em Blumenau no bairro Velha Central;560000.0;3;2;120.0;2;casa;212;Velha Central;18779;6119;7.0;Rua Joao Marchiori;89046-130;;-26.9280141;-49.1324117;venda;portal_imoveis
+279;Apartamento à Venda em Blumenau no bairro Fortaleza;263430.0;2;2;57.45;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+280;Apartamento à Venda em Blumenau no bairro Itoupava Norte;282008.0;2;2;58.6;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+281;Lote/Terreno à Venda em Blumenau no bairro Do Salto;290000.0;0;0;372.98;0;loteterreno;112;Do Salto;4558;1445;2.0;Rua Vitorino Odelli;89031-680;;-26.8845981;-49.1075309;venda;portal_imoveis
+287;Apartamento à Venda em Blumenau no bairro Victor Konder;470000.0;3;2;115.4;1;apartamento;755;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+288;Apartamento para Alugar em Blumenau no bairro Centro;2100.0;3;2;146.0;0;apartamento;26;Jardim Blumenau;2855;1004;1.0;Rua Nereu Ramos;89010-401;14.45;-26.9239658;-49.0619969;locação;portal_imoveis
+289;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;1060000.0;0;0;1531.63;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+297;Apartamento à Venda em Blumenau no bairro Garcia;495000.0;3;2;109.0;2;apartamento;110;Garcia;15911;5336;5.0;Rua Joao Ehrat;89020-090;12.25;-26.9318285;-49.059661;venda;portal_imoveis
+303;Loft à Venda em Blumenau no bairro Velha;468349.0;1;1;88.34;2;loft;334;Velha;15373;5470;6.0;Rua Jaragua;89036-400;15.4;-26.9175762;-49.0917647;venda;portal_imoveis
+337;Apartamento à Venda em Blumenau no bairro Fortaleza;286700.0;2;2;60.72;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+338;Apartamento à Venda em Blumenau no bairro Fortaleza;263466.0;2;2;55.86;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+339;Apartamento à Venda em Blumenau no bairro Fortaleza;266671.0;2;2;58.05;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+345;Apartamento à Venda em Blumenau no bairro Fortaleza;322751.0;2;2;59.15;1;apartamento;1045;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;venda;portal_imoveis
+346;Apartamento à Venda em Blumenau no bairro Itoupava Norte;279972.0;2;2;57.0;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+347;Apartamento à Venda em Blumenau no bairro Itoupava Norte;254520.0;2;2;57.95;1;apartamento;4040;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+353;Casa à Venda em Blumenau no bairro Ponta Aguda;240000.0;5;4;233.0;3;casa;303;Ponta Aguda;9880;3233;7.0;Rua Professor Lothar Krieck;89050-190;;-26.9096836;-49.0522814;venda;portal_imoveis
+354;Apartamento à Venda em Blumenau no bairro Itoupava Norte;299000.0;3;2;123.0;1;apartamento;179;Itoupava Norte;15648;5258;5.0;Rua Maracaja;89052-276;9.65;-26.8879402;-49.0788366;venda;portal_imoveis
+355;Casa à Venda em Blumenau no bairro Escola Agrícola;1000000.0;4;3;196.0;3;casa;664;Escola Agricola;12145;3906;4.0;Rua Ursa Maior;89037-510;;-26.9068808;-49.1014734;venda;portal_imoveis
+361;Apartamento à Venda em Blumenau no bairro Itoupava Seca;370000.0;2;1;85.0;1;apartamento;1729;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+362;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;139;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+363;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;143;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+369;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;340000.0;2;3;81.0;2;sobrado;145;Fortaleza Alta;4507;1398;5.0;Rua Monaco;89058-404;;-26.8489006;-49.0531933;venda;portal_imoveis
+370;Apartamento à Venda em Blumenau no bairro Victor Konder;350000.0;2;3;182.9;1;apartamento;165;Victor Konder;4612;1990;1.0;Rua Heinrich Hosang;89012-190;16.7;-26.9079728;-49.0757152;venda;portal_imoveis
+371;Sobrado à Venda em Blumenau no bairro Água Verde;850000.0;3;2;174.67;2;sobrado;259;Agua Verde;16186;5526;5.0;Rua Felipe Otto Becker;89037-080;15.45;-26.9113596;-49.1001998;venda;portal_imoveis
+377;Lote/Terreno à Venda em Blumenau no bairro Garcia;1900000.0;0;0;11875.0;0;loteterreno;303;Garcia;15911;5336;5.0;Rua Ararangua;89020-302;14.05;-26.938174;-49.0538273;venda;portal_imoveis
+378;Casa à Venda em Blumenau no bairro Valparaíso;450000.0;4;2;123.0;2;casa;122;Valparaiso;5280;1774;1.0;Rua Palmares;89023-650;;-26.9566687;-49.0715812;venda;portal_imoveis
+379;Loft à Venda em Blumenau no bairro Garcia;250000.0;1;1;60.0;1;loft;;Garcia;15911;5336;5.0;Rua Araxa;89020-330;10.6;-26.9298493;-49.0535121;venda;portal_imoveis
+385;Casa à Venda em Blumenau no bairro Itoupava Central;437000.0;3;2;146.7;2;casa;329;Itoupava Central;28164;8715;45.0;Rua Arnoldo Zuelow;89069-082;;-26.8046607;-49.0903124;venda;portal_imoveis
+403;Casa à Venda em Blumenau no bairro Ponta Aguda;650000.0;4;2;951.08;2;casa;321;Ponta Aguda;9880;3233;7.0;Rua Mexico;89050-130;17.3;-26.9116448;-49.0594885;venda;portal_imoveis
+404;Casa à Venda em Blumenau no bairro Garcia;689000.0;5;3;300.0;3;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;venda;portal_imoveis
+411;Casa à Venda em Blumenau no bairro Velha Central;389000.0;2;2;85.0;2;casa;71;Velha Central;18779;6119;7.0;Rua Augusto Zager;89046-150;;-26.9303803;-49.133405;venda;portal_imoveis
+416;Apartamento à Venda em Blumenau no bairro Vila Nova;1350000.0;3;3;215.0;3;apartamento;699;Vila Nova;9962;3884;2.0;Rua Joinville;89035-200;13.6;-26.9085016;-49.0822647;venda;portal_imoveis
+417;Casa à Venda em Blumenau no bairro Itoupava Norte;1600000.0;4;4;307.96;4;casa;163;Itoupava Norte;15648;5258;5.0;Rua Augusto Sutter;89052-680;16.35;-26.8845075;-49.0839477;venda;portal_imoveis
+418;Casa à Venda em Blumenau no bairro Ponta Aguda;500000.0;3;1;107.57;4;casa;256;Jardim Blumenau;2855;1004;1.0;Rua Jean Romain Bonnemasou;89010-370;;-26.9286324;-49.0630103;venda;portal_imoveis
+424;Casa à Venda em Blumenau no bairro Água Verde;590000.0;3;2;168.0;0;casa;595;Agua Verde;16186;5526;5.0;Rua Agua Branca;89041-700;;-26.9085947;-49.1217144;venda;portal_imoveis
+425;Apartamento à Venda em Blumenau no bairro Água Verde;240000.0;3;2;106.06;1;apartamento;290;Agua Verde;16186;5526;5.0;Rua Max Weise;89032-280;;-26.9054906;-49.1346702;venda;portal_imoveis
+426;Casa para Alugar em Blumenau no bairro Garcia;5000.0;5;3;300.0;3;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;locação;portal_imoveis
+432;Casa para Alugar em Blumenau no bairro Garcia;2500.0;1;1;300.0;2;casa;100;Garcia;15911;5336;5.0;Rua Goias;89021-301;13.35;-26.9408187;-49.065102;locação;portal_imoveis
+434;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;135000.0;0;0;333.14;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+442;Casa à Venda em Blumenau no bairro Ponta Aguda;830000.0;4;3;210.0;2;casa;401;Ponta Aguda;9880;3233;7.0;Rua Mexico;89050-130;17.3;-26.9116448;-49.0594885;venda;portal_imoveis
+449;Apartamento à Venda em Blumenau no bairro Victor Konder;280000.0;2;1;70.0;1;apartamento;161;Victor Konder;4612;1990;1.0;Rua Max Hering;89012-510;13.85;-26.9073376;-49.0785149;venda;portal_imoveis
+450;Casa à Venda em Blumenau no bairro Badenfurt;700000.0;4;2;372.0;2;casa;245;Badenfurt;8650;2753;12.0;Rua Emma Hemmer;89072-205;;-26.8878014;-49.1417491;venda;portal_imoveis
+456;Apartamento à Venda em Blumenau no bairro Itoupava Seca;420000.0;2;2;102.0;1;apartamento;365;Itoupava Seca;4464;1616;3.0;Rua Teresopolis;89030-110;14.75;-26.904098;-49.0807824;venda;portal_imoveis
+457;Sobrado à Venda em Blumenau no bairro Fortaleza Alta;299000.0;2;1;86.0;2;sobrado;;Fortaleza Alta;4507;1398;5.0;Rua Das Bromelias;89058-080;;-26.8548027;-49.0459675;venda;portal_imoveis
+458;Lote/Terreno à Venda em Blumenau no bairro Fidélis;295000.0;0;0;480.23;0;loteterreno;;Fidelis;5392;1597;9.0;Rua Theodoro Pasold;89060-060;;-26.8508268;-49.0558098;venda;portal_imoveis
+464;Lote/Terreno à Venda em Blumenau no bairro Fidélis;560000.0;0;0;948.15;0;loteterreno;;Fidelis;5392;1597;9.0;Rua Theodoro Pasold;89060-060;;-26.8508268;-49.0558098;venda;portal_imoveis
+465;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;460000.0;0;0;641.0;0;loteterreno;;Fortaleza;13196;4212;5.0;Rua Oswaldo Bonetti Kuestner;89056-456;;-26.8662572;-49.072395;venda;portal_imoveis
+466;Sobrado à Venda em Blumenau no bairro Itoupavazinha;390000.0;2;3;90.0;2;sobrado;145;Itoupavazinha;17560;5358;12.0;Rua Margot Ilse Anna Goll;89066-610;;-26.8518606;-49.1177367;venda;portal_imoveis
+472;Casa à Venda em Blumenau no bairro Fortaleza;800000.0;3;3;140.0;4;casa;288;Fortaleza;13196;4212;5.0;Rua Conde De Sao Simao;89057-241;;-26.8653808;-49.0668035;venda;portal_imoveis
+473;Casa à Venda em Blumenau no bairro Itoupava Central;1000000.0;3;3;190.0;6;casa;1501;Itoupava Central;28164;8715;45.0;Rua Erich Belz;89068-061;16.75;-26.8211875;-49.0969569;venda;portal_imoveis
+474;Apartamento à Venda em Blumenau no bairro Velha;430000.0;2;2;116.23;1;apartamento;220;Velha;15373;5470;6.0;Rua Londrina;89036-610;12.5;-26.9170239;-49.0958608;venda;portal_imoveis
+478;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;180000.0;0;0;384.07;0;loteterreno;;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+479;Casa à Venda em Blumenau no bairro Bom Retiro;450000.0;3;2;210.59;2;casa;235;Bom Retiro;1117;407;1.0;Rua Sebastian Fischer Senior;89010-625;14.15;-26.9244698;-49.0724784;venda;portal_imoveis
+480;Apartamento à Venda em Blumenau no bairro Água Verde;430000.0;3;2;105.0;1;apartamento;120;Agua Verde;16186;5526;5.0;Rua Canario;89037-380;;-26.9113864;-49.1093571;venda;portal_imoveis
+483;Apartamento à Venda em Blumenau no bairro Vila Nova;990000.0;3;3;159.0;2;apartamento;1399;Vila Nova;9962;3884;2.0;Rua Almirante Barroso;89035-402;15.25;-26.8941837;-49.0845078;venda;portal_imoveis
+503;Casa à Venda em Blumenau no bairro Velha Central;1280000.0;2;1;80.32;1;casa;175;Velha Central;18779;6119;7.0;Rua Oswald Arno Lenz;89040-440;;-26.9195444;-49.1214059;venda;portal_imoveis
+504;Casa para Alugar em Blumenau no bairro Garcia;2300.0;3;3;400.0;2;casa;101;Da Gloria;6228;2096;2.0;Rua Juiz De Fora;89025-420;;-26.965617;-49.057222;locação;portal_imoveis
+505;Casa para Alugar em Blumenau no bairro Garcia;1450.0;2;1;90.0;0;casa;101;Da Gloria;6228;2096;2.0;Rua Juiz De Fora;89025-420;;-26.965617;-49.057222;locação;portal_imoveis
+511;Apartamento à Venda em Blumenau no bairro Itoupavazinha;220000.0;2;1;72.77;1;apartamento;2230;Itoupavazinha;17560;5358;12.0;Rua Frederico Jensen;89066-510;15.05;-26.8605872;-49.0990946;venda;portal_imoveis
+512;Lote/Terreno à Venda em Blumenau no bairro Água Verde;3000000.0;0;0;1160.0;0;loteterreno;;Agua Verde;16186;5526;5.0;Rua Doutor Antonio Haffner;89036-640;;-26.9142369;-49.0998745;venda;portal_imoveis
+513;Apartamento à Venda em Blumenau no bairro Centro;280000.0;2;1;93.7;1;apartamento;48;Velha;15373;5470;6.0;Rua Minas Gerais;89036-040;10.1;-26.9141891;-49.0811622;venda;portal_imoveis
+519;Casa para Alugar em Blumenau no bairro Salto do Norte;5000.0;3;2;1117.5;4;casa;279;Salto Do Norte;8441;2779;7.0;Rua Trinta De Agosto;89065-210;;-26.8747273;-49.0932393;locação;portal_imoveis
+520;Casa à Venda em Blumenau no bairro Passo Manso;389000.0;3;2;105.0;2;casa;50;Passo Manso;6799;2069;7.0;Rua Antenor Linhares;89032-665;;-26.9035163;-49.1412302;venda;portal_imoveis
+521;Casa à Venda em Blumenau no bairro Fortaleza;330000.0;2;1;75.0;1;casa;22;Fortaleza;13196;4212;5.0;Rua Sergio Cardoso;89056-310;;-26.8741098;-49.07103;venda;portal_imoveis
+528;Sobrado à Venda em Blumenau no bairro Água Verde;360000.0;2;2;95.0;2;sobrado;31;Velha Central;18779;6119;7.0;Rua Anna Catharina Lenz;89042-286;;-26.914229;-49.125175;venda;portal_imoveis
+529;Casa à Venda em Blumenau no bairro Itoupava Central;420000.0;4;3;155.82;2;casa;62;Itoupava Central;28164;8715;45.0;Rua Ricardo Belz;89069-140;;-26.7922569;-49.1014905;venda;portal_imoveis
+535;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;1120000.0;0;0;990.62;0;loteterreno;;Fortaleza;13196;4212;5.0;Rua Primavera;89057-036;17.55;-26.8738475;-49.0609339;venda;portal_imoveis
+536;Casa à Venda em Blumenau no bairro Velha Central;1100000.0;4;3;236650.0;2;casa;468;Velha Central;18779;6119;7.0;Rua Georg Bachmann;89040-310;;-26.9285769;-49.1286466;venda;portal_imoveis
+542;Casa à Venda em Blumenau no bairro Itoupava Norte;550000.0;3;1;180.0;0;casa;1183;Itoupava Norte;15648;5258;5.0;Rua 25 De Julho;89053-001;14.8;-26.8815084;-49.0820566;venda;portal_imoveis
+566;Apartamento à Venda em Blumenau no bairro Itoupava Central;950000.0;3;4;196.54;2;apartamento;4410;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+568;Casa à Venda em Blumenau no bairro Fortaleza;365000.0;2;2;100.0;1;casa;60;Fortaleza;13196;4212;5.0;Rua Oswaldo Bonetti Kuestner;89056-456;;-26.8662572;-49.072395;venda;portal_imoveis
+574;Lote/Terreno à Venda em Blumenau no bairro Itoupava Norte;550000.0;0;0;702.21;0;loteterreno;;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;venda;portal_imoveis
+575;Casa à Venda em Blumenau no bairro Escola Agrícola;330000.0;2;2;100.0;2;casa;80;Escola Agricola;12145;3906;4.0;Rua Jose Machado;89031-491;;-26.8939744;-49.1053355;venda;portal_imoveis
+576;Apartamento para Alugar em Blumenau no bairro Victor Konder;3000.0;3;2;151.0;1;apartamento;40;Victor Konder;4612;1990;1.0;Rua Tocantins;89012-020;11.55;-26.9125919;-49.0702274;locação;portal_imoveis
+582;Apartamento à Venda em Blumenau no bairro Passo Manso;250000.0;3;1;89.94;1;apartamento;1855;Agua Verde;16186;5526;5.0;Rua Guilherme Poerner;89042-327;;-26.9084141;-49.1503081;venda;portal_imoveis
+583;Apartamento para Alugar em Blumenau no bairro Vila Nova;4200.0;3;3;111.0;2;apartamento;739;Vila Nova;9962;3884;2.0;Rua Almirante Barroso;89035-402;15.25;-26.8941837;-49.0845078;locação;portal_imoveis
+584;Casa à Venda em Blumenau no bairro Salto do Norte;550000.0;3;2;100.0;0;casa;131;Salto Do Norte;8441;2779;7.0;Rua Sabino Suave;89070-217;;-26.8807309;-49.1181115;venda;portal_imoveis
+590;Casa para Alugar em Blumenau no bairro Itoupava Central;2500.0;2;3;250.0;3;casa;112;Itoupava Central;28164;8715;45.0;Rua Wilhelm Rudiger;89068-300;;-26.8267756;-49.1087186;locação;portal_imoveis
+592;Casa para Alugar em Blumenau no bairro Itoupava Central;1700.0;3;1;100.0;2;casa;22;Itoupava Central;28164;8715;45.0;Rua Gregoria Nicolau Fagundes;89062-274;;-26.8202904;-49.0792584;locação;portal_imoveis
+598;Apartamento à Venda em Blumenau no bairro Itoupava Central;190000.0;2;1;52.46;1;apartamento;710;Itoupava Central;28164;8715;45.0;Rua Haroldo Hackbarth;89069-235;;-26.7908189;-49.096335;venda;portal_imoveis
+599;Lote/Terreno à Venda em Blumenau no bairro Velha;600000.0;0;0;281.2;0;loteterreno;;Velha;15373;5470;6.0;Rua Joao Pessoa;89036-256;17.3;-26.9145674;-49.0797311;venda;portal_imoveis
+606;Casa para Alugar em Blumenau no bairro Itoupava Central;3500.0;3;3;300.0;2;casa;37;Itoupava Central;28164;8715;45.0;Rua Alfredo Bauer;89068-220;;-26.8131229;-49.0909873;locação;portal_imoveis
+607;Apartamento para Alugar em Blumenau no bairro Garcia;1900.0;1;1;42.0;1;apartamento;85;Garcia;15911;5336;5.0;Rua Murici;89020-310;11.2;-26.9289109;-49.0553937;locação;portal_imoveis
+608;Apartamento para Alugar em Blumenau no bairro Garcia;1900.0;1;1;42.0;1;apartamento;85;Garcia;15911;5336;5.0;Rua Murici;89020-310;11.2;-26.9289109;-49.0553937;locação;portal_imoveis
+614;Casa à Venda em Blumenau no bairro Itoupava Central;940000.0;3;3;155.0;2;casa;37;Itoupava Central;28164;8715;45.0;Rua Alfredo Bauer;89068-220;;-26.8131229;-49.0909873;venda;portal_imoveis
+615;Sobrado à Venda em Blumenau no bairro Salto do Norte;550000.0;2;2;99.0;2;sobrado;70;Salto Do Norte;8441;2779;7.0;Rua Jose Roberto Tarnowski;89065-470;;-26.8800945;-49.1172378;venda;portal_imoveis
+616;Apartamento à Venda em Blumenau no bairro Velha;780000.0;3;2;140.0;2;apartamento;49;Velha;15373;5470;6.0;Rua Olavo Bilac;89036-710;;-26.9232166;-49.097258;venda;portal_imoveis
+622;Apartamento à Venda em Blumenau no bairro Jardim Blumenau;900000.0;3;5;160.0;3;apartamento;55;Jardim Blumenau;2855;1004;1.0;Rua Pastor Stutzer;89010-390;12.95;-26.929547;-49.0655116;venda;portal_imoveis
+623;Casa para Alugar em Blumenau no bairro Vorstadt;5500.0;4;3;798.46;3;casa;2357;Vorstadt;4269;1690;4.0;Rua Itajai;89015-208;17.3;-26.9116961;-49.0469884;locação;portal_imoveis
+624;Apartamento à Venda em Blumenau no bairro Victor Konder;650000.0;3;2;140.0;2;apartamento;64;Victor Konder;4612;1990;1.0;Rua Waldemar Medeiros;89012-520;;-26.9077761;-49.0785255;venda;portal_imoveis
+630;Apartamento para Alugar em Blumenau no bairro Victor Konder;3500.0;3;2;140.0;2;apartamento;64;Victor Konder;4612;1990;1.0;Rua Waldemar Medeiros;89012-520;;-26.9077761;-49.0785255;locação;portal_imoveis
+665;Apartamento à Venda em Blumenau no bairro Boa Vista;340000.0;2;2;92.4;1;apartamento;1758;Victor Konder;4612;1990;1.0;Rua Carlos Rischbieter;89012-200;16.6;-26.9077427;-49.0732069;venda;portal_imoveis
+666;Casa à Venda em Blumenau no bairro Fortaleza Alta;980000.0;3;3;388.31;2;casa;222;Fortaleza Alta;4507;1398;5.0;Rua Villa Fortaleza;89058-014;;-26.8547101;-49.0644198;venda;portal_imoveis
+672;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;187990.0;0;0;277.77;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Professor Jacob Ineichen;89066-598;;-26.8426432;-49.1113311;venda;portal_imoveis
+673;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;315010.0;0;0;544.71;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Professor Jacob Ineichen;89066-598;;-26.8426432;-49.1113311;venda;portal_imoveis
+674;Apartamento à Venda em Blumenau no bairro Centro;430000.0;3;2;182.65;1;apartamento;286;Centro;5004;1622;2.0;Rua Ayres Gama;89012-480;10.0;-26.9133497;-49.079564;venda;portal_imoveis
+680;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;330000.0;0;0;415.61;0;loteterreno;3065;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+681;Casa à Venda em Blumenau no bairro Vorstadt;1650000.0;5;5;1200.0;5;casa;2135;Vorstadt;4269;1690;4.0;Rua Itajai;89015-208;17.3;-26.9116961;-49.0469884;venda;portal_imoveis
+682;Lote/Terreno à Venda em Blumenau no bairro Badenfurt;1700000.0;0;0;5284.98;0;loteterreno;1356;Testo Salto;7065;2135;15.0;Rua Werner Duwe;89074-178;13.55;-26.8504419;-49.1519382;venda;portal_imoveis
+688;Lote/Terreno à Venda em Blumenau no bairro Velha;249900.0;0;0;360.0;0;loteterreno;10;Velha;15373;5470;6.0;Rua Atanagildo Jose Nunes;89040-105;;-26.9222779;-49.1163423;venda;portal_imoveis
+689;Apartamento à Venda em Blumenau no bairro Velha;450000.0;2;1;121.24;2;apartamento;156;Velha;15373;5470;6.0;Rua Mariana Bronnemann;89036-080;10.9;-26.9142373;-49.0839246;venda;portal_imoveis
+690;Apartamento para Alugar em Blumenau no bairro Centro;1800.0;2;1;93.7;1;apartamento;48;Velha;15373;5470;6.0;Rua Minas Gerais;89036-040;10.1;-26.9141891;-49.0811622;locação;portal_imoveis
+733;Sobrado à Venda em Blumenau no bairro Fortaleza;885000.0;3;2;247.99;2;sobrado;49;Fortaleza;13196;4212;5.0;Rua Deodoro Pereira;89057-051;;-26.8718482;-49.0673449;venda;portal_imoveis
+734;Sobrado à Venda em Blumenau no bairro Itoupava Norte;330000.0;2;1;73.0;0;sobrado;87;Itoupava Norte;15648;5258;5.0;Rua Antonina;89052-650;;-26.8848667;-49.0748575;venda;portal_imoveis
+735;Sobrado à Venda em Blumenau no bairro Fortaleza;885000.0;3;2;246.51;2;sobrado;53;Fortaleza;13196;4212;5.0;Rua Deodoro Pereira;89057-051;;-26.8718482;-49.0673449;venda;portal_imoveis
+741;Sobrado à Venda em Blumenau no bairro Fortaleza;760000.0;3;2;247.99;2;sobrado;53;Fortaleza;13196;4212;5.0;Rua Deodoro Pereira;89057-051;;-26.8718482;-49.0673449;venda;portal_imoveis
+743;Apartamento à Venda em Blumenau no bairro Água Verde;380000.0;2;2;123.16;1;apartamento;111;Agua Verde;16186;5526;5.0;Rua Frei Estanislau Schaette;89037-256;19.25;-26.9123839;-49.1120379;venda;portal_imoveis
+749;Casa à Venda em Blumenau no bairro Progresso;450000.0;3;2;317.0;1;casa;2093;Progresso;15005;4852;7.0;Rua Bruno Schreiber;89027-400;;-26.9936705;-49.0998762;venda;portal_imoveis
+750;Apartamento para Alugar em Blumenau no bairro Vila Nova;1600.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+751;Apartamento para Alugar em Blumenau no bairro Vila Nova;1600.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+757;Apartamento para Alugar em Blumenau no bairro Vila Nova;1800.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+758;Apartamento à Venda em Blumenau no bairro Itoupava Norte;520000.0;2;2;110.0;1;apartamento;106;Itoupava Norte;15648;5258;5.0;Rua Treze De Maio;89053-210;;-26.8820145;-49.0850507;venda;portal_imoveis
+759;Casa à Venda em Blumenau no bairro Tribess;365000.0;2;3;95.0;1;casa;2633;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+766;Apartamento à Venda em Blumenau no bairro Itoupava Seca;600000.0;2;2;170.16;2;apartamento;1750;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+767;Casa à Venda em Blumenau no bairro Itoupava Norte;450000.0;2;1;375.0;3;casa;223;Itoupava Norte;15648;5258;5.0;Rua Max Aldemann;89053-598;11.5;-26.8663556;-49.0808807;venda;portal_imoveis
+773;Casa à Venda em Blumenau no bairro Tribess;355000.0;2;1;110.0;0;casa;2633;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+774;Casa à Venda em Blumenau no bairro Salto do Norte;599000.0;2;2;219.55;4;casa;119;Salto Do Norte;8441;2779;7.0;Rua Sabino Suave;89070-217;;-26.8807309;-49.1181115;venda;portal_imoveis
+775;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;135000.0;0;0;400.0;0;loteterreno;;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;venda;portal_imoveis
+781;Casa à Venda em Blumenau no bairro Tribess;350000.0;2;1;110.0;0;casa;2633;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+783;Sobrado à Venda em Blumenau no bairro Itoupava Central;270000.0;2;3;75.0;2;sobrado;209;Itoupava Central;28164;8715;45.0;Rua Frieda Muller;89068-050;;-26.822616;-49.09345;venda;portal_imoveis
+789;Casa à Venda em Blumenau no bairro Salto Weissbach;650000.0;4;2;315.0;2;casa;44;Salto Weissbach;5213;1556;4.0;Rua Pedro Aldo Cardoso;89032-195;;-26.8931224;-49.1325703;venda;portal_imoveis
+791;Apartamento à Venda em Blumenau no bairro Vila Nova;285000.0;1;2;53.61;1;apartamento;181;Vila Nova;9962;3884;2.0;Rua Frei Gabriel Zimmer;89035-510;14.15;-26.9024045;-49.0875439;venda;portal_imoveis
+797;Apartamento para Alugar em Blumenau no bairro Garcia;1750.0;1;1;60.0;1;apartamento;85;Garcia;15911;5336;5.0;Rua Murici;89020-310;11.2;-26.9289109;-49.0553937;locação;portal_imoveis
+798;Apartamento para Alugar em Blumenau no bairro Vila Nova;1800.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+799;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;750000.0;0;0;1117.42;0;loteterreno;880;Ponta Aguda;9880;3233;7.0;Avenida Brasil;89050-000;;-26.9168982;-49.063716;venda;portal_imoveis
+805;Casa à Venda em Blumenau no bairro Salto do Norte;1200000.0;3;3;351.0;1;casa;73;Salto Do Norte;8441;2779;7.0;Rua Francisco Tiedt;89065-150;;-26.8725028;-49.1070328;venda;portal_imoveis
+806;Apartamento à Venda em Blumenau no bairro Badenfurt;295000.0;3;1;84.0;1;apartamento;183;Badenfurt;8650;2753;12.0;Rua Margareth Bennertz;89070-080;17.1;-26.8824738;-49.1235962;venda;portal_imoveis
+807;Casa à Venda em Blumenau no bairro Fortaleza;490000.0;5;2;484.0;7;casa;614;Fortaleza;13196;4212;5.0;Rua Heinrich Piske;89057-230;;-26.8624609;-49.0583676;venda;portal_imoveis
+813;Apartamento à Venda em Blumenau no bairro Itoupava Norte;410000.0;2;2;120.63;1;apartamento;111;Fortaleza;13196;4212;5.0;Rua Sargento Jones Artur Senabio;89055-230;12.55;-26.8844886;-49.0641123;venda;portal_imoveis
+814;Casa à Venda em Blumenau no bairro Velha Central;610000.0;2;3;312.0;2;casa;90;Velha Central;18779;6119;7.0;Rua Henrique Geske;89045-280;;-26.9275536;-49.1151454;venda;portal_imoveis
+815;Geminada à Venda em Blumenau no bairro Itoupava Central;340000.0;3;1;68.73;1;geminada;661;Itoupava Central;28164;8715;45.0;Rua Arnoldo Zuelow;89069-082;;-26.8046607;-49.0903124;venda;portal_imoveis
+817;Casa à Venda em Blumenau no bairro Escola Agrícola;500000.0;3;3;147.39;3;casa;54;Escola Agricola;12145;3906;4.0;Rua Anna Gals Kruger;89037-710;;-26.9019528;-49.1001269;venda;portal_imoveis
+818;Apartamento para Alugar em Blumenau no bairro Vila Nova;1600.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+819;Apartamento para Alugar em Blumenau no bairro Vila Nova;1600.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+827;Apartamento para Alugar em Blumenau no bairro Vila Nova;1500.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+828;Casa à Venda em Blumenau no bairro Água Verde;650000.0;3;1;429.43;4;casa;112;Agua Verde;16186;5526;5.0;Rua Canario;89037-380;;-26.9113864;-49.1093571;venda;portal_imoveis
+829;Casa para Alugar em Blumenau no bairro Itoupava Norte;2900.0;3;3;230.0;1;casa;435;Itoupava Norte;15648;5258;5.0;Rua Quatro De Fevereiro;89052-500;;-26.8837967;-49.0758419;locação;portal_imoveis
+833;Casa para Alugar em Blumenau no bairro Centro;16500.0;6;4;22000.0;50;casa;89;Ribeirao Fresco;1587;513;1.0;Rua Alwin Schrader;89015-125;13.3;-26.9255483;-49.0511884;locação;portal_imoveis
+835;Apartamento à Venda em Blumenau no bairro Itoupava Central;275000.0;2;1;87.42;1;apartamento;5747;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+841;Apartamento à Venda em Blumenau no bairro Victor Konder;620000.0;3;3;142.0;2;apartamento;99;Victor Konder;4612;1990;1.0;Rua Victor Konder;89012-170;10.3;-26.9113888;-49.0755186;venda;portal_imoveis
+842;Lote/Terreno à Venda em Blumenau no bairro Badenfurt;1900000.0;0;0;5000.0;0;loteterreno;745;Badenfurt;8650;2753;12.0;Rua Bernardino Jose De Oliveira;89070-270;13.5;-26.8839224;-49.1332086;venda;portal_imoveis
+843;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;1000000.0;0;0;712.5;0;loteterreno;2660;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+850;Casa à Venda em Blumenau no bairro Itoupavazinha;420000.0;2;2;788.11;2;casa;191;Itoupavazinha;17560;5358;12.0;Rua Luiz De Oliveira;89066-562;;-26.8534346;-49.1360982;venda;portal_imoveis
+851;Apartamento à Venda em Blumenau no bairro Velha;540000.0;3;2;128.0;2;apartamento;361;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+852;Casa à Venda em Blumenau no bairro Itoupava Central;2200000.0;3;5;340.0;2;casa;152;Itoupava Central;28164;8715;45.0;Rua Jatoba;89062-256;;-26.8299462;-49.0825392;venda;portal_imoveis
+859;Apartamento para Alugar em Blumenau no bairro Vila Nova;1450.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+860;Apartamento à Venda em Blumenau no bairro Velha;300000.0;2;2;101.99;1;apartamento;459;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+861;Casa à Venda em Blumenau no bairro Itoupava Seca;990000.0;3;3;289.0;4;casa;104;Itoupava Seca;4464;1616;3.0;Rua Carlos Jensen;89030-010;;-26.9002979;-49.0778204;venda;portal_imoveis
+862;Apartamento à Venda em Blumenau no bairro Água Verde;490000.0;2;2;114.6;2;apartamento;126;Agua Verde;16186;5526;5.0;Rua Johann Doebeli;89041-510;;-26.9126117;-49.1125777;venda;portal_imoveis
+863;Apartamento à Venda em Blumenau no bairro Escola Agrícola;370000.0;2;2;92.71;1;apartamento;47;Escola Agricola;12145;3906;4.0;Rua Gertrudes Bogo;89037-654;;-26.8971069;-49.096274;venda;portal_imoveis
+869;Casa à Venda em Blumenau no bairro Itoupava Norte;980000.0;3;4;247.62;2;casa;175;Itoupava Norte;15648;5258;5.0;Rua Almirante Armin Zimmermann;89053-500;17.95;-26.8776068;-49.0849655;venda;portal_imoveis
+870;Apartamento à Venda em Blumenau no bairro Água Verde;330000.0;2;2;112.34;1;apartamento;230;Agua Verde;16186;5526;5.0;Rua Carlos Guilherme Hennings;89032-270;;-26.9043583;-49.1299144;venda;portal_imoveis
+871;Apartamento à Venda em Blumenau no bairro Água Verde;280000.0;2;1;78.93;1;apartamento;50;Agua Verde;16186;5526;5.0;Rua Oscar Paulo;89042-260;;-26.9133226;-49.1279344;venda;portal_imoveis
+872;Apartamento à Venda em Blumenau no bairro Victor Konder;350000.0;2;1;125.0;1;apartamento;940;Victor Konder;4612;1990;1.0;Rua Sao Paulo;89030-001;14.45;-26.9044071;-49.0773754;venda;portal_imoveis
+873;Casa à Venda em Blumenau no bairro Água Verde;650000.0;3;2;180.0;2;casa;317;Agua Verde;16186;5526;5.0;Rua Biguacu;89041-580;;-26.9114869;-49.1206804;venda;portal_imoveis
+880;Casa à Venda em Blumenau no bairro Badenfurt;700000.0;6;3;283.88;2;casa;151;Badenfurt;8650;2753;12.0;Rua Waltraud Voigt;89070-050;;-26.8794376;-49.1223111;venda;portal_imoveis
+881;Lote/Terreno à Venda em Blumenau no bairro Velha;330000.0;0;0;400.0;0;loteterreno;;Velha;15373;5470;6.0;Rua Maria Bugmann;89041-380;;-26.9143618;-49.1142082;venda;portal_imoveis
+889;Apartamento para Alugar em Blumenau no bairro Itoupava Norte;1600.0;2;2;110.0;1;apartamento;3999;Itoupava Norte;15648;5258;5.0;Rua Dois De Setembro;89052-000;;-26.8843974;-49.0843002;locação;portal_imoveis
+890;Casa para Alugar em Blumenau no bairro Itoupava Central;3200.0;4;2;360.0;4;casa;110;Itoupava Central;28164;8715;45.0;Rua Joao Benjamin Alves;89068-270;;-26.8142376;-49.1073779;locação;portal_imoveis
+892;Sobrado à Venda em Blumenau no bairro Água Verde;360000.0;2;2;95.0;2;sobrado;31;Velha Central;18779;6119;7.0;Rua Anna Catharina Lenz;89042-286;;-26.914229;-49.125175;venda;portal_imoveis
+893;Apartamento à Venda em Blumenau no bairro Fortaleza;330000.0;2;2;86.73;1;apartamento;55;Fortaleza;13196;4212;5.0;Rua Leopoldo Keunecke;89056-110;;-26.8743192;-49.0654614;venda;portal_imoveis
+898;Apartamento para Alugar em Blumenau no bairro Velha Central;1350.0;2;1;78.53;1;apartamento;158;Velha Central;18779;6119;7.0;Rua Jose Woestemeier;89040-498;;-26.9190543;-49.1272839;locação;portal_imoveis
+899;Lote/Terreno à Venda em Blumenau no bairro Centro;2500000.0;0;0;200.0;0;loteterreno;44;Jardim Blumenau;2855;1004;1.0;Rua Floriano Peixoto;89010-325;18.0;-26.9221084;-49.0635103;venda;portal_imoveis
+900;Casa à Venda em Blumenau no bairro Itoupava Central;2700000.0;3;4;318.27;2;casa;;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+926;Casa para Alugar em Blumenau no bairro Velha;2000.0;3;1;110.0;1;casa;665;Velha;15373;5470;6.0;Rua Joao Pessoa;89036-256;17.3;-26.9145674;-49.0797311;locação;portal_imoveis
+927;Sobrado à Venda em Blumenau no bairro Ponta Aguda;998000.0;3;4;168.0;4;sobrado;;Ponta Aguda;9880;3233;7.0;Rua Nestor Seara Heusi;89050-200;;-26.9078156;-49.047159;venda;portal_imoveis
+930;Apartamento à Venda em Blumenau no bairro Água Verde;199000.0;2;1;57.4;1;apartamento;194;Agua Verde;16186;5526;5.0;Rua Angelina;89042-330;;-26.9126422;-49.1362801;venda;portal_imoveis
+931;Casa à Venda em Blumenau no bairro Vila Nova;1272000.0;4;4;451.6;2;casa;156;Vila Nova;9962;3884;2.0;Rua Alma Haskel;89035-115;;-26.9086001;-49.0907362;venda;portal_imoveis
+932;Sobrado à Venda em Blumenau no bairro Velha Central;379000.0;2;3;87.0;2;sobrado;15;Velha Central;18779;6119;7.0;Rua Gustavo Steffen;89040-365;;-26.9296484;-49.1302458;venda;portal_imoveis
+934;Apartamento à Venda em Blumenau no bairro Água Verde;235000.0;2;1;57.0;1;apartamento;194;Agua Verde;16186;5526;5.0;Rua Angelina;89042-330;;-26.9126422;-49.1362801;venda;portal_imoveis
+937;Apartamento à Venda em Blumenau no bairro Itoupava Norte;385000.0;3;2;122.0;1;apartamento;111;Itoupava Norte;15648;5258;5.0;Rua Vereador Romario Da Conceicao Badia;89053-600;13.45;-26.8741891;-49.0869085;venda;portal_imoveis
+938;Apartamento à Venda em Blumenau no bairro Vila Nova;438000.0;2;1;103.31;1;apartamento;350;Vila Nova;9962;3884;2.0;Rua Joao Gomes Da Nobrega;89035-450;12.8;-26.8986994;-49.0885241;venda;portal_imoveis
+939;Casa à Venda em Blumenau no bairro Badenfurt;490000.0;4;2;200.0;1;casa;134;Badenfurt;8650;2753;12.0;Rua Margareth Bennertz;89070-080;17.1;-26.8824738;-49.1235962;venda;portal_imoveis
+940;Apartamento à Venda em Blumenau no bairro Escola Agrícola;320000.0;3;1;79.06;1;apartamento;207;Escola Agricola;12145;3906;4.0;Rua Doutor Paulo Aldinger;89037-690;;-26.8922135;-49.0983306;venda;portal_imoveis
+941;Apartamento à Venda em Blumenau no bairro Vila Nova;920000.0;3;3;168.03;2;apartamento;310;Vila Nova;9962;3884;2.0;Rua Casemiro De Abreu;89035-600;14.1;-26.9016572;-49.0904408;venda;portal_imoveis
+946;Casa para Alugar em Blumenau no bairro Itoupava Central;1500.0;3;1;60.0;1;casa;355;Itoupava Central;28164;8715;45.0;Rua Ida Stein;89062-280;;-26.8224683;-49.0797257;locação;portal_imoveis
+947;Apartamento à Venda em Blumenau no bairro Ponta Aguda;1100000.0;3;4;260.0;5;apartamento;56;Ponta Aguda;9880;3233;7.0;Rua Colombia;89050-030;;-26.9181537;-49.061012;venda;portal_imoveis
+949;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;350000.0;0;0;322.16;0;loteterreno;109;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+954;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;420000.0;0;0;566.84;0;loteterreno;109;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+955;Apartamento à Venda em Blumenau no bairro Itoupava Central;270000.0;2;1;64.0;1;apartamento;5747;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+956;Apartamento para Alugar em Blumenau no bairro Itoupava Norte;3500.0;2;2;80.0;2;apartamento;100;Itoupava Norte;15648;5258;5.0;Rua 25 De Agosto;89056-150;17.6;-26.8761314;-49.0805143;locação;portal_imoveis
+961;Casa para Alugar em Blumenau no bairro Itoupava Central;2100.0;2;1;75.0;1;casa;578;Itoupava Central;28164;8715;45.0;Rua Arnoldo Zuelow;89069-082;;-26.8046607;-49.0903124;locação;portal_imoveis
+962;Apartamento para Alugar em Blumenau no bairro Itoupava Seca;1300.0;1;1;28.0;1;apartamento;107;Ponta Aguda;9880;3233;7.0;Rua Nicaragua;89050-050;13.2;-26.9169101;-49.0629324;locação;portal_imoveis
+963;Apartamento para Alugar em Blumenau no bairro Itoupava Seca;1300.0;1;1;28.0;1;apartamento;107;Ponta Aguda;9880;3233;7.0;Rua Nicaragua;89050-050;13.2;-26.9169101;-49.0629324;locação;portal_imoveis
+965;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;178436.0;0;0;252.0;0;loteterreno;0;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+971;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;249750.0;0;0;277.5;0;loteterreno;0;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+972;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;271082.0;0;0;417.05;0;loteterreno;0;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+973;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;234462.0;0;0;332.57;0;loteterreno;0;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+974;Apartamento para Alugar em Blumenau no bairro Velha Central;2400.0;2;1;70.0;1;apartamento;468;Velha Central;18779;6119;7.0;Rua Georg Bachmann;89040-310;;-26.9285769;-49.1286466;locação;portal_imoveis
+975;Apartamento à Venda em Blumenau no bairro Velha;800000.0;3;2;130.0;3;apartamento;49;Velha;15373;5470;6.0;Rua Olavo Bilac;89036-710;;-26.9232166;-49.097258;venda;portal_imoveis
+979;Apartamento à Venda em Blumenau no bairro Centro;600000.0;3;1;148.73;2;apartamento;2530;Centro;5004;1622;2.0;Rua Sete De Setembro;89010-200;;-26.9130355;-49.0790176;venda;portal_imoveis
+980;Apartamento à Venda em Blumenau no bairro Centro;600000.0;3;3;136.37;2;apartamento;2530;Centro;5004;1622;2.0;Rua Sete De Setembro;89010-200;;-26.9130355;-49.0790176;venda;portal_imoveis
+981;Apartamento à Venda em Blumenau no bairro Itoupava Seca;260000.0;1;1;63.9;1;apartamento;236;Itoupava Seca;4464;1616;3.0;Rua Teresopolis;89030-110;14.75;-26.904098;-49.0807824;venda;portal_imoveis
+982;Casa à Venda em Blumenau no bairro Itoupava Central;1100000.0;4;3;250.0;4;casa;156;Itoupava Central;28164;8715;45.0;Rua Augusto Ruschi;89069-080;;-26.8053086;-49.0942244;venda;portal_imoveis
+983;Apartamento à Venda em Blumenau no bairro Velha;435000.0;2;2;92.57;2;apartamento;714;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+989;Apartamento para Alugar em Blumenau no bairro Velha;1300.0;1;1;46.0;1;apartamento;201;Velha;15373;5470;6.0;Rua Consul Roberto Jose Castro;89045-220;;-26.924294;-49.1139695;locação;portal_imoveis
+992;Apartamento para Alugar em Blumenau no bairro Água Verde;1200.0;1;1;55.0;1;apartamento;859;Agua Verde;16186;5526;5.0;Rua Dona Emma;89037-213;;-26.9094905;-49.1019116;locação;portal_imoveis
+1001;Apartamento à Venda em Blumenau no bairro Escola Agrícola;450000.0;2;2;92.29;1;apartamento;47;Escola Agricola;12145;3906;4.0;Rua Gertrudes Bogo;89037-654;;-26.8971069;-49.096274;venda;portal_imoveis
+1002;Casa para Alugar em Blumenau no bairro Centro;5500.0;4;5;5361.47;2;casa;250;Centro;5004;1622;2.0;Rua Caxambu;89010-280;;-26.9178919;-49.0791826;locação;portal_imoveis
+1003;Casa à Venda em Blumenau no bairro Velha;600000.0;2;2;450.0;4;casa;48;Velha;15373;5470;6.0;Rua Gustavo Karsten;89040-062;;-26.9163867;-49.1171762;venda;portal_imoveis
+1009;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;1390000.0;0;0;2507.65;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua George Fridrich Mordhorst;89062-220;19.05;-26.826806;-49.0818168;venda;portal_imoveis
+1010;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;1100000.0;0;0;2910.0;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua George Fridrich Mordhorst;89062-220;19.05;-26.826806;-49.0818168;venda;portal_imoveis
+1025;Apartamento para Alugar em Blumenau no bairro Garcia;1900.0;1;1;45.0;1;apartamento;85;Garcia;15911;5336;5.0;Rua Murici;89020-310;11.2;-26.9289109;-49.0553937;locação;portal_imoveis
+1031;Casa à Venda em Blumenau no bairro Escola Agrícola;800000.0;5;3;226.0;2;casa;233;Do Salto;4558;1445;2.0;Rua Jose Deeke;89031-400;;-26.8911422;-49.1015605;venda;portal_imoveis
+1032;Casa à Venda em Blumenau no bairro Badenfurt;650000.0;3;2;470.04;2;casa;626;Salto Do Norte;8441;2779;7.0;Rua Johann Sachse;89070-541;19.65;-26.8646743;-49.1243115;venda;portal_imoveis
+1033;Casa à Venda em Blumenau no bairro Centro;2000000.0;4;5;5361.47;2;casa;250;Centro;5004;1622;2.0;Rua Caxambu;89010-280;;-26.9178919;-49.0791826;venda;portal_imoveis
+1034;Apartamento para Alugar em Blumenau no bairro Vila Nova;1450.0;1;1;45.0;1;apartamento;2296;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;locação;portal_imoveis
+1035;Apartamento para Alugar em Blumenau no bairro Salto do Norte;2400.0;2;2;96.0;2;apartamento;572;Salto Do Norte;8441;2779;7.0;Rua Max Maul;89065-640;17.65;-26.8632931;-49.1159143;locação;portal_imoveis
+1041;Apartamento à Venda em Blumenau no bairro Velha;750000.0;3;2;100.0;2;apartamento;279;Vila Nova;9962;3884;2.0;Rua Marechal Deodoro;89035-090;14.4;-26.9187971;-49.0896995;venda;portal_imoveis
+1042;Lote/Terreno à Venda em Blumenau no bairro Garcia;900000.0;0;0;2171.1;0;loteterreno;;Garcia;15911;5336;5.0;Rua Maravilha;89020-120;12.75;-26.9293995;-49.0579974;venda;portal_imoveis
+1043;Casa para Alugar em Blumenau no bairro Itoupavazinha;2300.0;2;2;112.0;2;casa;359;Itoupavazinha;17560;5358;12.0;Rua Botuvera;89066-360;;-26.850249;-49.105625;locação;portal_imoveis
+1044;Casa para Alugar em Blumenau no bairro Itoupavazinha;1900.0;2;2;86.0;1;casa;359;Itoupavazinha;17560;5358;12.0;Rua Botuvera;89066-360;;-26.850249;-49.105625;locação;portal_imoveis
+1045;Lote/Terreno à Venda em Blumenau no bairro Testo Salto;500000.0;0;0;1165.0;0;loteterreno;;Testo Salto;7065;2135;15.0;Rua Helmund Trapp;89074-180;;-26.8446197;-49.1536293;venda;portal_imoveis
+1051;Sobrado à Venda em Blumenau no bairro Água Verde;389000.0;2;2;78.24;2;sobrado;61;Agua Verde;16186;5526;5.0;Rua Antenor Zimmermann;89036-550;;-26.9127964;-49.1032715;venda;portal_imoveis
+1053;Apartamento para Alugar em Blumenau no bairro Água Verde;1800.0;2;2;80.0;1;apartamento;500;Agua Verde;16186;5526;5.0;Rua Dona Emma;89037-213;;-26.9094905;-49.1019116;locação;portal_imoveis
+1054;Apartamento para Alugar em Blumenau no bairro Água Verde;1600.0;2;2;50.0;1;apartamento;500;Agua Verde;16186;5526;5.0;Rua Dona Emma;89037-213;;-26.9094905;-49.1019116;locação;portal_imoveis
+1055;Casa para Alugar em Blumenau no bairro Escola Agrícola;2200.0;2;2;78.0;1;casa;676;Do Salto;4558;1445;2.0;Rua Jose Deeke;89031-400;;-26.8911422;-49.1015605;locação;portal_imoveis
+1061;Apartamento para Alugar em Blumenau no bairro Itoupava Norte;1780.0;2;1;55.0;1;apartamento;300;Itoupava Norte;15648;5258;5.0;Rua Soldado Mario Luiz Bertolini;89053-180;12.2;-26.8821532;-49.0724932;locação;portal_imoveis
+1062;Apartamento à Venda em Blumenau no bairro Victor Konder;600000.0;2;2;117.49;2;apartamento;45;Victor Konder;4612;1990;1.0;Rua Waldemar Medeiros;89012-520;;-26.9077761;-49.0785255;venda;portal_imoveis
+1063;Apartamento para Alugar em Blumenau no bairro Velha Central;2300.0;3;2;0.0;1;apartamento;;Velha Central;18779;6119;7.0;Rua Barao De Batovi;89045-410;;-26.9308636;-49.1268056;locação;portal_imoveis
+1064;Apartamento à Venda em Blumenau no bairro Itoupava Norte;239000.0;2;1;71.09;1;apartamento;564;Itoupava Norte;15648;5258;5.0;Rua Sao Bernardo;89052-100;13.25;-26.8884622;-49.0668409;venda;portal_imoveis
+1065;Apartamento para Alugar em Blumenau no bairro Garcia;4200.0;4;4;336.0;2;apartamento;77;Garcia;15911;5336;5.0;Rua Paulo Kellner;89022-030;17.35;-26.9457674;-49.0733918;locação;portal_imoveis
+1072;Apartamento para Alugar em Blumenau no bairro Victor Konder;1500.0;2;3;182.9;1;apartamento;165;Victor Konder;4612;1990;1.0;Rua Heinrich Hosang;89012-190;16.7;-26.9079728;-49.0757152;locação;portal_imoveis
+1073;Casa para Alugar em Blumenau no bairro Itoupavazinha;3300.0;2;1;200.0;1;casa;936;Itoupavazinha;17560;5358;12.0;Rua Luiz Maske;89066-650;;-26.8399033;-49.1205342;locação;portal_imoveis
+1074;Apartamento à Venda em Blumenau no bairro Velha Central;295000.0;2;1;71.52;1;apartamento;866;Velha Central;18779;6119;7.0;Rua Divinopolis;89040-400;;-26.9207073;-49.1221006;venda;portal_imoveis
+1075;Apartamento à Venda em Blumenau no bairro Vorstadt;569000.0;3;2;103.09;2;apartamento;95;Vorstadt;4269;1690;4.0;Rua Antonio Treis;89015-400;19.3;-26.9018778;-49.038204;venda;portal_imoveis
+1081;Casa para Alugar em Blumenau no bairro Garcia;2600.0;3;2;301.0;2;casa;4390;Garcia;15911;5336;5.0;Rua Amazonas;89022-006;18.4;-26.9613043;-49.0655583;locação;portal_imoveis
+1082;Apartamento para Alugar em Blumenau no bairro Itoupava Seca;1450.0;1;1;54.0;1;apartamento;42;Itoupava Seca;4464;1616;3.0;Rua Alfredo Gunther;89030-108;;-26.9076351;-49.0807835;locação;portal_imoveis
+1083;Apartamento para Alugar em Blumenau no bairro Velha Central;1950.0;2;1;56.0;1;apartamento;825;Velha Central;18779;6119;7.0;Rua Divinopolis;89040-400;;-26.9207073;-49.1221006;locação;portal_imoveis
+1084;Apartamento à Venda em Blumenau no bairro Velha Central;320000.0;2;2;90.0;2;apartamento;825;Velha Central;18779;6119;7.0;Rua Divinopolis;89040-400;;-26.9207073;-49.1221006;venda;portal_imoveis
+1085;Casa à Venda em Blumenau no bairro Água Verde;990000.0;6;5;313.0;4;casa;500;Agua Verde;16186;5526;5.0;Rua Dona Emma;89037-213;;-26.9094905;-49.1019116;venda;portal_imoveis
+1092;Casa para Alugar em Blumenau no bairro Passo Manso;2400.0;2;2;80.0;2;casa;35;Passo Manso;6799;2069;7.0;Rua Maria Hubertina Bornhofen;89032-459;;-26.9034707;-49.1558535;locação;portal_imoveis
+1102;Lote/Terreno à Venda em Blumenau no bairro Fidélis;295000.0;0;0;467.92;0;loteterreno;;Fidelis;5392;1597;9.0;Rua Theodoro Pasold;89060-060;;-26.8508268;-49.0558098;venda;portal_imoveis
+1104;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;165000.0;0;0;324.0;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+1105;Sobrado à Venda em Blumenau no bairro Escola Agrícola;490000.0;3;2;116.18;2;sobrado;;Escola Agricola;12145;3906;4.0;Rua Carlos Erbs;89037-830;;-26.8979446;-49.1050724;venda;portal_imoveis
+1110;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;9340000.0;0;0;11623.42;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+1111;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;2490000.0;0;0;3656.41;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Ricardo Georg;89069-100;;-26.7968587;-49.0994516;venda;portal_imoveis
+1112;Casa à Venda em Blumenau no bairro Salto Weissbach;490000.0;3;1;82.0;2;casa;152;Salto Weissbach;5213;1556;4.0;Rua Das Acacias;89032-130;;-26.8952382;-49.1288733;venda;portal_imoveis
+1129;Casa para Alugar em Blumenau no bairro Ponta Aguda;2250.0;2;1;150.0;2;casa;59;Ponta Aguda;9880;3233;7.0;Rua Belizario Vedes;89050-590;;-26.9013012;-49.0490064;locação;portal_imoveis
+1130;Casa para Alugar em Blumenau no bairro Itoupava Norte;3000.0;4;2;250.0;2;casa;220;Itoupava Norte;15648;5258;5.0;Rua Vereador Romario Da Conceicao Badia;89053-600;13.45;-26.8741891;-49.0869085;locação;portal_imoveis
+1132;Apartamento para Alugar em Blumenau no bairro Vila Nova;2100.0;2;2;125.0;2;apartamento;66;Vila Nova;9962;3884;2.0;Rua Teofilo Otoni;89035-650;;-26.902121;-49.0914091;locação;portal_imoveis
+1133;Sobrado à Venda em Blumenau no bairro Itoupavazinha;320000.0;2;2;120.0;1;sobrado;93;Itoupavazinha;17560;5358;12.0;Rua Otto Wetzstein;89066-480;;-26.849239;-49.1020229;venda;portal_imoveis
+1140;Apartamento para Alugar em Blumenau no bairro Itoupava Norte;1780.0;2;1;55.0;1;apartamento;300;Itoupava Norte;15648;5258;5.0;Rua Soldado Mario Luiz Bertolini;89053-180;12.2;-26.8821532;-49.0724932;locação;portal_imoveis
+1141;Casa para Alugar em Blumenau no bairro Itoupava Norte;2980.0;4;3;100.0;1;casa;55;Itoupava Norte;15648;5258;5.0;Rua Vinte E Cinco De Janeiro;89052-070;;-26.8903662;-49.0690388;locação;portal_imoveis
+1142;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;183000.0;0;0;324.0;0;loteterreno;;Itoupavazinha;17560;5358;12.0;Rua Calli;89066-740;;-26.856409;-49.1174422;venda;portal_imoveis
+1143;Sobrado à Venda em Blumenau no bairro Centro;399000.0;2;3;95.0;1;sobrado;542;Centro;5004;1622;2.0;Rua Nova Friburgo;89010-290;;-26.9175026;-49.077936;venda;portal_imoveis
+1149;Sobrado à Venda em Blumenau no bairro Centro;499000.0;2;3;95.0;1;sobrado;542;Centro;5004;1622;2.0;Rua Nova Friburgo;89010-290;;-26.9175026;-49.077936;venda;portal_imoveis
+1151;Apartamento à Venda em Blumenau no bairro Itoupava Central;209000.0;2;1;74.0;1;apartamento;1445;Itoupava Central;28164;8715;45.0;Rua Rudolfo Walter;89068-239;;-26.8087992;-49.1004954;venda;portal_imoveis
+1152;Apartamento para Alugar em Blumenau no bairro Itoupava Central;1500.0;2;1;65.0;1;apartamento;4691;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;locação;portal_imoveis
+1161;Apartamento à Venda em Blumenau no bairro Itoupava Central;205000.0;2;1;63.0;1;apartamento;400;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+1163;Apartamento à Venda em Blumenau no bairro Itoupava Central;750000.0;3;4;196.4;2;apartamento;4410;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+1164;Casa à Venda em Blumenau no bairro Salto do Norte;850000.0;3;3;250.0;2;casa;33;Salto Do Norte;8441;2779;7.0;Rua Lamartine Babo;89065-760;;-26.8683424;-49.1092971;venda;portal_imoveis
+1165;Lote/Terreno à Venda em Blumenau no bairro Vila Itoupava;230000.0;0;0;6051.0;0;loteterreno;650;Itoupava Central;28164;8715;45.0;Rua Carlos Bauer;89095-550;;-26.719235;-49.071368;venda;portal_imoveis
+1171;Casa à Venda em Blumenau no bairro Itoupava Seca;1500000.0;5;2;1179.0;5;casa;902;Itoupava Seca;4464;1616;3.0;Rua Coronel Feddersen;89030-400;17.3;-26.8902201;-49.0866196;venda;portal_imoveis
+1172;Apartamento à Venda em Blumenau no bairro Badenfurt;265000.0;2;1;78.96;1;apartamento;240;Badenfurt;8650;2753;12.0;Rua Arthur Kuhl;89070-240;;-26.8752438;-49.1238964;venda;portal_imoveis
+1173;Casa à Venda em Blumenau no bairro Itoupava Central;1490000.0;3;4;400.0;2;casa;2660;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+1174;Apartamento para Alugar em Blumenau no bairro Fortaleza;1500.0;2;1;91.73;2;apartamento;122;Fortaleza;13196;4212;5.0;Rua Max Scheidemantel;89055-260;12.05;-26.8856828;-49.0643841;locação;portal_imoveis
+1175;Casa à Venda em Blumenau no bairro Itoupava Norte;2400000.0;4;2;2000.0;4;casa;375;Itoupava Norte;15648;5258;5.0;Rua Augusto Sutter;89052-680;16.35;-26.8845075;-49.0839477;venda;portal_imoveis
+1177;Casa para Alugar em Blumenau no bairro Centro;4500.0;2;1;300.0;2;casa;52;Centro;5004;1622;2.0;Rua Guilherme Siebert;89012-413;;-26.9160523;-49.0762548;locação;portal_imoveis
+1178;Casa à Venda em Blumenau no bairro Itoupava Norte;1500000.0;3;4;325.0;2;casa;136;Itoupava Norte;15648;5258;5.0;Rua Olga Krutzsch;89053-073;15.0;-26.8785986;-49.0794927;venda;portal_imoveis
+1179;Casa à Venda em Blumenau no bairro Progresso;560000.0;3;2;822.26;1;casa;97;Progresso;15005;4852;7.0;Rua Germano Roeder;89026-250;;-26.9654392;-49.0763192;venda;portal_imoveis
+1181;Casa à Venda em Blumenau no bairro Itoupava Norte;950000.0;3;4;259.5;2;casa;21;Itoupava Norte;15648;5258;5.0;Rua Xaverio Eble;89053-460;;-26.8717243;-49.0778422;venda;portal_imoveis
+1187;Apartamento à Venda em Blumenau no bairro Vila Nova;380000.0;4;2;150.0;1;apartamento;163;Vila Nova;9962;3884;2.0;Rua Theodoro Holtrup;89035-300;13.35;-26.9097018;-49.0825406;venda;portal_imoveis
+1188;Casa à Venda em Blumenau no bairro Velha;650000.0;4;4;274.77;2;casa;137;Velha;15373;5470;6.0;Rua Bruno Hildebrand;89040-090;;-26.9210608;-49.1148786;venda;portal_imoveis
+1189;Lote/Terreno à Venda em Blumenau no bairro Vila Nova;2500000.0;0;0;1927.0;0;loteterreno;233;Vila Nova;9962;3884;2.0;Rua Theodoro Holtrup;89035-300;13.35;-26.9097018;-49.0825406;venda;portal_imoveis
+1190;Casa à Venda em Blumenau no bairro Itoupava Norte;1100000.0;5;3;431.85;3;casa;385;Itoupava Norte;15648;5258;5.0;Rua Ary Taborda Ribas;89053-520;;-26.8760919;-49.0823522;venda;portal_imoveis
+1197;Casa à Venda em Blumenau no bairro Vorstadt;1600000.0;3;5;372.5;4;casa;403;Vorstadt;4269;1690;4.0;Alameda Ralf Bruno Gross;89015-430;16.35;-26.8989653;-49.0420927;venda;portal_imoveis
+1198;Apartamento à Venda em Blumenau no bairro Itoupava Norte;720000.0;2;1;215.98;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1199;Apartamento à Venda em Blumenau no bairro Itoupava Norte;750000.0;3;1;140.47;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1200;Apartamento à Venda em Blumenau no bairro Itoupava Norte;750000.0;2;3;215.98;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1201;Apartamento à Venda em Blumenau no bairro Itoupava Norte;790000.0;3;1;140.47;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1206;Apartamento à Venda em Blumenau no bairro Itoupava Norte;750000.0;3;1;136.98;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1207;Apartamento à Venda em Blumenau no bairro Itoupava Norte;1210000.0;3;1;140.47;2;apartamento;;Itoupava Norte;15648;5258;5.0;Rua Sao Valentin;89053-330;13.6;-26.8735371;-49.0835406;venda;portal_imoveis
+1209;Lote/Terreno à Venda em Blumenau no bairro Escola Agrícola;1200000.0;0;0;2200.0;0;loteterreno;;Do Salto;4558;1445;2.0;Rua Jose Deeke;89031-400;;-26.8911422;-49.1015605;venda;portal_imoveis
+1210;Casa à Venda em Blumenau no bairro Itoupava Central;1319000.0;5;4;860.0;4;casa;542;Itoupava Central;28164;8715;45.0;Rua Norma Hadlich;89069-040;;-26.8066061;-49.0942941;venda;portal_imoveis
+1216;Lote/Terreno à Venda em Blumenau no bairro Vila Nova;500000.0;0;0;300.0;0;loteterreno;;Vila Nova;9962;3884;2.0;Rua Jose De Alencar;89035-430;11.4;-26.8984135;-49.0896278;venda;portal_imoveis
+1217;Casa à Venda em Blumenau no bairro Fortaleza;1400000.0;5;6;650.0;3;casa;141;Fortaleza;13196;4212;5.0;Rua Babilonia;89053-490;;-26.870607;-49.0763179;venda;portal_imoveis
+1218;Casa à Venda em Blumenau no bairro Itoupava Central;2200000.0;4;4;700.0;2;casa;389;Itoupava Central;28164;8715;45.0;Rua Flamboyant;89062-253;;-26.8286471;-49.0868367;venda;portal_imoveis
+1219;Apartamento para Alugar em Blumenau no bairro Itoupava Central;275000.0;2;1;64.0;1;apartamento;5747;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;locação;portal_imoveis
+1220;Casa à Venda em Blumenau no bairro Garcia;780000.0;4;2;276.76;2;casa;394;Garcia;15911;5336;5.0;Rua Engenheiro Odebrecht;89021-200;13.6;-26.9408836;-49.0584558;venda;portal_imoveis
+1226;Apartamento à Venda em Blumenau no bairro Itoupava Central;262000.0;2;1;99.0;1;apartamento;4500;Itoupava Central;28164;8715;45.0;Rua Gustavo Zimmermann;89063-003;18.3;-26.8036671;-49.0875859;venda;portal_imoveis
+1227;Casa à Venda em Blumenau no bairro Fortaleza;695000.0;2;3;453.75;3;casa;318;Fortaleza;13196;4212;5.0;Rua Miguel Servet;89056-300;16.2;-26.8754639;-49.0736358;venda;portal_imoveis
+1228;Casa à Venda em Blumenau no bairro Salto;750000.0;4;4;783.0;3;casa;185;Salto Do Norte;8441;2779;7.0;Rua Osni Jensen;89065-280;12.5;-26.8778205;-49.099843;venda;portal_imoveis
+1229;Apartamento à Venda em Blumenau no bairro Centro;600617.0;1;1;73.0;1;apartamento;148;Centro;5004;1622;2.0;Rua Namy Deeke;89010-130;13.95;-26.917538;-49.0677202;venda;portal_imoveis
+1230;Apartamento à Venda em Blumenau no bairro Centro;815650.0;1;2;88.56;1;apartamento;148;Centro;5004;1622;2.0;Rua Namy Deeke;89010-130;13.95;-26.917538;-49.0677202;venda;portal_imoveis
+1234;Casa à Venda em Blumenau no bairro Itoupava Norte;1100000.0;4;4;502.0;4;casa;264;Itoupava Norte;15648;5258;5.0;Rua Almirante Armin Zimmermann;89053-500;17.95;-26.8776068;-49.0849655;venda;portal_imoveis
+1235;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;290000.0;0;0;375.0;0;loteterreno;3065;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+1236;Sobrado à Venda em Blumenau no bairro Escola Agrícola;1425000.0;3;3;683.0;2;sobrado;181;Do Salto;4558;1445;2.0;Rua Roland Riediger;89031-031;;-26.8923183;-49.0936116;venda;portal_imoveis
+1238;Casa à Venda em Blumenau no bairro Ponta Aguda;880000.0;3;3;240.0;2;casa;09;Ponta Aguda;9880;3233;7.0;Rua Nestor Seara Heusi;89050-200;;-26.9078156;-49.047159;venda;portal_imoveis
+1244;Casa à Venda em Blumenau no bairro Testo Salto;790000.0;3;3;516.33;2;casa;78;Testo Salto;7065;2135;15.0;Rua Bruno Morell;89074-580;;-26.8570593;-49.1384688;venda;portal_imoveis
+1246;Casa à Venda em Blumenau no bairro Tribess;530000.0;3;1;107.0;2;casa;;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+1247;Casa à Venda em Blumenau no bairro Tribess;490000.0;3;1;103.0;2;casa;;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+1258;Casa à Venda em Blumenau no bairro Tribess;490000.0;3;1;103.0;2;casa;;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+1259;Casa à Venda em Blumenau no bairro Progresso;380000.0;3;2;455.0;2;casa;67;Progresso;15005;4852;7.0;Rua Erico Verissimo;89026-275;;-26.9685845;-49.0749231;venda;portal_imoveis
+1260;Casa à Venda em Blumenau no bairro Testo Salto;370000.0;2;1;68.74;1;casa;2691;Testo Salto;7065;2135;15.0;Rua Werner Duwe;89074-178;13.55;-26.8504419;-49.1519382;venda;portal_imoveis
+1261;Casa à Venda em Blumenau no bairro Itoupava Norte;280000.0;2;1;100.0;1;casa;88;Itoupava Norte;15648;5258;5.0;Rua Doutor Edgar Barreto;89053-540;;-26.8741176;-49.081574;venda;portal_imoveis
+1262;Casa à Venda em Blumenau no bairro Progresso;580000.0;3;2;960.0;2;casa;1284;Progresso;15005;4852;7.0;Rua Avelino Pering;89027-440;;-26.9852457;-49.0844607;venda;portal_imoveis
+1266;Casa à Venda em Blumenau no bairro Progresso;420000.0;3;2;825.0;2;casa;1274;Progresso;15005;4852;7.0;Rua Avelino Pering;89027-440;;-26.9852457;-49.0844607;venda;portal_imoveis
+1267;Apartamento à Venda em Blumenau no bairro Itoupavazinha;280000.0;3;1;96.0;1;apartamento;90;Itoupavazinha;17560;5358;12.0;Rua Jose Stein;89066-430;;-26.8530595;-49.1171885;venda;portal_imoveis
+1268;Apartamento à Venda em Blumenau no bairro Salto do Norte;255423.0;2;1;55.48;1;apartamento;832;Salto Do Norte;8441;2779;7.0;Rua Pomerode;89065-301;14.75;-26.8785312;-49.1012611;venda;portal_imoveis
+1269;Apartamento à Venda em Blumenau no bairro Salto do Norte;269718.0;2;2;63.79;1;apartamento;832;Salto Do Norte;8441;2779;7.0;Rua Pomerode;89065-301;14.75;-26.8785312;-49.1012611;venda;portal_imoveis
+1276;Apartamento à Venda em Blumenau no bairro Victor Konder;860000.0;3;4;230.0;3;apartamento;130;Victor Konder;4612;1990;1.0;Rua Victor Konder;89012-170;10.3;-26.9113888;-49.0755186;venda;portal_imoveis
+1278;Casa para Alugar em Blumenau no bairro Itoupava Norte;1200.0;2;1;60.0;0;casa;191;Itoupava Norte;15648;5258;5.0;Rua Vinte E Cinco De Novembro;89053-110;;-26.8777978;-49.0760725;locação;portal_imoveis
+1279;Casa à Venda em Blumenau no bairro Escola Agrícola;750000.0;3;3;168.22;2;casa;;Escola Agricola;12145;3906;4.0;Rua Francisco Da Cunha Silveira;89037-695;;-26.8944032;-49.0938482;venda;portal_imoveis
+1280;Apartamento à Venda em Blumenau no bairro Itoupava Seca;420000.0;2;2;102.0;1;apartamento;365;Itoupava Seca;4464;1616;3.0;Rua Teresopolis;89030-110;14.75;-26.904098;-49.0807824;venda;portal_imoveis
+1286;Lote/Terreno para Alugar em Blumenau no bairro Fortaleza;1500.0;0;0;311.5;0;loteterreno;;Tribess;8503;2691;3.0;Rua Francisco Vahldieck;89057-700;18.35;-26.8835204;-49.0721619;locação;portal_imoveis
+1287;Casa à Venda em Blumenau no bairro Tribess;650000.0;3;3;407.0;3;casa;440;Tribess;8503;2691;3.0;Rua Robert Koch;89055-580;;-26.8786037;-49.0551769;venda;portal_imoveis
+1288;Casa à Venda em Blumenau no bairro Garcia;800000.0;2;3;145.0;3;casa;;Garcia;15911;5336;5.0;Rua Araxa;89020-330;10.6;-26.9298493;-49.0535121;venda;portal_imoveis
+1289;Casa para Alugar em Blumenau no bairro Ponta Aguda;8000.0;5;7;422.0;4;casa;149;Ponta Aguda;9880;3233;7.0;Rua Assuncao;89050-120;;-26.9138736;-49.0611724;locação;portal_imoveis
+1323;Lote/Terreno à Venda em Blumenau no bairro Vorstadt;1000000.0;0;0;53000.0;0;loteterreno;;Vorstadt;4269;1690;4.0;Rua Juazeiro;89015-535;;-26.9072525;-49.0361775;venda;portal_imoveis
+1324;Lote/Terreno à Venda em Blumenau no bairro Badenfurt;1200000.0;0;0;2500.0;0;loteterreno;485;Badenfurt;8650;2753;12.0;Rua Bernardino Jose De Oliveira;89070-270;13.5;-26.8839224;-49.1332086;venda;portal_imoveis
+1325;Casa à Venda em Blumenau no bairro Garcia;1650000.0;4;3;1798.56;3;casa;111;Garcia;15911;5336;5.0;Rua Maravilha;89020-120;12.75;-26.9293995;-49.0579974;venda;portal_imoveis
+1326;Casa à Venda em Blumenau no bairro Velha;695000.0;4;2;813.26;2;casa;452;Velha;15373;5470;6.0;Rua Luiz Bittelbrunn;89040-080;;-26.9207813;-49.1143257;venda;portal_imoveis
+1327;Casa para Alugar em Blumenau no bairro Passo Manso;2000.0;3;2;600.0;1;casa;915;Passo Manso;6799;2069;7.0;Rua Arthur Mantau;89032-310;;-26.899334;-49.1391033;locação;portal_imoveis
+1333;Casa à Venda em Blumenau no bairro Escola Agrícola;899000.0;4;6;442.13;2;casa;224;Escola Agricola;12145;3906;4.0;Rua Luiz Altemburg Senior;89031-300;;-26.8894568;-49.09968;venda;portal_imoveis
+1334;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;940000.0;0;0;5903.88;0;loteterreno;1051;Itoupava Central;28164;8715;45.0;Rua Erich Meyer;89069-300;;-26.7843627;-49.0943118;venda;portal_imoveis
+1335;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;360000.0;0;0;459.0;0;loteterreno;;Fortaleza;13196;4212;5.0;Rua Babilonia;89053-490;;-26.870607;-49.0763179;venda;portal_imoveis
+1336;Casa à Venda em Blumenau no bairro Salto do Norte;650000.0;3;3;482.5;5;casa;587;Salto Do Norte;8441;2779;7.0;Rua Trinta De Agosto;89065-210;;-26.8747273;-49.0932393;venda;portal_imoveis
+1337;Casa à Venda em Blumenau no bairro Água Verde;900000.0;6;5;449.0;4;casa;162;Agua Verde;16186;5526;5.0;Rua Hermann Spernau;89037-506;;-26.9073283;-49.0978223;venda;portal_imoveis
+1343;Casa para Alugar em Blumenau no bairro Garcia;7000.0;4;2;307.0;3;casa;98;Garcia;15911;5336;5.0;Rua Mancio Costa;89020-030;10.3;-26.9284339;-49.0580864;locação;portal_imoveis
+1345;Casa para Alugar em Blumenau no bairro Itoupava Norte;5800.0;8;3;390.0;2;casa;55;Itoupava Norte;15648;5258;5.0;Rua Vinte E Cinco De Janeiro;89052-070;;-26.8903662;-49.0690388;locação;portal_imoveis
+1346;Casa à Venda em Blumenau no bairro Fortaleza;530000.0;3;3;450.0;3;casa;98;Fortaleza;13196;4212;5.0;Rua Conde De Araruana;89057-233;;-26.8644397;-49.0620369;venda;portal_imoveis
+1347;Casa à Venda em Blumenau no bairro Velha Central;735000.0;3;3;185.47;2;casa;35;Velha Central;18779;6119;7.0;Rua Wally Vogelbacher;89045-460;;-26.9335275;-49.1253947;venda;portal_imoveis
+1353;Casa à Venda em Blumenau no bairro Ribeirão Fresco;580000.0;10;10;603.5;0;casa;659;Ribeirao Fresco;1587;513;1.0;Rua Pastor Oswald Hesse;89015-100;;-26.9279792;-49.0390287;venda;portal_imoveis
+1357;Sobrado à Venda em Blumenau no bairro Garcia;800000.0;2;3;145.15;3;sobrado;;Garcia;15911;5336;5.0;Rua Araxa;89020-330;10.6;-26.9298493;-49.0535121;venda;portal_imoveis
+1364;Lote/Terreno à Venda em Blumenau no bairro Salto Weissbach;350000.0;0;0;674.62;0;loteterreno;;Salto Weissbach;5213;1556;4.0;Rua Guilherme Probst;89032-250;;-26.9045483;-49.1358349;venda;portal_imoveis
+1365;Lote/Terreno à Venda em Blumenau no bairro Salto Weissbach;350000.0;0;0;614.51;0;loteterreno;;Salto Weissbach;5213;1556;4.0;Rua Guilherme Probst;89032-250;;-26.9045483;-49.1358349;venda;portal_imoveis
+1366;Casa à Venda em Blumenau no bairro Itoupava Norte;860000.0;3;5;240.0;3;casa;20;Itoupava Norte;15648;5258;5.0;Rua Pedro Pereira;89053-516;;-26.8776068;-49.0849655;venda;portal_imoveis
+1367;Apartamento à Venda em Blumenau no bairro Água Verde;450000.0;2;3;177.55;2;apartamento;142;Agua Verde;16186;5526;5.0;Rua Tenente Silvio Delmar Hollenbach;89036-655;;-26.9145072;-49.1005226;venda;portal_imoveis
+1373;Lote/Terreno à Venda em Blumenau no bairro Itoupava Norte;350000.0;0;0;599.43;0;loteterreno;112;Itoupava Norte;15648;5258;5.0;Rua Berlim;89052-630;;-26.8842776;-49.0791035;venda;portal_imoveis
+1374;Apartamento à Venda em Blumenau no bairro Garcia;310000.0;2;2;79.7;1;apartamento;240;Garcia;15911;5336;5.0;Rua Ararangua;89020-302;14.05;-26.938174;-49.0538273;venda;portal_imoveis
+1375;Apartamento à Venda em Blumenau no bairro Victor Konder;795000.0;3;1;189.72;2;apartamento;283;Victor Konder;4612;1990;1.0;Rua Timbo;89012-180;11.4;-26.9092948;-49.0756817;venda;portal_imoveis
+1376;Casa à Venda em Blumenau no bairro Itoupava Norte;650000.0;3;2;610.0;2;casa;47;Itoupava Norte;15648;5258;5.0;Rua Vereador Romario Da Conceicao Badia;89053-600;13.45;-26.8741891;-49.0869085;venda;portal_imoveis
+1377;Apartamento à Venda em Blumenau no bairro Centro;510000.0;3;2;212.94;2;apartamento;44;Centro;5004;1622;2.0;Rua Sao Joaquim;89012-420;12.55;-26.9123984;-49.0758331;venda;portal_imoveis
+1382;Apartamento para Alugar em Blumenau no bairro Itoupava Norte;1500.0;2;1;58.3;1;apartamento;66;Itoupava Norte;15648;5258;5.0;Rua Sao Roque;89053-630;10.95;-26.8726573;-49.0870339;locação;portal_imoveis
+1384;Casa à Venda em Blumenau no bairro Escola Agrícola;510000.0;2;2;124.0;2;casa;19;Escola Agricola;12145;3906;4.0;Rua Ernesto Rhenius;89031-572;;-26.8898958;-49.1091898;venda;portal_imoveis
+1385;Sobrado à Venda em Blumenau no bairro Boa Vista;340000.0;2;2;99.0;1;sobrado;125;Boa Vista;1748;589;1.0;Rua Guido Kaestner Senior;89012-360;13.8;-26.8999524;-49.0642471;venda;portal_imoveis
+1386;Apartamento à Venda em Blumenau no bairro Escola Agrícola;341768.0;2;1;80.0;1;apartamento;474;Escola Agricola;12145;3906;4.0;Rua Norberto Seara Heusi;89037-800;;-26.8920906;-49.0985074;venda;portal_imoveis
+1390;Casa à Venda em Blumenau no bairro Passo Manso;3900000.0;4;7;8322.82;6;casa;128;Passo Manso;6799;2069;7.0;Rua Oswald Heinrich Kluge;89032-440;;-26.9055053;-49.1493956;venda;portal_imoveis
+1392;Casa para Alugar em Blumenau no bairro Itoupavazinha;10000.0;2;1;357.7;0;casa;3587;Itoupavazinha;17560;5358;12.0;Rua Frederico Jensen;89066-510;15.05;-26.8605872;-49.0990946;locação;portal_imoveis
+1399;Lote/Terreno à Venda em Blumenau no bairro Testo Salto;149000.0;0;0;700.17;0;loteterreno;28;Testo Salto;7065;2135;15.0;Rua Mina Nova;89074-350;;-26.8611092;-49.1415386;venda;portal_imoveis
+1400;Apartamento para Alugar em Blumenau no bairro Victor Konder;2400.0;2;2;92.78;2;apartamento;113;Victor Konder;4612;1990;1.0;Rua Max Hering;89012-510;13.85;-26.9073376;-49.0785149;locação;portal_imoveis
+1401;Casa à Venda em Blumenau no bairro Itoupava Central;750000.0;3;4;434.63;2;casa;364;Itoupava Central;28164;8715;45.0;Rua Norma Hadlich;89069-040;;-26.8066061;-49.0942941;venda;portal_imoveis
+1422;Apartamento à Venda em Blumenau no bairro Vila Nova;542563.0;2;2;85.4;1;apartamento;54;Escola Agricola;12145;3906;4.0;Rua Sao Manoel;89037-625;;-26.9035809;-49.0971173;venda;portal_imoveis
+1428;Apartamento à Venda em Blumenau no bairro Salto do Norte;265000.0;2;2;71.59;1;apartamento;480;Salto Do Norte;8441;2779;7.0;Rua Max Maul;89065-640;17.65;-26.8632931;-49.1159143;venda;portal_imoveis
+1429;Sobrado à Venda em Blumenau no bairro Tribess;998000.0;3;4;194.9;2;sobrado;65;Tribess;8503;2691;3.0;Rua Mario Marcelo Werplotz;89057-272;;-26.8673565;-49.0516218;venda;portal_imoveis
+1430;Sobrado à Venda em Blumenau no bairro Tribess;830000.0;3;4;144.26;2;sobrado;11;Tribess;8503;2691;3.0;Rua Evelina Dos Santos Iaginski;89057-275;;-26.8678233;-49.0510565;venda;portal_imoveis
+1437;Casa à Venda em Blumenau no bairro Água Verde;600000.0;3;2;576.0;3;casa;132;Agua Verde;16186;5526;5.0;Rua Waldir Medeiros;89042-340;;-26.914426;-49.1367485;venda;portal_imoveis
+1438;Apartamento para Alugar em Blumenau no bairro Passo Manso;1500.0;2;1;91.57;1;apartamento;1845;Passo Manso;6799;2069;7.0;Rua Bernardo Reiter;89046-200;;-26.9278486;-49.1432775;locação;portal_imoveis
+1440;Lote/Terreno à Venda em Blumenau no bairro Garcia;450000.0;0;0;540.0;0;loteterreno;;Garcia;15911;5336;5.0;Rua Prefeito Frederico Busch Junior;89020-400;13.1;-26.9288714;-49.0563345;venda;portal_imoveis
+1441;Casa à Venda em Blumenau no bairro Testo Salto;370000.0;2;2;68.74;1;casa;2975;Testo Salto;7065;2135;15.0;Rua Werner Duwe;89074-178;13.55;-26.8504419;-49.1519382;venda;portal_imoveis
+1447;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;350000.0;0;0;375.0;0;loteterreno;3065;Ponta Aguda;9880;3233;7.0;Rua Silvano Candido Da Silva Senior;89050-280;;-26.9004052;-49.0464149;venda;portal_imoveis
+1448;Casa à Venda em Blumenau no bairro Testo Salto;370000.0;2;2;160.0;1;casa;2975;Testo Salto;7065;2135;15.0;Rua Werner Duwe;89074-178;13.55;-26.8504419;-49.1519382;venda;portal_imoveis
+1449;Casa à Venda em Blumenau no bairro Vila Nova;3100000.0;4;3;1440.0;4;casa;162;Vila Nova;9962;3884;2.0;Rua Joao Gomes Da Nobrega;89035-450;12.8;-26.8986994;-49.0885241;venda;portal_imoveis
+9473;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;850000.0;0;0;8360.0;0;loteterreno;00;Ponta Aguda;9880;3233;7.0;Rua Rudolfo Augusto Kucker;89050-070;15.05;-26.9132753;-49.0659486;venda;portal_imoveis
+9474;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;299000.0;0;0;397.0;0;loteterreno;835;Itoupavazinha;17560;5358;12.0;Rua Guilherme Scharf;89066-032;11.8;-26.8510262;-49.0871018;venda;portal_imoveis
+9539;Apartamento à Venda em Blumenau no bairro Garcia;390000.0;3;2;124.17;2;apartamento;4040;Garcia;15911;5336;5.0;Rua Amazonas;89022-006;18.4;-26.9613043;-49.0655583;venda;portal_imoveis
+9540;Casa à Venda em Blumenau no bairro Itoupava Central;1800000.0;3;4;332.0;2;casa;219;Itoupava Central;28164;8715;45.0;Rua Flamboyant;89062-253;;-26.8286471;-49.0868367;venda;portal_imoveis
+9542;Apartamento à Venda em Blumenau no bairro Itoupavazinha;219000.0;2;1;55.0;1;apartamento;;Itoupavazinha;17560;5358;12.0;Rua Henrique Mette;89066-500;;-26.8589924;-49.1246485;venda;portal_imoveis
+9573;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;2800000.0;0;0;43000.0;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Tereza Fischer;89062-080;17.65;-26.8423599;-49.082931;venda;portal_imoveis
+9574;Apartamento à Venda em Blumenau no bairro Centro;332019.0;1;1;34.54;1;apartamento;148;Centro;5004;1622;2.0;Rua Namy Deeke;89010-130;13.95;-26.917538;-49.0677202;venda;portal_imoveis
+9575;Casa à Venda em Blumenau no bairro Itoupava Central;2250000.0;4;4;300.0;2;casa;9669;Itoupava Central;28164;8715;45.0;Rua Doutor Pedro Zimmermann;89095-000;;-26.7674501;-49.0800116;venda;portal_imoveis
+9576;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;350000.0;0;0;527.0;0;loteterreno;;Fortaleza;13196;4212;5.0;Rua Vereador Agnelo Paulo Lanser;89056-455;;-26.8700633;-49.0727878;venda;portal_imoveis
+9577;Casa à Venda em Blumenau no bairro Itoupava Central;1800000.0;3;4;544.0;2;casa;801;Itoupava Central;28164;8715;45.0;Rua Carlos Roesel;89069-250;;-26.7897377;-49.093272;venda;portal_imoveis
+9578;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;194500.0;0;0;336.0;0;loteterreno;500;Fortaleza;13196;4212;5.0;Rua Vereador Agnelo Paulo Lanser;89056-455;;-26.8700633;-49.0727878;venda;portal_imoveis
+9579;Sobrado à Venda em Blumenau no bairro Salto do Norte;640000.0;3;4;180.0;2;sobrado;188;Salto Do Norte;8441;2779;7.0;Rua Hermann Knasel;89065-235;;-26.8730188;-49.0919003;venda;portal_imoveis
+9580;Sobrado à Venda em Blumenau no bairro Passo Manso;480000.0;2;3;120.0;2;sobrado;20;Passo Manso;6799;2069;7.0;Rua Adele Jansen;89032-301;;-26.91153;-49.1469178;venda;portal_imoveis
+9581;Casa à Venda em Blumenau no bairro Itoupava Central;700000.0;3;2;152.0;3;casa;449;Itoupava Central;28164;8715;45.0;Rua Ricardo Belz;89069-140;;-26.7922569;-49.1014905;venda;portal_imoveis
+9582;Lote/Terreno à Venda em Blumenau no bairro Garcia;120000.0;0;0;922.2;0;loteterreno;;Garcia;15911;5336;5.0;Rua Christiano Theiss;89020-410;10.8;-26.9293031;-49.0561492;venda;portal_imoveis
+9583;Apartamento à Venda em Blumenau no bairro Garcia;431000.0;2;2;81.5;1;apartamento;123;Garcia;15911;5336;5.0;Rua Lydia Zwicker;89021-190;17.15;-26.9438557;-49.0669679;venda;portal_imoveis
+9584;Apartamento à Venda em Blumenau no bairro Velha;406000.0;2;2;97.0;1;apartamento;128;Agua Verde;16186;5526;5.0;Rua Doutor Antonio Haffner;89036-640;;-26.9142369;-49.0998745;venda;portal_imoveis
+9586;Apartamento à Venda em Blumenau no bairro Vila Nova;608100.0;3;3;115.1;2;apartamento;96;Vila Nova;9962;3884;2.0;Rua Afonso Pena;89035-280;;-26.9043414;-49.0878844;venda;portal_imoveis
+9588;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;4200000.0;0;0;30000.0;0;loteterreno;;Agua Verde;16186;5526;5.0;Rua Novo Hamburgo;89037-140;;-26.9119375;-49.0949695;venda;portal_imoveis
+9590;Apartamento à Venda em Blumenau no bairro Vila Nova;1317100.0;3;3;115.1;2;apartamento;96;Vila Nova;9962;3884;2.0;Rua Afonso Pena;89035-280;;-26.9043414;-49.0878844;venda;portal_imoveis
+9591;Casa à Venda em Blumenau no bairro Itoupava Central;700000.0;3;3;331.04;4;casa;490;Itoupava Central;28164;8715;45.0;Rua Frederico Voelz;89068-210;16.4;-26.8136448;-49.0921571;venda;portal_imoveis
+9592;Apartamento à Venda em Blumenau no bairro Itoupava Seca;500000.0;2;2;102.0;1;apartamento;365;Itoupava Seca;4464;1616;3.0;Rua Teresopolis;89030-110;14.75;-26.904098;-49.0807824;venda;portal_imoveis
+9593;Apartamento à Venda em Blumenau no bairro Água Verde;455000.0;3;2;133.34;1;apartamento;1300;Agua Verde;16186;5526;5.0;Rua Frei Estanislau Schaette;89037-256;19.25;-26.9123839;-49.1120379;venda;portal_imoveis
+9594;Casa à Venda em Blumenau no bairro Testo Salto;350000.0;2;2;160.0;1;casa;2975;Testo Salto;7065;2135;15.0;Rua Werner Duwe;89074-178;13.55;-26.8504419;-49.1519382;venda;portal_imoveis
+9606;Lote/Terreno à Venda em Blumenau no bairro Ribeirão Fresco;215000.0;0;0;399.0;0;loteterreno;;Ribeirao Fresco;1587;513;1.0;Rua Alwin Schrader;89015-125;13.3;-26.9255483;-49.0511884;venda;portal_imoveis
+9607;Casa à Venda em Blumenau no bairro Fortaleza;495000.0;3;1;324.62;2;casa;331;Fortaleza;13196;4212;5.0;Rua Manoel Pinheiro Da Silva Neto;89057-120;;-26.8689048;-49.0580011;venda;portal_imoveis
+9608;Apartamento à Venda em Blumenau no bairro Velha;700000.0;3;4;238.0;3;apartamento;361;Velha;15373;5470;6.0;Rua Gustavo Budag;89036-501;17.6;-26.918693;-49.0942472;venda;portal_imoveis
+9609;Lote/Terreno à Venda em Blumenau no bairro Água Verde;880000.0;0;0;881.46;0;loteterreno;;Agua Verde;16186;5526;5.0;Rua Agua Branca;89041-700;;-26.9085947;-49.1217144;venda;portal_imoveis
+9610;Casa à Venda em Blumenau no bairro Tribess;1000000.0;7;4;1027.46;0;casa;1026;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+9611;Casa à Venda em Blumenau no bairro Tribess;880000.0;5;3;460.0;2;casa;128;Tribess;8503;2691;3.0;Rua Hermann Tribess;89055-400;;-26.8764169;-49.0587461;venda;portal_imoveis
+9612;Apartamento à Venda em Blumenau no bairro Velha Central;300000.0;2;1;70.0;1;apartamento;799;Velha Central;18779;6119;7.0;Rua Jose Reuter;89046-000;;-26.933882;-49.1307406;venda;portal_imoveis
+9613;Apartamento à Venda em Blumenau no bairro Fortaleza;340000.0;2;2;73.97;2;apartamento;41;Fortaleza;13196;4212;5.0;Rua Quadrangular;89056-045;10.4;-26.8791836;-49.067916;venda;portal_imoveis
+9614;Lote/Terreno à Venda em Blumenau no bairro Itoupava Central;940000.0;1;0;5903.88;0;loteterreno;1051;Itoupava Central;28164;8715;45.0;Rua Erich Meyer;89069-300;;-26.7843627;-49.0943118;venda;portal_imoveis
+9615;Apartamento à Venda em Blumenau no bairro Vila Nova;1430000.0;4;6;220.0;3;apartamento;64;Vila Nova;9962;3884;2.0;Rua Afonso Pena;89035-280;;-26.9043414;-49.0878844;venda;portal_imoveis
+9617;Apartamento à Venda em Blumenau no bairro Centro;270000.0;1;1;46.27;0;apartamento;2014;Centro;5004;1622;2.0;Rua Sete De Setembro;89010-200;;-26.9130355;-49.0790176;venda;portal_imoveis
+9618;Lote/Terreno à Venda em Blumenau no bairro Vila Itoupava;750000.0;0;0;21550.0;0;loteterreno;;Itoupava Central;28164;8715;45.0;Rua Friedrich Bieging;89095-140;;-26.7383975;-49.062569;venda;portal_imoveis
+9619;Apartamento à Venda em Blumenau no bairro Vila Nova;450000.0;2;3;113.05;2;apartamento;66;Vila Nova;9962;3884;2.0;Rua Teofilo Otoni;89035-650;;-26.902121;-49.0914091;venda;portal_imoveis
+9622;Lote/Terreno à Venda em Blumenau no bairro Centro;1100000.0;0;1;1375.0;0;loteterreno;372;Centro;5004;1622;2.0;Rua Sao Jose;89010-220;14.0;-26.9169992;-49.072585;venda;portal_imoveis
+9639;Casa para Alugar em Blumenau no bairro Garcia;12900.0;4;2;1300.0;20;casa;108;Garcia;15911;5336;5.0;Rua Engenheiro Odebrecht;89021-200;13.6;-26.9408836;-49.0584558;locação;portal_imoveis
+9640;Lote/Terreno à Venda em Blumenau no bairro Velha Central;1450000.0;0;0;13116.34;0;loteterreno;;Passo Manso;6799;2069;7.0;Rua Bernardo Reiter;89046-200;;-26.9278486;-49.1432775;venda;portal_imoveis
+9641;Apartamento à Venda em Blumenau no bairro Água Verde;296000.0;2;1;89.96;1;apartamento;111;Agua Verde;16186;5526;5.0;Rua Guabiruba;89040-465;;-26.9143672;-49.1272598;venda;portal_imoveis
+9642;Lote/Terreno à Venda em Blumenau no bairro Ponta Aguda;667926.0;0;0;513.0;0;loteterreno;1983;Ponta Aguda;9880;3233;7.0;Rua Republica Argentina;89050-213;15.75;-26.9064258;-49.0448293;venda;portal_imoveis
+9643;Apartamento à Venda em Blumenau no bairro Escola Agrícola;316837.0;2;2;82.0;1;apartamento;474;Escola Agricola;12145;3906;4.0;Rua Norberto Seara Heusi;89037-800;;-26.8920906;-49.0985074;venda;portal_imoveis
+9645;Casa para Alugar em Blumenau no bairro Vila Nova;4995.0;3;2;240.0;3;casa;71;Vila Nova;9962;3884;2.0;Rua Casemiro De Abreu;89035-600;14.1;-26.9016572;-49.0904408;locação;portal_imoveis
+9646;Casa para Alugar em Blumenau no bairro Itoupava Norte;2500.0;3;1;100.0;1;casa;100;Itoupava Norte;15648;5258;5.0;Rua Roseli Schoenau;89053-075;;-26.8779871;-49.0798036;locação;portal_imoveis
+9647;Lote/Terreno à Venda em Blumenau no bairro Salto do Norte;2300000.0;0;0;6928.8;10;loteterreno;1437;Salto Do Norte;8441;2779;7.0;Rua Pomerode;89065-301;14.75;-26.8785312;-49.1012611;venda;portal_imoveis
+9672;Casa à Venda em Blumenau no bairro Testo Salto;449900.0;3;2;585.38;2;casa;440;Testo Salto;7065;2135;15.0;Rua Rudolfo Kienen;89074-410;;-26.8510996;-49.1463182;venda;portal_imoveis
+9674;Lote/Terreno à Venda em Blumenau no bairro Escola Agrícola;5489000.0;0;0;4075.0;0;loteterreno;85;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;venda;portal_imoveis
+9675;Apartamento à Venda em Blumenau no bairro Itoupava Seca;259000.0;1;1;66.86;1;apartamento;150;Itoupava Seca;4464;1616;3.0;Rua Teresopolis;89030-110;14.75;-26.904098;-49.0807824;venda;portal_imoveis
+9676;Lote/Terreno à Venda em Blumenau no bairro Vila Nova;930000.0;0;0;539.0;1;loteterreno;2419;Vila Nova;9962;3884;2.0;Rua Benjamin Constant;89037-502;12.1;-26.8948773;-49.0987164;venda;portal_imoveis
+9678;Lote/Terreno à Venda em Blumenau no bairro Itoupavazinha;245000.0;0;0;303.0;0;loteterreno;;Itoupavazinha;17560;5358;12.0;Rua Francisca Krenkel;89070-535;;-26.8604559;-49.1219664;venda;portal_imoveis
+9704;Lote/Terreno à Venda em Blumenau no bairro Velha;599000.0;0;0;330.0;0;loteterreno;;Velha;15373;5470;6.0;Rua Jaragua;89036-400;15.4;-26.9175762;-49.0917647;venda;portal_imoveis
+9705;Lote/Terreno à Venda em Blumenau no bairro Testo Salto;270000.0;0;0;398.44;0;loteterreno;440;Testo Salto;7065;2135;15.0;Rua Rudolfo Kienen;89074-410;;-26.8510996;-49.1463182;venda;portal_imoveis
+9706;Lote/Terreno para Alugar em Blumenau no bairro Escola Agrícola;2500.0;0;0;400.0;0;loteterreno;57;Escola Agricola;12145;3906;4.0;Rua Ernesto Jensem;89031-245;;-27.2998051;-49.628929;locação;portal_imoveis
+9707;Apartamento à Venda em Blumenau no bairro Vila Nova;528061.0;2;1;85.4;1;apartamento;54;Escola Agricola;12145;3906;4.0;Rua Sao Manoel;89037-625;;-26.9035809;-49.0971173;venda;portal_imoveis
+9708;Casa para Alugar em Blumenau no bairro Vorstadt;5800.0;4;2;169.44;2;casa;1715;Vorstadt;4269;1690;4.0;Rua Itajai;89015-208;17.3;-26.9116961;-49.0469884;locação;portal_imoveis
+9709;Lote/Terreno para Alugar em Blumenau no bairro Vila Nova;10000.0;0;0;800.0;0;loteterreno;128;Vila Nova;9962;3884;2.0;Rua Joinville;89035-200;13.6;-26.9085016;-49.0822647;locação;portal_imoveis
+9710;Lote/Terreno para Alugar em Blumenau no bairro Vila Nova;6000.0;0;0;540.0;0;loteterreno;16;Vila Nova;9962;3884;2.0;Rua Nilo Pecanha;89035-260;;-26.9046336;-49.087186;locação;portal_imoveis
+9737;Casa à Venda em Blumenau no bairro Badenfurt;1200000.0;3;2;7015.0;2;casa;1725;Badenfurt;8650;2753;12.0;Rua Heinrich Hemmer;89070-272;18.95;-26.8820467;-49.1224641;venda;portal_imoveis
+9738;Casa à Venda em Blumenau no bairro Vorstadt;790000.0;3;4;193.47;4;casa;23;Vorstadt;4269;1690;4.0;Rua Humaita;89015-280;;-26.9132525;-49.0480271;venda;portal_imoveis
+9740;Apartamento à Venda em Blumenau no bairro Velha;267000.0;1;1;39.0;1;apartamento;64;Velha;15373;5470;6.0;Rua Araras;89036-452;;-26.9238492;-49.0917702;venda;portal_imoveis
+9741;Lote/Terreno à Venda em Blumenau no bairro Itoupava Norte;555000.0;0;0;480.0;0;loteterreno;;Itoupava Norte;15648;5258;5.0;Rua Otto Mordhorst;89053-610;11.45;-26.8734257;-49.0849878;venda;portal_imoveis
+9770;Apartamento para Alugar em Blumenau no bairro Velha Central;1300.0;2;1;60.0;0;apartamento;177;Velha Central;18779;6119;7.0;Rua Hermann Barthel;89046-560;;-26.9316332;-49.1478673;locação;portal_imoveis
+9771;Apartamento à Venda em Blumenau no bairro Escola Agrícola;300000.0;3;1;90.0;1;apartamento;207;Escola Agricola;12145;3906;4.0;Rua Doutor Paulo Aldinger;89037-690;;-26.8922135;-49.0983306;venda;portal_imoveis
+9772;Casa para Alugar em Blumenau no bairro Badenfurt;3500.0;3;3;377.0;2;casa;50;Badenfurt;8650;2753;12.0;Rua Selma Becker;89070-351;;-26.8838878;-49.1349692;locação;portal_imoveis
+9773;Casa para Alugar em Blumenau no bairro Itoupava Central;2200.0;2;2;120.0;2;casa;11949;Itoupava Central;28164;8715;45.0;Rua Doutor Pedro Zimmermann;89095-000;;-26.7674501;-49.0800116;locação;portal_imoveis
+9775;Apartamento à Venda em Blumenau no bairro Água Verde;250000.0;3;2;102.53;1;apartamento;269;Agua Verde;16186;5526;5.0;Rua Trombudo Central;89041-480;;-26.9135665;-49.1164143;venda;portal_imoveis
+9776;Apartamento para Alugar em Blumenau no bairro Centro;2000.0;2;1;74.0;1;apartamento;63;Velha;15373;5470;6.0;Rua Rio Do Sul;89036-020;13.3;-27.0402804;-49.3963133;locação;portal_imoveis
+9777;Apartamento à Venda em Blumenau no bairro Itoupava Seca;879000.0;3;2;143.0;2;apartamento;255;Itoupava Seca;4464;1616;3.0;Rua Iguape;89030-112;14.25;-26.9052032;-49.0809125;venda;portal_imoveis
+9804;Sobrado à Venda em Blumenau no bairro Ponta Aguda;730000.0;3;4;150.0;2;sobrado;;Ponta Aguda;9880;3233;7.0;Rua Edmundo Da Silva Pozes;89050-205;;-26.9071351;-49.0467399;venda;portal_imoveis
+9805;Sobrado à Venda em Blumenau no bairro Ponta Aguda;745000.0;3;4;156.0;2;sobrado;;Ponta Aguda;9880;3233;7.0;Rua Edmundo Da Silva Pozes;89050-205;;-26.9071351;-49.0467399;venda;portal_imoveis
+9807;Casa à Venda em Blumenau no bairro Velha Central;380000.0;3;2;300.0;3;casa;298;Velha Central;18779;6119;7.0;Rua Grecia;89046-633;;-26.9402675;-49.1523091;venda;portal_imoveis
+9836;Casa à Venda em Blumenau no bairro Água Verde;690000.0;3;2;796.8;2;casa;50;Agua Verde;16186;5526;5.0;Rua Joaquina Soares;89041-540;;-26.9104445;-49.1191786;venda;portal_imoveis
+9838;Apartamento à Venda em Blumenau no bairro Bom Retiro;2650000.0;3;5;490.0;3;apartamento;93;Bom Retiro;1117;407;1.0;Rua Hermann Hering;89010-600;;-26.9259164;-49.0683484;venda;portal_imoveis
+9839;Lote/Terreno à Venda em Blumenau no bairro Fortaleza;285000.0;0;0;387.31;0;loteterreno;89;Fortaleza;13196;4212;5.0;Rua Artur Correa;89056-164;;-26.8724037;-49.0740274;venda;portal_imoveis
+9840;Casa para Alugar em Blumenau no bairro Ribeirão Fresco;1150.0;2;1;75.0;1;casa;659;Ribeirao Fresco;1587;513;1.0;Rua Pastor Oswald Hesse;89015-100;;-26.9279792;-49.0390287;locação;portal_imoveis
+9841;Casa para Alugar em Blumenau no bairro Itoupava Central;2700.0;2;2;508.0;2;casa;370;Itoupava Central;28164;8715;45.0;Rua Carlos Zuelow;89069-090;;-26.8053166;-49.0888479;locação;portal_imoveis
+9842;Lote/Terreno à Venda em Blumenau no bairro Vorstadt;279000.0;0;0;1200.0;0;loteterreno;1860;Vorstadt;4269;1690;4.0;Rua Itajai;89015-208;17.3;-26.9116961;-49.0469884;venda;portal_imoveis
+9843;Sobrado à Venda em Blumenau no bairro Itoupava Norte;410000.0;2;3;92.37;2;sobrado;73;Itoupava Norte;15648;5258;5.0;Rua Santa Cruz;89053-145;;-26.8806388;-49.0755442;venda;portal_imoveis
+9844;Sobrado à Venda em Blumenau no bairro Itoupava Norte;510000.0;3;1;122.87;2;sobrado;73;Itoupava Norte;15648;5258;5.0;Rua Santa Cruz;89053-145;;-26.8806388;-49.0755442;venda;portal_imoveis
+9845;Casa à Venda em Blumenau no bairro Bom Retiro;680000.0;4;2;1465.55;3;casa;349;Bom Retiro;1117;407;1.0;Rua Augusto Otte;89010-680;;-26.9259373;-49.074553;venda;portal_imoveis
+9846;Casa para Alugar em Blumenau no bairro Salto Weissbach;6500.0;3;2;500.0;4;casa;4468;Agua Verde;16186;5526;5.0;Rua General Osorio;89032-239;;-26.909049;-49.1246971;locação;portal_imoveis
+9848;Casa à Venda em Blumenau no bairro Velha;600000.0;3;2;463.43;1;casa;1025;Agua Verde;16186;5526;5.0;Rua General Osorio;89032-239;;-26.909049;-49.1246971;venda;portal_imoveis
+9851;Apartamento para Alugar em Blumenau no bairro Fortaleza;800.0;1;1;34.35;1;apartamento;1481;Fortaleza;13196;4212;5.0;Rua Fritz Koegler;89056-101;19.75;-26.8703023;-49.0726174;locação;portal_imoveis
+9852;Apartamento à Venda em Blumenau no bairro Salto Weissbach;255000.0;3;2;111.0;1;apartamento;5800;Salto Weissbach;5213;1556;4.0;Rua Bahia;89032-525;14.8;-26.8867411;-49.0937241;venda;portal_imoveis
+9853;Casa à Venda em Blumenau no bairro Salto Weissbach;410000.0;2;1;360.0;2;casa;19;Salto Weissbach;5213;1556;4.0;Rua Fernandes Marques Brinhosa;89032-138;;-26.9005326;-49.1285643;venda;portal_imoveis
+9869;Apartamento à Venda em Blumenau no bairro Jardim Blumenau;1100000.0;3;4;178.25;3;apartamento;129;Jardim Blumenau;2855;1004;1.0;Rua Coronel Vidal Ramos;89010-330;10.5;-26.9258216;-49.0628314;venda;portal_imoveis

@@ -13,7 +13,7 @@ class ModelRepository(Repository):
     def __init__(self, connection: DBConnection) -> None:
         super().__init__(connection)
 
-    async def create(self, model: Model) -> ModelInDB:
+    def create(self, model: Model) -> ModelInDB:
         query = """--sql
         INSERT
             INTO
@@ -44,7 +44,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def update_status(self, new_status: ModelStatus, model_id: int) -> bool:
+    def update_status(self, new_status: ModelStatus, model_id: int) -> bool:
         query = """--sql
         UPDATE
             public.models
@@ -67,7 +67,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def update(self, model_in_db: ModelInDB) -> bool:
+    def update(self, model_in_db: ModelInDB) -> bool:
         query = """--sql
         UPDATE
             public.models
@@ -102,7 +102,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def select_latest(self) -> ModelInDB:
+    def select_latest(self) -> ModelInDB:
         query = """--sql
         SELECT
             id,
@@ -136,7 +136,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def select_models(self, page: int, page_size: int) -> List[ModelInDB]:
+    def select_models(self, page: int, page_size: int) -> List[ModelInDB]:
         query = """--sql
         SELECT
             id,
@@ -174,7 +174,7 @@ class ModelRepository(Repository):
             _logger.error(f"Error: {str(error)}")
             return []
 
-    async def select_by_id(self, id: int) -> SummarizedModel:
+    def select_by_id(self, id: int) -> SummarizedModel:
         query = """--sql
         SELECT
             id,
@@ -196,7 +196,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def select_complete_by_id(self, id: int) -> ModelInDB:
+    def select_complete_by_id(self, id: int) -> ModelInDB:
         query = """--sql
         SELECT
             id,
@@ -230,7 +230,7 @@ class ModelRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
 
-    async def select_remaining_time(self, model_id: int) -> float:
+    def select_remaining_time(self, model_id: int) -> float:
         query = """--sql
         WITH TimeDiffCTE AS (
             SELECT

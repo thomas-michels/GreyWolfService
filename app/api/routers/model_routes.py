@@ -1,7 +1,9 @@
-from fastapi import APIRouter, Depends, BackgroundTasks, Query
+from fastapi import APIRouter, Depends, Query
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from typing import List
+from uuid import uuid4
+from datetime import datetime
 from app.api.composers import model_composer
 from app.api.shared_schemas import GWOParams
 from app.core.services import ModelServices
@@ -11,23 +13,35 @@ from app.core.entities import (
     ModelWithHistory,
     SummarizedModel,
 )
-from app.core.configs import get_logger
+from app.core.configs import get_logger, get_environment
+from app.worker import KombuProducer, EventSchema
 
 
 router = APIRouter(prefix="/models", tags=["Models"])
 _logger = get_logger(__name__)
+_env = get_environment()
 
 
 @router.post("/train")
 async def train_model(
     gwo_params: GWOParams,
-    worker: BackgroundTasks,
     name: str = "Grey Wolf V2",
     services: ModelServices = Depends(model_composer),
 ):
-    model_in_db = await services.pre_create_model(name=name, gwo_params=gwo_params)
+    model_in_db = services.pre_create_model(name=name, gwo_params=gwo_params)
+
     if model_in_db:
-        worker.add_task(services.train_and_save_model, model_in_db)
+        event = EventSchema(
+            id=str(uuid4()),
+            origin="TRAIN_ROUTE",
+            sent_to=_env.TRAIN_MODEL_CHANNEL,
+            payload=model_in_db.model_dump(),
+            created_at=datetime.now(),
+            updated_at=datetime.now()
+        )
+
+        KombuProducer.send_messages(message=event)
+
         return JSONResponse(
             status_code=201,
             content=jsonable_encoder(
@@ -52,7 +66,7 @@ async def predict_price(
     property: Property, model_id: int=None, services: ModelServices = Depends(model_composer)
 ):
     try:
-        predicted_property = await services.predict_price(model_id=model_id, property=property)
+        predicted_property = services.predict_price(model_id=model_id, property=property)
 
         if predicted_property:
             return JSONResponse(
@@ -81,7 +95,7 @@ async def get_trained_models(
     services: ModelServices = Depends(model_composer),
 ):
     try:
-        models = await services.search_models(page=page, page_size=page_size)
+        models = services.search_models(page=page, page_size=page_size)
 
         if models:
             return JSONResponse(
@@ -108,7 +122,7 @@ async def get_model_by_id(
     model_id: int, services: ModelServices = Depends(model_composer)
 ):
     try:
-        model = await services.search_model_by_id(id=model_id)
+        model = services.search_model_by_id(id=model_id)
 
         if model:
             return JSONResponse(

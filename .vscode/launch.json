@@ -9,13 +9,24 @@
 
   "configurations": [
     {
-      "name": "Python: Main.py",
+      "name": "Python: API",
 
       "type": "python",
 
       "request": "launch",
 
       "program": "main.py",
+
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Consumer",
+
+      "type": "python",
+
+      "request": "launch",
+
+      "program": "run_consumer.py",
 
       "console": "integratedTerminal"
     }

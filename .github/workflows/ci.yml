@@ -35,6 +35,6 @@ jobs:
 
       - name: Build, tag Consumer
         run: |
-          docker build build --file ./Dockerfile.consumer -t ${{ vars.DOCKER_USERNAME }}/${{ vars.MY_REPOSITORY_NAME }}:${{ github.sha }} .
+          docker build --file ./Dockerfile.consumer -t ${{ vars.DOCKER_USERNAME }}/${{ vars.MY_REPOSITORY_NAME }}:${{ github.sha }} .
           docker images
           docker push ${{ vars.DOCKER_USERNAME }}/${{ vars.MY_REPOSITORY_NAME_CONSUMER }}:${{ github.sha }}

@@ -71,6 +71,11 @@ class ModelServices:
 
     def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
 
+        model_in_db = self.__model_repository.select_by_id(id=model_in_db.id)
+
+        if model_in_db.status != ModelStatus.SCHEDULED:
+            return model_in_db
+
         file_url = self.__property_repository.get_all_properties()
         if not file_url or not model_in_db:
             return
@@ -79,43 +84,50 @@ class ModelServices:
             new_status=ModelStatus.TRAINING, model_id=model_in_db.id
         )
 
-        preprocessing = PreProcessingServices(file_url=file_url)
+        try:
+            preprocessing = PreProcessingServices(file_url=file_url)
 
-        preprocessing.normalize()
+            preprocessing.normalize()
 
-        preprocessing.filter_best_characteristics(only=model_in_db.gwo_params.get("property_type"))
+            preprocessing.filter_best_characteristics(only=model_in_db.gwo_params.get("property_type"))
 
-        preprocessing.apply_label_encoder()
+            preprocessing.apply_label_encoder()
 
-        preprocessing.apply_one_hot_encoder()
+            preprocessing.apply_one_hot_encoder()
 
-        preprocessing.scale()
+            preprocessing.scale()
 
-        preprocessing.split()
+            preprocessing.split()
 
-        train_services = TrainServices(
-            model_in_db=model_in_db,
-            x_properties_train=preprocessing.x_properties_train,
-            y_properties_train=preprocessing.y_properties_train,
-            x_properties_test=preprocessing.x_properties_test,
-            y_properties_test=preprocessing.y_properties_test,
-        )
-
-        mse, model_path = train_services.train()
-
-        model_in_db.path = model_path
-        model_in_db.mse = mse
-
-        preprocessing.save(model_in_db)
-
-        is_updated = self.__model_repository.update(model_in_db=model_in_db)
-
-        if is_updated:
-            self.__model_repository.update_status(
-                new_status=ModelStatus.READY, model_id=model_in_db.id
+            train_services = TrainServices(
+                model_in_db=model_in_db,
+                x_properties_train=preprocessing.x_properties_train,
+                y_properties_train=preprocessing.y_properties_train,
+                x_properties_test=preprocessing.x_properties_test,
+                y_properties_test=preprocessing.y_properties_test,
             )
 
-        else:
+            mse, model_path = train_services.train()
+
+            model_in_db.path = model_path
+            model_in_db.mse = mse
+
+            preprocessing.save(model_in_db)
+
+            is_updated = self.__model_repository.update(model_in_db=model_in_db)
+
+            if is_updated:
+                self.__model_repository.update_status(
+                    new_status=ModelStatus.READY, model_id=model_in_db.id
+                )
+
+            else:
+                self.__model_repository.update_status(
+                    new_status=ModelStatus.ERROR, model_id=model_in_db.id
+                )
+
+        except Exception as error:
+            _logger.error(f"Error on train_model: {str(error)}")
             self.__model_repository.update_status(
                 new_status=ModelStatus.ERROR, model_id=model_in_db.id
             )
@@ -204,6 +216,10 @@ class ModelServices:
 
         return model
 
+    def delete_model_by_id(self, id: int) -> bool:
+        self.__model_history_repository.delete_by_model_id(model_id=id)
+        return self.__model_repository.delete_by_id(id=id)
+
     def search_complete_model_by_id(self, id: int) -> ModelInDB:
         if id:
             model = self.__model_repository.select_complete_by_id(id=id)
@@ -212,3 +228,6 @@ class ModelServices:
             model = self.__model_repository.select_latest()
 
         return model
+
+    def search_statistics(self) -> dict:
+        return self.__model_repository.select_model_statistics()

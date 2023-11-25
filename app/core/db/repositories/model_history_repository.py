@@ -76,3 +76,22 @@ class ModelHistoryRepository(Repository):
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
             return {}
+
+    def delete_by_model_id(self, model_id: int) -> bool:
+        query = """--sql
+        DELETE
+        FROM
+            public.model_histories mh
+        WHERE
+            mh.model_id = %(model_id)s
+        RETURNING 1;
+        """
+
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={"model_id": model_id})
+            self.conn.commit()
+            return bool(result)
+
+        except Exception as error:
+            _logger.error(f"Error on delete history: {str(error)}")
+            return False

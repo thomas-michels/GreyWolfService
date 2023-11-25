@@ -117,6 +117,33 @@ async def get_trained_models(
         )
 
 
+@router.get("/statistics", responses={200: {"model": List[ModelWithHistory]}})
+async def get_models_statistics(
+    services: ModelServices = Depends(model_composer),
+):
+    try:
+        statistics = services.search_statistics()
+
+        if statistics:
+            return JSONResponse(
+                status_code=200,
+                content=jsonable_encoder(statistics),
+            )
+
+        else:
+            return JSONResponse(
+                status_code=400,
+                content=jsonable_encoder({"message": "Some error happen"}),
+            )
+
+    except Exception as error:
+        _logger.error(f"Error on get_models_statistics: {str(error)}")
+        return JSONResponse(
+            status_code=400,
+            content=jsonable_encoder({"message": f"Some error happen: {str(error)}"}),
+        )
+
+
 @router.get("/{model_id}", responses={200: {"model": SummarizedModel}})
 async def get_model_by_id(
     model_id: int, services: ModelServices = Depends(model_composer)
@@ -127,6 +154,31 @@ async def get_model_by_id(
         if model:
             return JSONResponse(
                 status_code=200, content=jsonable_encoder(model.model_dump())
+            )
+
+        else:
+            return JSONResponse(
+                status_code=404, content=jsonable_encoder({"message": "Not found"})
+            )
+
+    except Exception as error:
+        _logger.error(f"Error on get_model_by_id: {str(error)}")
+        return JSONResponse(
+            status_code=400,
+            content=jsonable_encoder({"message": f"Some error happen: {str(error)}"}),
+        )
+
+
+@router.delete("/{model_id}", responses={200: {"model": SummarizedModel}})
+async def delete_model_by_id(
+    model_id: int, services: ModelServices = Depends(model_composer)
+):
+    try:
+        model = services.delete_model_by_id(id=model_id)
+
+        if model:
+            return JSONResponse(
+                status_code=200, content=jsonable_encoder({"message": "Model deleted with success"})
             )
 
         else:

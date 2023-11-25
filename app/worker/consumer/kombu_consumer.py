@@ -36,6 +36,7 @@ class KombuWorker(ConsumerMixin):
         try:
             infos = message.delivery_info
             _logger.info(f"Message received at {infos['routing_key']}")
+            message.ack()
             callback = self.queues.get_function(infos["routing_key"])
             pg_connection = PGConnection()
             callback = callback(pg_connection)
@@ -45,8 +46,6 @@ class KombuWorker(ConsumerMixin):
                     event_schema.payload = json.loads(event_schema.payload)
 
                 callback.handle(event_schema)
-
-            message.ack()
 
             _logger.info(f"Message consumed at {event_schema.id}")
 

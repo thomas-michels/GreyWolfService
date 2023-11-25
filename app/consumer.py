@@ -25,7 +25,7 @@ class Consumer:
                 worker = KombuWorker(conn, queues)
                 worker.run()
 
-        except KeyboardInterrupt:
+        except Exception:
             _logger.info("Stopping Worker")
             quit()
 

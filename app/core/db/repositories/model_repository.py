@@ -155,6 +155,7 @@ class ModelRepository(Repository):
             population_size
         FROM
             public.models m
+        WHERE m.status = 'READY' and m.mse > 0
         ORDER BY
             created_at DESC
         LIMIT %(page_size)s OFFSET %(page)s;
@@ -287,3 +288,55 @@ class ModelRepository(Repository):
 
         except Exception as error:
             _logger.error(f"Error: {str(error)}")
+
+    def select_model_statistics(self) -> dict:
+        query = """--sql
+        SELECT
+            m.status,
+            count(m.id)
+        FROM
+            public.models m
+        GROUP BY m.status;
+        """
+
+        try:
+            results = self.conn.fetch_with_retry(sql_statement=query, values={}, all=True)
+
+            status = {}
+            parser = {
+                "SCHEDULED": "Agendado",
+                "TRAINING": "Em treinamento",
+                "READY": "Pronto",
+                "ERROR": "Error ao treinar"
+            }
+
+            if results:
+                for result in results:
+                    label = result.get("status")
+                    if label:
+                        status[parser[label]] = result["count"]
+
+            return status
+        
+        except Exception as error:
+            _logger.error(f"Error on select_model_statistics: {str(error)}")
+            return {}
+
+    def delete_by_id(self, id: int) -> bool:
+        query = """--sql
+        DELETE
+        FROM
+            public.models m
+        WHERE
+            m.id = %(id)s
+        RETURNING 1;
+        """
+
+        try:
+            result = self.conn.fetch_with_retry(sql_statement=query, values={"id": id})
+            self.conn.commit()
+            return bool(result)
+
+        except Exception as error:
+            _logger.error(f"Error on delete model: {str(error)}")
+            return False

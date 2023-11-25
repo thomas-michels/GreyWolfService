@@ -296,13 +296,19 @@ class ModelRepository(Repository):
             count(m.id)
         FROM
             public.models m
+        WHERE m.created_at >= CURRENT_DATE - INTERVAL '2 days'
         GROUP BY m.status;
         """
 
         try:
             results = self.conn.fetch_with_retry(sql_statement=query, values={}, all=True)
 
-            status = {}
+            status = {
+                "Agendado": 0,
+                "Em treinamento": 0,
+                "Pronto": 0,
+                "Error ao treinar": 0
+            }
             parser = {
                 "SCHEDULED": "Agendado",
                 "TRAINING": "Em treinamento",

@@ -71,33 +71,48 @@ class ModelServices:
 
     def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
 
-        model_in_db = self.__model_repository.select_complete_by_id(id=model_in_db.id)
+        check_model = self.__model_repository.select_complete_by_id(id=model_in_db.id)
 
-        if model_in_db.status != ModelStatus.SCHEDULED:
+        if check_model.status != ModelStatus.SCHEDULED:
+            _logger.info(f"Model not in SCHEDULED step")
             return model_in_db
 
         file_url = self.__property_repository.get_all_properties()
         if not file_url or not model_in_db:
+            _logger.error("Error on get file_url to train model")
             return
 
         self.__model_repository.update_status(
             new_status=ModelStatus.TRAINING, model_id=model_in_db.id
         )
+        _logger.debug(f"Model #{model_in_db.id} - In Training")
 
         try:
             preprocessing = PreProcessingServices(file_url=file_url)
 
             preprocessing.normalize()
 
+            _logger.debug(f"Model #{model_in_db.id} - Normalized")
+
             preprocessing.filter_best_characteristics(only=model_in_db.gwo_params.get("property_type"))
+
+            _logger.debug(f"Model #{model_in_db.id} - Filtered data")
 
             preprocessing.apply_label_encoder()
 
+            _logger.debug(f"Model #{model_in_db.id} - Label encoder")
+
             preprocessing.apply_one_hot_encoder()
+
+            _logger.debug(f"Model #{model_in_db.id} - Onehot encoder")
 
             preprocessing.scale()
 
+            _logger.debug(f"Model #{model_in_db.id} - Scalled")
+
             preprocessing.split()
+
+            _logger.debug(f"Model #{model_in_db.id} - Splitted data")
 
             train_services = TrainServices(
                 model_in_db=model_in_db,
@@ -117,11 +132,13 @@ class ModelServices:
             is_updated = self.__model_repository.update(model_in_db=model_in_db)
 
             if is_updated:
+                _logger.debug(f"Model #{model_in_db.id} - Ready")
                 self.__model_repository.update_status(
                     new_status=ModelStatus.READY, model_id=model_in_db.id
                 )
 
             else:
+                _logger.debug(f"Model #{model_in_db.id} - Error")
                 self.__model_repository.update_status(
                     new_status=ModelStatus.ERROR, model_id=model_in_db.id
                 )
@@ -140,6 +157,7 @@ class ModelServices:
         latest_model = self.search_complete_model_by_id(id=model_id)
 
         if not latest_model:
+            _logger.debug(f"Model #{model_id} - Not found")
             return
 
         preprocessing = PreProcessingServices(model=latest_model)

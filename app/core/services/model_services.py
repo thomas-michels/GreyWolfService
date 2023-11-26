@@ -70,24 +70,25 @@ class ModelServices:
         return model_in_db
 
     def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
-
-        check_model = self.__model_repository.select_complete_by_id(id=model_in_db.id)
-
-        if check_model.status != ModelStatus.SCHEDULED:
-            _logger.info(f"Model not in SCHEDULED step")
-            return model_in_db
-
-        file_url = self.__property_repository.get_all_properties()
-        if not file_url or not model_in_db:
-            _logger.error("Error on get file_url to train model")
-            return
-
-        self.__model_repository.update_status(
-            new_status=ModelStatus.TRAINING, model_id=model_in_db.id
-        )
-        _logger.debug(f"Model #{model_in_db.id} - In Training")
-
         try:
+            check_model = self.__model_repository.select_complete_by_id(id=model_in_db.id)
+            if not check_model:
+                raise Exception(f"Model #{model_in_db.id} not found")
+
+            if check_model.status != ModelStatus.SCHEDULED:
+                _logger.info(f"Model not in SCHEDULED step")
+                return model_in_db
+
+            file_url = self.__property_repository.get_all_properties()
+            if not file_url or not model_in_db:
+                _logger.error("Error on get file_url to train model")
+                return
+
+            self.__model_repository.update_status(
+                new_status=ModelStatus.TRAINING, model_id=model_in_db.id
+            )
+            _logger.debug(f"Model #{model_in_db.id} - In Training")
+
             preprocessing = PreProcessingServices(file_url=file_url)
 
             preprocessing.normalize()
@@ -217,6 +218,7 @@ class ModelServices:
                 id=model.id,
                 name=model.name,
                 mse=model.mse,
+                status=model.status,
                 gwo_params=model.gwo_params,
                 created_at=model.created_at,
                 updated_at=model.updated_at,

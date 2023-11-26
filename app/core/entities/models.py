@@ -35,6 +35,7 @@ class ModelWithHistory(BaseModel):
     id: int = Field(example=123)
     name: Optional[str] = Field(default="", example="test")
     mse: float = Field(default=0, example=123)
+    status: Optional[ModelStatus] = Field(default=ModelStatus.SCHEDULED, example=ModelStatus.SCHEDULED)
     gwo_params: Optional[dict] = Field(default={})
     created_at: datetime = Field(example=str(datetime.now()))
     updated_at: datetime = Field(example=str(datetime.now()))

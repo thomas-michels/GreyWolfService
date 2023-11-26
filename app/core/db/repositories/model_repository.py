@@ -229,7 +229,7 @@ class ModelRepository(Repository):
                 return ModelInDB(**result)
 
         except Exception as error:
-            _logger.error(f"Error: {str(error)}")
+            _logger.error(f"Error on select_complete_by_id: {str(error)}")
 
     def select_remaining_time(self, model_id: int) -> float:
         query = """--sql

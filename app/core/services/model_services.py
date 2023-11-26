@@ -71,7 +71,7 @@ class ModelServices:
 
     def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
 
-        model_in_db = self.__model_repository.select_by_id(id=model_in_db.id)
+        model_in_db = self.__model_repository.select_complete_by_id(id=model_in_db.id)
 
         if model_in_db.status != ModelStatus.SCHEDULED:
             return model_in_db

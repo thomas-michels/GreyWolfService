@@ -71,7 +71,7 @@ class ModelServices:
 
     def train_and_save_model(self, model_in_db: ModelInDB) -> ModelInDB:
         try:
-            check_model = self.__model_repository.select_complete_by_id(id=model_in_db.id)
+            check_model = self.__model_repository.select_by_id(id=model_in_db.id)
             if not check_model:
                 raise Exception(f"Model #{model_in_db.id} not found")
 

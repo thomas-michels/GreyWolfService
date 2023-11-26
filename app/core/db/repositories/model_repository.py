@@ -137,7 +137,7 @@ class ModelRepository(Repository):
             _logger.error(f"Error: {str(error)}")
 
     def select_models(self, page: int, page_size: int) -> List[ModelInDB]:
-        query = """--sql
+        query = """
         SELECT
             id,
             "path",

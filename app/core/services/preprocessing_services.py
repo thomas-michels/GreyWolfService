@@ -18,13 +18,14 @@ _env = get_environment()
 
 
 class PreProcessingServices:
-    def __init__(self, model: ModelInDB=None, file_url: str=None) -> None:
+    def __init__(self, model: ModelInDB=None, file_url: str=None, model_id: int=0) -> None:
         self.label_encoder_neighborhood = LabelEncoder()
         self.onehot_encoder_properties = ColumnTransformer(
             transformers=[("OneHot", OneHotEncoder(), [4])], remainder="passthrough"
         )
         self.x_min_max_scaler = MinMaxScaler()
         self.y_min_max_scaler = MinMaxScaler()
+        self.model_id = model_id
 
         if file_url:
             self.__file_url = file_url
@@ -252,4 +253,4 @@ class PreProcessingServices:
     def __get_model_path(self, model_name: str, type: str) -> str:
         now = datetime.now()
 
-        return f"Encoders/{model_name.upper()}_{now.year}-{now.month}-{now.day}-{now.second}.{type}"
+        return f"models/model #{self.model_id} - {model_name.upper()}_{now.year}-{now.month}-{now.day}-{now.second}.{type}"

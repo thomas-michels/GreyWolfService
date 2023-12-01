@@ -41,7 +41,9 @@ class PGConnection:
                     break
 
             except Exception as error:
-                _logger.error(f"Error: {str(error)}")
+                if i >= 9:
+                    _logger.error(f"Error: {str(error)}")
+
                 _logger.warning(f"DB retry activated - Count: {i}")
                 self.close()
                 self.conn = None

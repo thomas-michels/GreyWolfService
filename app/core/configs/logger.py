@@ -26,7 +26,6 @@ class Logger:
         """
         self.logger_worker.setLevel(self.DEBUG)
         self.__config_handler(logging.DEBUG)
-        self.__config_handler(logging.DEBUG, "debug.log")
 
     def __config_handler(self, level, file=None):
         # create console handler and set level to debug

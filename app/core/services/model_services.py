@@ -79,7 +79,7 @@ class ModelServices:
                 _logger.info(f"Model not in SCHEDULED step")
                 return model_in_db
 
-            file_url = self.__property_repository.get_all_properties()
+            file_url = self.__property_repository.get_all_properties(model_id=model_in_db.id)
             if not file_url or not model_in_db:
                 _logger.error("Error on get file_url to train model")
                 return
@@ -89,7 +89,7 @@ class ModelServices:
             )
             _logger.debug(f"Model #{model_in_db.id} - In Training")
 
-            preprocessing = PreProcessingServices(file_url=file_url)
+            preprocessing = PreProcessingServices(file_url=file_url, model_id=model_in_db.id)
 
             preprocessing.normalize()
 
@@ -113,7 +113,7 @@ class ModelServices:
 
             preprocessing.split()
 
-            _logger.debug(f"Model #{model_in_db.id} - Splitted data")
+            _logger.debug(f"Model #{model_in_db.id} - Splited data")
 
             train_services = TrainServices(
                 model_in_db=model_in_db,

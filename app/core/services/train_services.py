@@ -110,7 +110,7 @@ class TrainServices:
     def __get_model_path(self) -> str:
         now = datetime.now()
 
-        return f"GWO/GWO_{now.year}-{now.month}-{now.day}-{now.hour}:{now.minute}.h5"
+        return f"models/model #{self.model_in_db.id} - {now.year}-{now.month}-{now.day}-{now.hour}:{now.minute}.h5"
 
     def __save_history(
             self,

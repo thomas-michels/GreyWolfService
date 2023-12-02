@@ -14,7 +14,8 @@ class PGConnection:
 
     def execute(self, sql_statement: str, values: tuple = None):
         sql = sql_statement.replace("public", _env.ENVIRONMENT)
-        self.cursor.execute(sql, values)
+        if self.cursor:
+            self.cursor.execute(sql, values)
 
     def commit(self):
         if self.conn:
@@ -67,9 +68,6 @@ class PGConnection:
                     f"user={_env.DATABASE_USER} "
                     f"password={_env.DATABASE_PASSWORD} "
                     f"dbname={_env.DATABASE_NAME} "
-                    f"keepalives_idle=5 "
-                    f"keepalives_interval=2 "
-                    f"keepalives_count=2"
                 ),
                 autocommit=False,
                 row_factory=dict_row
